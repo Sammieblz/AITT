@@ -60,7 +60,7 @@ export default function Dashboard() {
           </nav>
           <div className={styles.appHeaderRight}>
             <Badge variant="volt">{mockUser.practiceStreakDays}-day streak</Badge>
-            <Button variant="volt" size="sm" href="/get-started">New session →</Button>
+            <Button variant="volt" size="sm" href="/session">New session →</Button>
           </div>
         </div>
       </header>
@@ -127,7 +127,7 @@ export default function Dashboard() {
                 <Badge key={area} variant="outline">{area}</Badge>
               ))}
             </div>
-            <Button variant="volt" size="lg" href="/get-started">
+            <Button variant="volt" size="lg" href="/session">
               Start practice session →
             </Button>
           </div>
