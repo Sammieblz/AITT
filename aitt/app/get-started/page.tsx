@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import Button from '@/components/Button/Button'
 import styles from './page.module.css'
@@ -17,6 +18,7 @@ const CATEGORIES = [
 ]
 
 export default function GetStarted() {
+  const router = useRouter()
   const [step, setStep] = useState(0)
   const [level, setLevel] = useState<string | null>(null)
   const [categories, setCategories] = useState<string[]>([])
@@ -199,7 +201,7 @@ export default function GetStarted() {
               size="md"
               fullWidth
               disabled={!micReady}
-              onClick={() => console.log('Starting interview')}
+              onClick={() => router.push('/dashboard')}
             >
               Start my first interview →
             </Button>
