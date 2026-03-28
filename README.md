@@ -1,2 +1,1 @@
-# AITT
-AITT: Automatic Interview Training Tool
+AITT: Automatic Interview Training Assistant

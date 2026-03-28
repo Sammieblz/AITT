@@ -1,0 +1,12 @@
+{
+  "dataset": "behavioral_interview",
+  "encoding": "gpt2",
+  "num_examples": 2,
+  "num_train_examples": 1,
+  "num_val_examples": 1,
+  "num_train_tokens": 522,
+  "num_val_tokens": 493,
+  "source_files": [
+    "seed_examples.jsonl"
+  ]
+}
