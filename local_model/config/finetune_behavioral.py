@@ -1,11 +1,11 @@
 import time
 
 out_dir = "out-behavioral"
-eval_interval = 25
-eval_iters = 20
-log_interval = 5
+eval_interval = 50
+eval_iters = 25
+log_interval = 10
 
-always_save_checkpoint = False
+always_save_checkpoint = True
 
 wandb_log = False
 wandb_project = "behavioral-interview"
@@ -23,11 +23,12 @@ gradient_accumulation_steps = 8
 dropout = 0.1
 
 # Conservative GPT-2 fine-tune defaults for a small custom dataset.
-learning_rate = 3e-5
-max_iters = 600
-lr_decay_iters = 600
-min_lr = 3e-6
-warmup_iters = 25
+learning_rate = 2e-5
+weight_decay = 1e-2
+max_iters = 1500
+lr_decay_iters = 1500
+min_lr = 2e-6
+warmup_iters = 100
 decay_lr = True
 
 # Slightly larger eval cadence helps small runs.

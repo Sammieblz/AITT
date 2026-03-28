@@ -1,0 +1,4 @@
+# Install your preferred torch build separately if you need CUDA.
+tiktoken>=0.9
+fastapi>=0.115
+uvicorn>=0.30
