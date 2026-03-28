@@ -1,0 +1,40 @@
+.base {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: var(--radius-sharp);
+  font-family: var(--font-inter), 'Helvetica Neue', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+/* ── Variants ─────────────────────────────────────────────────────── */
+.volt {
+  background-color: #B4FF5B;
+  color: #1A3300;
+}
+
+.alert {
+  background-color: #FF4444;
+  color: #FFFFFF;
+}
+
+.black {
+  background-color: #0A0A0A;
+  color: #FFFFFF;
+}
+
+.white {
+  background-color: #FFFFFF;
+  color: #0A0A0A;
+  border: 1px solid var(--border);
+}
+
+.outline {
+  background-color: transparent;
+  color: #0A0A0A;
+  border: 1.5px solid #0A0A0A;
+}
