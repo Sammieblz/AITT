@@ -1,0 +1,142 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 40px;
+  height: 60px;
+}
+
+/* ── Wordmark ─────────────────────────────────────────────────────── */
+.wordmark {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.wordmarkVoid {
+  color: var(--void);
+}
+
+.wordmarkVolt {
+  color: var(--volt);
+}
+
+/* ── Nav links ────────────────────────────────────────────────────── */
+.links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  flex: 1;
+}
+
+.link {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--stone);
+  transition: color 0.1s ease;
+}
+
+.link:hover {
+  color: var(--void);
+}
+
+/* ── CTA group ────────────────────────────────────────────────────── */
+.ctas {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+/* ── Hamburger ────────────────────────────────────────────────────── */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 36px;
+  height: 36px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  margin-left: auto;
+}
+
+.bar {
+  display: block;
+  width: 22px;
+  height: 1.5px;
+  background-color: var(--void);
+  border-radius: 2px;
+}
+
+/* ── Mobile dropdown ──────────────────────────────────────────────── */
+.mobileMenu {
+  display: none;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px 24px 24px;
+  border-top: 1px solid var(--border);
+  background-color: var(--white);
+}
+
+.mobileLinks {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.mobileLink {
+  display: block;
+  padding: 12px 0;
+  font-family: var(--font-inter), sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--void);
+  border-bottom: 1px solid var(--border);
+}
+
+.mobileCtas {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* ── Responsive ───────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .nav {
+    padding: 0 24px;
+    gap: 0;
+  }
+
+  .links,
+  .ctas {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .mobileMenu {
+    display: flex;
+  }
+}

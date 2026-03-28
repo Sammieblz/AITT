@@ -1,0 +1,163 @@
+/* ── Hero ───────────────────────────────────────────────────────────── */
+.hero {
+  background-color: var(--void);
+  padding: 72px 40px;
+  text-align: center;
+}
+
+.heroInner {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.heroHeadline {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 44px;
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+
+.heroSub {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #888888;
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ── Steps ──────────────────────────────────────────────────────────── */
+.steps {
+  background-color: var(--chalk);
+  padding: 80px 40px;
+}
+
+.stepsInner {
+  max-width: 820px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.step {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 24px;
+  padding: 40px 0;
+  border-bottom: 1px solid var(--border);
+  align-items: start;
+}
+
+.step:first-child {
+  padding-top: 0;
+}
+
+.step:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.stepNumber {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 64px;
+  font-weight: 800;
+  color: #E5E5E5;
+  line-height: 1;
+}
+
+.stepContent {
+  padding-top: 8px;
+}
+
+.stepTitle {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--void);
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.stepBody {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--stone);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.stepTags {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* ── CTA ────────────────────────────────────────────────────────────── */
+.cta {
+  background-color: var(--void);
+  padding: 64px 40px;
+  text-align: center;
+}
+
+.ctaInner {
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ctaHeadline {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+
+.ctaSub {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #888888;
+  margin-top: 8px;
+  margin-bottom: 28px;
+}
+
+/* ── Responsive ─────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .hero {
+    padding: 56px 24px;
+  }
+
+  .heroHeadline {
+    font-size: 32px;
+  }
+
+  .steps {
+    padding: 60px 24px;
+  }
+
+  .step {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .stepNumber {
+    font-size: 40px;
+  }
+
+  .stepContent {
+    padding-top: 0;
+  }
+
+  .cta {
+    padding: 48px 24px;
+  }
+}
