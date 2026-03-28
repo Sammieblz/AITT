@@ -112,8 +112,8 @@ function MicCheck({ onReady }: { onReady: () => void }) {
             {hasPermission === null
               ? 'Requesting mic access…'
               : hasSpeaking
-              ? '✓ We can hear you'
-              : 'Say something to test your mic'}
+                ? '✓ We can hear you'
+                : 'Say something to test your mic'}
           </p>
 
           <Button
@@ -335,49 +335,52 @@ function Results({ scores }: { scores: Score[] }) {
 }
 
 // ── Page ───────────────────────────────────────────────────────────────────
+import { ConversationProvider } from '@elevenlabs/react'
 export default function SessionPage() {
   const [phase, setPhase] = useState<Phase>('mic-check')
   const [scores, setScores] = useState<Score[]>([])
 
   return (
-    <div className={styles.page}>
-      <header className={styles.header}>
-        <Link href="/dashboard" className={styles.wordmark}>
-          <span className={styles.wordmarkVoid}>interview</span>
-          <span className={styles.wordmarkVolt}>AI</span>
-        </Link>
-        <div className={styles.headerRight}>
-          <div className={[
-            styles.phasePip,
-            phase === 'mic-check' ? styles.phasePipActive : styles.phasePipDone,
-          ].join(' ')} />
-          <div className={[
-            styles.phasePip,
-            phase === 'interview' ? styles.phasePipActive : phase === 'results' ? styles.phasePipDone : '',
-          ].join(' ')} />
-          <div className={[
-            styles.phasePip,
-            phase === 'results' ? styles.phasePipActive : '',
-          ].join(' ')} />
-        </div>
-      </header>
+    <ConversationProvider>
+      <div className={styles.page}>
+        <header className={styles.header}>
+          <Link href="/dashboard" className={styles.wordmark}>
+            <span className={styles.wordmarkVoid}>interview</span>
+            <span className={styles.wordmarkVolt}>AI</span>
+          </Link>
+          <div className={styles.headerRight}>
+            <div className={[
+              styles.phasePip,
+              phase === 'mic-check' ? styles.phasePipActive : styles.phasePipDone,
+            ].join(' ')} />
+            <div className={[
+              styles.phasePip,
+              phase === 'interview' ? styles.phasePipActive : phase === 'results' ? styles.phasePipDone : '',
+            ].join(' ')} />
+            <div className={[
+              styles.phasePip,
+              phase === 'results' ? styles.phasePipActive : '',
+            ].join(' ')} />
+          </div>
+        </header>
 
-      <main className={styles.main}>
-        {phase === 'mic-check' && (
-          <MicCheck onReady={() => setPhase('interview')} />
-        )}
-        {phase === 'interview' && (
-          <Interview
-            onComplete={(s) => {
-              setScores(s)
-              setPhase('results')
-            }}
-          />
-        )}
-        {phase === 'results' && (
-          <Results scores={scores} />
-        )}
-      </main>
-    </div>
+        <main className={styles.main}>
+          {phase === 'mic-check' && (
+            <MicCheck onReady={() => setPhase('interview')} />
+          )}
+          {phase === 'interview' && (
+            <Interview
+              onComplete={(s) => {
+                setScores(s)
+                setPhase('results')
+              }}
+            />
+          )}
+          {phase === 'results' && (
+            <Results scores={scores} />
+          )}
+        </main>
+      </div>
+    </ConversationProvider>
   )
 }
