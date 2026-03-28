@@ -1,0 +1,414 @@
+/* ── Hero ───────────────────────────────────────────────────────────── */
+.hero {
+  background-color: var(--void);
+  padding: 100px 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: 'AI';
+  font-family: var(--font-syne), sans-serif;
+  font-size: 220px;
+  font-weight: 800;
+  color: #1A1A1A;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  pointer-events: none;
+  line-height: 1;
+  user-select: none;
+}
+
+.heroInner {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.heroBadge {
+  border-color: var(--volt) !important;
+  color: #9FE1CB !important;
+  margin-bottom: 28px;
+}
+
+.heroHeadline {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 52px;
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  max-width: 700px;
+  margin-bottom: 0;
+}
+
+.heroSub {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #888888;
+  max-width: 560px;
+  margin-top: 20px;
+  line-height: 1.7;
+}
+
+.heroSocial {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #555555;
+  margin-top: 12px;
+}
+
+.heroCtas {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 36px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.trustStrip {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid #1A1A1A;
+  width: 100%;
+}
+
+.trustItem {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #555555;
+}
+
+.trustDot {
+  color: var(--volt);
+  font-size: 14px;
+  line-height: 1;
+}
+
+/* ── Pain ───────────────────────────────────────────────────────────── */
+.pain {
+  background-color: var(--chalk);
+  padding: 80px 40px;
+}
+
+.painInner {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.painOverline {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--volt);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.painGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.painCard {
+  background-color: var(--void);
+  border: 1px solid #222222;
+  border-radius: var(--radius-card);
+  padding: 24px;
+}
+
+.painStat {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--volt);
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.painCardTitle {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.painCardBody {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--stone);
+  line-height: 1.6;
+}
+
+/* ── Solution ───────────────────────────────────────────────────────── */
+.solution {
+  background-color: var(--white);
+  padding: 80px 40px;
+}
+
+.solutionInner {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.solutionOverline {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--stone);
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.solutionHeadline {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--void);
+  text-align: center;
+  max-width: 540px;
+  margin: 0 auto;
+  line-height: 1.15;
+}
+
+.solutionBody {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--stone);
+  text-align: center;
+  max-width: 520px;
+  margin: 16px auto 56px;
+  line-height: 1.7;
+}
+
+.featureRows {
+  display: flex;
+  flex-direction: column;
+}
+
+.featureRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.featureRow:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.featureIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.featureText {
+  flex: 1;
+}
+
+.featureTitle {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--void);
+  margin-bottom: 6px;
+}
+
+.featureDesc {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--stone);
+  line-height: 1.65;
+}
+
+/* ── Social Proof ───────────────────────────────────────────────────── */
+.socialProof {
+  background-color: var(--void);
+  padding: 64px 40px;
+}
+
+.socialProofInner {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.socialProofHeadline {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.testimonialGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.testimonialCard {
+  background-color: #141414;
+  border: 1px solid #222222;
+  border-radius: var(--radius-card);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.testimonialQuote {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #AAAAAA;
+  line-height: 1.65;
+  flex: 1;
+}
+
+.testimonialFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.testimonialName {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--white);
+}
+
+/* ── Final CTA ──────────────────────────────────────────────────────── */
+.finalCta {
+  background-color: var(--volt);
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.finalCtaInner {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.finalCtaHeadline {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--void);
+  letter-spacing: -0.02em;
+  max-width: 540px;
+  line-height: 1.1;
+}
+
+.finalCtaSub {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #1A3300;
+  margin-top: 12px;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.finalCtaNote {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #1A3300;
+  margin-top: 16px;
+}
+
+/* ── Responsive ─────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .hero {
+    padding: 72px 24px;
+  }
+
+  .hero::after {
+    font-size: 120px;
+  }
+
+  .heroHeadline {
+    font-size: 36px;
+  }
+
+  .heroSub {
+    font-size: 15px;
+  }
+
+  .heroCtas {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .pain {
+    padding: 60px 24px;
+  }
+
+  .painGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .solution {
+    padding: 60px 24px;
+  }
+
+  .solutionHeadline {
+    font-size: 28px;
+  }
+
+  .socialProof {
+    padding: 48px 24px;
+  }
+
+  .testimonialGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .finalCta {
+    padding: 60px 24px;
+  }
+
+  .finalCtaHeadline {
+    font-size: 30px;
+  }
+}
