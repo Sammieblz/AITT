@@ -1,0 +1,4 @@
+# Install your preferred torch build separately if you need CUDA.
+numpy>=1.26
+tiktoken>=0.9
+transformers>=4.49

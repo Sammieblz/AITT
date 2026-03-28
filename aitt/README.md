@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## AITT App
+
+This is the Next.js shell for AITT.
+
+Full documentation lives in:
+
+- [`../docs/README.md`](../docs/README.md)
+- [`../docs/api-and-nextjs-integration.md`](../docs/api-and-nextjs-integration.md)
+- [`../docs/environment-reference.md`](../docs/environment-reference.md)
+- [`../docs/repo-hygiene.md`](../docs/repo-hygiene.md)
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies and run the app:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Interviewer Backend Integration
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The browser should talk only to same-origin Next API routes. Those route
+handlers call the interviewer backend service over HTTP. Do not read dataset
+files or SQLite directly from the app.
 
-## Learn More
+Set this in `aitt/.env.local`:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+AITT_INTERVIEWER_API_URL=http://127.0.0.1:8000
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Use the thin app helper in [lib/interview-api.ts](./lib/interview-api.ts):
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```ts
+import {
+  generateInterviewTurn,
+  getInterviewSession,
+  startInterviewSession,
+} from "@/lib/interview-api";
 
-## Deploy on Vercel
+const session = await startInterviewSession({
+  group: "Leadership & Influence",
+  level: "intern",
+});
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+const turn = await generateInterviewTurn({
+  session_id: session.session_id,
+  candidate_answer: "During my internship...",
+});
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+const hydratedSession = await getInterviewSession(session.session_id);
+```
+
+Server-side proxying to the interviewer backend lives in:
+
+- [`lib/server/interviewer-service.ts`](./lib/server/interviewer-service.ts)
+- [`lib/interview-types.ts`](./lib/interview-types.ts)
+
+## What The App Should Not Own
+
+- direct database access
+- direct filesystem reads into `local_model/`
+- direct browser calls to the Python service URL
+- Ollama or model orchestration logic
+
+Current same-origin endpoints expected by the app:
+
+- `POST /api/interview/session/start`
+- `POST /api/interview/turn`
+- `GET /api/interview/session/{id}`
+- `GET /api/interview/health`

@@ -1,0 +1,362 @@
+[
+  {
+    "category": "Leadership & Influence",
+    "question": "Tell me about a time you led a project without formal authority.",
+    "ideal_answer_beats": [
+      "Specific project and stakes",
+      "No formal title or authority",
+      "How trust or buy-in was built",
+      "Concrete actions to create alignment",
+      "Delivery or team outcome",
+      "Reflection on influence style"
+    ]
+  },
+  {
+    "category": "Leadership & Influence",
+    "question": "Describe a situation where you had to influence a decision you disagreed with.",
+    "ideal_answer_beats": [
+      "Decision and disagreement context",
+      "Why it mattered",
+      "Evidence or tradeoffs presented",
+      "How disagreement stayed constructive",
+      "Final decision and outcome",
+      "Relationship preserved"
+    ]
+  },
+  {
+    "category": "Leadership & Influence",
+    "question": "Tell me about a time you mentored or coached a teammate.",
+    "ideal_answer_beats": [
+      "Skill gap or challenge",
+      "Your mentoring role",
+      "Specific coaching actions",
+      "Follow-up or support",
+      "Teammate growth",
+      "Team benefit"
+    ]
+  },
+  {
+    "category": "Leadership & Influence",
+    "question": "Give an example of when you had to rally a team around a difficult goal.",
+    "ideal_answer_beats": [
+      "Hard goal and resistance or pressure",
+      "Why the goal mattered",
+      "How you framed the mission",
+      "Actions to create momentum",
+      "How you handled setbacks",
+      "Result"
+    ]
+  },
+  {
+    "category": "Leadership & Influence",
+    "question": "Tell me about a time you took ownership of something outside your role.",
+    "ideal_answer_beats": [
+      "Gap or problem noticed",
+      "Why you stepped in",
+      "What was outside your scope",
+      "Specific actions taken",
+      "Impact on project or team",
+      "What you learned about ownership"
+    ]
+  },
+  {
+    "category": "Conflict & Collaboration",
+    "question": "Tell me about a time you disagreed with a technical decision. How did you handle it?",
+    "ideal_answer_beats": [
+      "Technical decision and risk",
+      "Your responsibility in the decision",
+      "How you raised the concern",
+      "Data, tradeoffs, or examples used",
+      "Resolution reached",
+      "Outcome for team or product"
+    ]
+  },
+  {
+    "category": "Conflict & Collaboration",
+    "question": "Describe a conflict with a coworker and how you resolved it.",
+    "ideal_answer_beats": [
+      "Specific conflict and stakes",
+      "What caused the tension",
+      "Your role in resolving it",
+      "Communication steps",
+      "Compromise or agreement",
+      "Relationship and project outcome"
+    ]
+  },
+  {
+    "category": "Conflict & Collaboration",
+    "question": "Tell me about a time you had to work with a difficult stakeholder.",
+    "ideal_answer_beats": [
+      "Stakeholder and mismatch",
+      "Why it mattered",
+      "How you understood their concern",
+      "How you adjusted communication",
+      "Decision or resolution",
+      "Outcome"
+    ]
+  },
+  {
+    "category": "Conflict & Collaboration",
+    "question": "Give an example of when you had to give critical feedback to a peer.",
+    "ideal_answer_beats": [
+      "Why feedback was necessary",
+      "Risk of avoiding it",
+      "How you delivered it respectfully",
+      "Specific examples used",
+      "How the peer responded",
+      "Result"
+    ]
+  },
+  {
+    "category": "Conflict & Collaboration",
+    "question": "Tell me about a time a teammate wasn't pulling their weight.",
+    "ideal_answer_beats": [
+      "Concrete team situation",
+      "Impact on work or morale",
+      "Support before judgment",
+      "Clear conversation or accountability step",
+      "Escalation if needed",
+      "Outcome"
+    ]
+  },
+  {
+    "category": "Problem Solving & Technical Judgment",
+    "question": "Tell me about the hardest technical problem you've solved.",
+    "ideal_answer_beats": [
+      "Problem scale or complexity",
+      "Why it was hard",
+      "Your ownership",
+      "Investigation or debugging approach",
+      "Solution and tradeoffs",
+      "Measured result"
+    ]
+  },
+  {
+    "category": "Problem Solving & Technical Judgment",
+    "question": "Describe a time you had to make a technical decision with incomplete information.",
+    "ideal_answer_beats": [
+      "Uncertainty and constraints",
+      "Decision that had to be made",
+      "Assumptions or risk mitigation",
+      "How you gathered enough signal",
+      "Choice made",
+      "Outcome and lesson"
+    ]
+  },
+  {
+    "category": "Problem Solving & Technical Judgment",
+    "question": "Tell me about a time you had to balance technical debt vs. shipping speed.",
+    "ideal_answer_beats": [
+      "Delivery pressure and debt context",
+      "Tradeoff you faced",
+      "How you evaluated options",
+      "Short-term and long-term plan",
+      "Decision and rationale",
+      "Outcome"
+    ]
+  },
+  {
+    "category": "Problem Solving & Technical Judgment",
+    "question": "Give an example of a time you identified a problem before it became critical.",
+    "ideal_answer_beats": [
+      "Signal or early warning",
+      "Why it could have become serious",
+      "Investigation steps",
+      "Preventive action",
+      "Risk avoided",
+      "Impact"
+    ]
+  },
+  {
+    "category": "Problem Solving & Technical Judgment",
+    "question": "Tell me about a time you simplified a complex system or process.",
+    "ideal_answer_beats": [
+      "Original complexity or friction",
+      "Why simplification mattered",
+      "How you analyzed the problem",
+      "Specific simplification steps",
+      "User or team benefit",
+      "Measured improvement"
+    ]
+  },
+  {
+    "category": "Failure & Resilience",
+    "question": "Tell me about a project that failed. What did you learn?",
+    "ideal_answer_beats": [
+      "Project and failure context",
+      "Your ownership",
+      "What went wrong",
+      "How you responded",
+      "Lesson learned",
+      "How behavior changed afterward"
+    ]
+  },
+  {
+    "category": "Failure & Resilience",
+    "question": "Describe a time you missed a deadline. What happened?",
+    "ideal_answer_beats": [
+      "Deadline and stakes",
+      "Why it was missed",
+      "Your role",
+      "How you communicated or mitigated",
+      "Immediate outcome",
+      "Process change afterward"
+    ]
+  },
+  {
+    "category": "Failure & Resilience",
+    "question": "Tell me about a time you received harsh feedback. How did you respond?",
+    "ideal_answer_beats": [
+      "Feedback context",
+      "Why it was difficult",
+      "How you processed it",
+      "Concrete behavior change",
+      "Improved result",
+      "What it taught you"
+    ]
+  },
+  {
+    "category": "Failure & Resilience",
+    "question": "Give an example of a technical decision you regret. What would you do differently?",
+    "ideal_answer_beats": [
+      "Original decision and rationale",
+      "What signal you missed",
+      "Why it was a mistake",
+      "How you corrected course",
+      "Outcome",
+      "What you would change next time"
+    ]
+  },
+  {
+    "category": "Failure & Resilience",
+    "question": "Tell me about a time things didn't go as planned mid-project.",
+    "ideal_answer_beats": [
+      "Original plan and disruption",
+      "Why the change mattered",
+      "How you reassessed",
+      "Adaptation steps",
+      "Outcome",
+      "Learning"
+    ]
+  },
+  {
+    "category": "Achievement & Impact",
+    "question": "Tell me about your proudest technical achievement.",
+    "ideal_answer_beats": [
+      "Meaningful technical challenge",
+      "Your ownership",
+      "What made it hard",
+      "What you built or improved",
+      "Result and impact",
+      "Why it matters to you"
+    ]
+  },
+  {
+    "category": "Achievement & Impact",
+    "question": "Describe a time you delivered results under pressure or tight constraints.",
+    "ideal_answer_beats": [
+      "Constraint or pressure",
+      "Specific goal",
+      "Prioritization choices",
+      "Execution steps",
+      "Outcome",
+      "What enabled success"
+    ]
+  },
+  {
+    "category": "Achievement & Impact",
+    "question": "Tell me about a time you went above and beyond what was asked.",
+    "ideal_answer_beats": [
+      "Baseline expectation",
+      "Why extra ownership was needed",
+      "What you did beyond scope",
+      "Risk or effort involved",
+      "Impact",
+      "Why you chose to do it"
+    ]
+  },
+  {
+    "category": "Achievement & Impact",
+    "question": "Give an example of a time your work had a measurable impact on the business.",
+    "ideal_answer_beats": [
+      "Business or user problem",
+      "Your contribution",
+      "Technical or process action",
+      "Metric used",
+      "Business outcome",
+      "Why it mattered"
+    ]
+  },
+  {
+    "category": "Achievement & Impact",
+    "question": "Tell me about a time you improved a process or system significantly.",
+    "ideal_answer_beats": [
+      "Painful baseline",
+      "Why improvement mattered",
+      "How you diagnosed root cause",
+      "Improvement implemented",
+      "Measured gain",
+      "Adoption or follow-through"
+    ]
+  },
+  {
+    "category": "Adaptability & Growth",
+    "question": "Tell me about a time you had to learn a new technology quickly.",
+    "ideal_answer_beats": [
+      "Urgent delivery need",
+      "Technology and why it was new",
+      "Learning approach",
+      "How you applied it immediately",
+      "Result",
+      "What you learned about learning"
+    ]
+  },
+  {
+    "category": "Adaptability & Growth",
+    "question": "Describe a time priorities shifted dramatically mid-sprint. How did you handle it?",
+    "ideal_answer_beats": [
+      "Original priorities",
+      "What changed and why",
+      "How you reprioritized",
+      "Communication with team or stakeholders",
+      "Tradeoffs made",
+      "Outcome"
+    ]
+  },
+  {
+    "category": "Adaptability & Growth",
+    "question": "Tell me about a time you joined a new team or codebase and had to get up to speed fast.",
+    "ideal_answer_beats": [
+      "New environment and challenge",
+      "Why ramp speed mattered",
+      "How you learned the system",
+      "Questions, docs, or pairing used",
+      "First useful contribution",
+      "Outcome"
+    ]
+  },
+  {
+    "category": "Adaptability & Growth",
+    "question": "Give an example of when you had to change your approach based on new information.",
+    "ideal_answer_beats": [
+      "Initial plan",
+      "New information discovered",
+      "Why pivot was necessary",
+      "How you adjusted",
+      "Result",
+      "Lesson about flexibility"
+    ]
+  },
+  {
+    "category": "Adaptability & Growth",
+    "question": "Tell me about a time you worked outside your comfort zone.",
+    "ideal_answer_beats": [
+      "Why it was unfamiliar",
+      "What was at stake",
+      "How you got support or learned",
+      "What you did",
+      "Outcome",
+      "Growth takeaway"
+    ]
+  }
+]
