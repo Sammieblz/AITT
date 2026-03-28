@@ -1,0 +1,301 @@
+/* ── Page wrapper ───────────────────────────────────────────────────── */
+.page {
+  background-color: var(--chalk);
+  min-height: 100vh;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* ── Wordmark ───────────────────────────────────────────────────────── */
+.wordmarkWrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.wordmark {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.wordmarkVoid {
+  color: var(--void);
+}
+
+.wordmarkVolt {
+  color: var(--volt);
+}
+
+/* ── Card ───────────────────────────────────────────────────────────── */
+.card {
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: 40px;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* ── Step Indicator ─────────────────────────────────────────────────── */
+.stepIndicator {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.stepIndicatorItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.stepDot {
+  width: 10px;
+  height: 10px;
+}
+
+.stepDotCompleted {
+  background-color: var(--volt);
+}
+
+.stepDotCurrent {
+  background-color: var(--void);
+}
+
+.stepDotUpcoming {
+  background-color: #E5E5E5;
+}
+
+.stepDotLabel {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--stone);
+}
+
+/* ── Step Content ───────────────────────────────────────────────────── */
+.stepContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.stepHeadline {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--void);
+  margin-bottom: 6px;
+}
+
+.stepSub {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--stone);
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+/* ── Inputs ─────────────────────────────────────────────────────────── */
+.input {
+  background-color: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sharp);
+  padding: 10px 14px;
+  font-family: var(--font-inter), sans-serif;
+  font-size: 14px;
+  width: 100%;
+  margin-bottom: 12px;
+  color: var(--void);
+  outline: none;
+  transition: border-color 0.1s ease;
+}
+
+.input::placeholder {
+  color: #BBBBBB;
+}
+
+.input:focus {
+  border-color: var(--void);
+}
+
+/* ── Level Selector ─────────────────────────────────────────────────── */
+.levelSelector {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.levelBtn {
+  background-color: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sharp);
+  padding: 10px 8px;
+  font-family: var(--font-inter), sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--void);
+  cursor: pointer;
+  transition: background-color 0.1s ease, border-color 0.1s ease, color 0.1s ease;
+  text-align: center;
+}
+
+.levelBtn:hover {
+  border-color: var(--void);
+}
+
+.levelBtnSelected {
+  background-color: var(--void);
+  border-color: var(--void);
+  color: var(--white);
+}
+
+/* ── Step Note ──────────────────────────────────────────────────────── */
+.stepNote {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--stone);
+  text-align: center;
+  margin-top: 12px;
+}
+
+/* ── Category Grid ──────────────────────────────────────────────────── */
+.categoryGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.categoryCard {
+  background-color: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: 16px;
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: border-color 0.1s ease, background-color 0.1s ease;
+}
+
+.categoryCard:hover {
+  border-color: #CCCCCC;
+}
+
+.categoryCardSelected {
+  border-color: var(--volt);
+  background-color: #FBFFF5;
+}
+
+.categoryLabel {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--void);
+}
+
+.categoryDesc {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--stone);
+  line-height: 1.5;
+}
+
+/* ── Back button ────────────────────────────────────────────────────── */
+.backBtn {
+  background: none;
+  border: none;
+  font-family: var(--font-inter), sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--stone);
+  cursor: pointer;
+  padding: 8px 0;
+  margin-top: 8px;
+  align-self: center;
+  transition: color 0.1s ease;
+}
+
+.backBtn:hover {
+  color: var(--void);
+}
+
+/* ── Mic ────────────────────────────────────────────────────────────── */
+.micWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.micBtn {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--void);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.15s ease;
+}
+
+.micBtnReady {
+  background-color: var(--volt);
+}
+
+.micLabel {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--stone);
+}
+
+.micReady {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--volt);
+}
+
+.micNote {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--stone);
+  text-align: center;
+  margin-top: 12px;
+}
+
+/* ── Responsive ─────────────────────────────────────────────────────── */
+@media (max-width: 560px) {
+  .card {
+    padding: 28px 20px;
+  }
+
+  .categoryGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .levelSelector {
+    grid-template-columns: 1fr;
+  }
+}

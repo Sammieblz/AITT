@@ -1,0 +1,510 @@
+/* ── Page shell ──────────────────────────────────────────────────────────── */
+.page {
+  background-color: var(--chalk);
+  min-height: 100vh;
+}
+
+.main {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 40px 40px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* ── App header ──────────────────────────────────────────────────────────── */
+.appHeader {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.appHeaderInner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 40px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.wordmark {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  font-family: var(--font-syne), sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.wordmarkVoid {
+  color: var(--void);
+}
+
+.wordmarkVolt {
+  color: var(--volt);
+}
+
+.appNav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.appNavItem {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--void);
+  border-bottom: 2px solid var(--volt);
+  padding-bottom: 2px;
+}
+
+.appHeaderRight {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ── Welcome section ─────────────────────────────────────────────────────── */
+.welcome {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.welcomeGreeting {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 13px;
+  color: var(--stone);
+  margin-bottom: 4px;
+}
+
+.welcomeHeadline {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--void);
+  line-height: 1.1;
+  margin-bottom: 6px;
+}
+
+.welcomeHeadlineAccent {
+  color: var(--volt);
+}
+
+.welcomeSub {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 14px;
+  color: var(--stone);
+}
+
+.welcomeBadges {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* ── Stats strip ─────────────────────────────────────────────────────────── */
+/* Gap-color trick: container bg = border color, gap = 1px → free dividers */
+.statsStrip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background-color: var(--border);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+}
+
+.statCard {
+  background-color: var(--white);
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.statValue {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--void);
+  line-height: 1;
+}
+
+.statLabel {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--void);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.statSub {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 11px;
+  color: var(--stone);
+  margin-top: 2px;
+}
+
+/* ── Action row ──────────────────────────────────────────────────────────── */
+.actionRow {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+  align-items: stretch;
+}
+
+/* Start practice card */
+.startPracticeCard {
+  background-color: var(--void);
+  border-radius: var(--radius-card);
+  padding: 36px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.actionOverline {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--stone);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.actionHeadline {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--white);
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+.actionSub {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 13px;
+  color: var(--stone);
+  line-height: 1.5;
+}
+
+.actionFocusList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* Upcoming interview card */
+.upcomingCard {
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.upcomingLabel {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--stone);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 8px;
+}
+
+.upcomingCompany {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--void);
+  line-height: 1;
+}
+
+.upcomingRole {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 13px;
+  color: var(--void);
+}
+
+.upcomingRound {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 12px;
+  color: var(--stone);
+}
+
+.upcomingDate {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--void);
+  margin-top: 8px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+/* ── Section heading ─────────────────────────────────────────────────────── */
+.sectionHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.sectionTitle {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--void);
+}
+
+.sectionMeta {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 12px;
+  color: var(--stone);
+}
+
+/* ── Recent sessions ─────────────────────────────────────────────────────── */
+.sessionsList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.sessionRow {
+  display: grid;
+  grid-template-columns: 30px auto 1fr auto;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.sessionRow:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.sessionMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 80px;
+}
+
+.sessionDate {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--void);
+  white-space: nowrap;
+}
+
+.sessionDuration {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 11px;
+  color: var(--stone);
+  white-space: nowrap;
+}
+
+.sessionInsight {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 13px;
+  color: var(--stone);
+  line-height: 1.4;
+}
+
+.sessionCategories {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+/* ── Two-column bottom section ───────────────────────────────────────────── */
+.bottomRow {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 16px;
+  align-items: start;
+}
+
+/* Category progress */
+.progressCard {
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: 28px;
+}
+
+.categoryRows {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.categoryRow {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.categoryMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.categoryName {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--void);
+}
+
+.categoryRight {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.categoryScore {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--void);
+}
+
+.trendUp {
+  font-size: 11px;
+  color: var(--volt);
+}
+
+.trendDown {
+  font-size: 11px;
+  color: var(--alert);
+}
+
+.trendFlat {
+  font-size: 11px;
+  color: var(--stone);
+}
+
+.barTrack {
+  height: 6px;
+  background-color: var(--border);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  background-color: var(--volt);
+  border-radius: 3px;
+}
+
+.categorySessionCount {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 11px;
+  color: var(--stone);
+}
+
+/* Daily tip card */
+.tipCard {
+  background-color: var(--void);
+  border-radius: var(--radius-card);
+  padding: 28px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tipHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tipDate {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 11px;
+  color: var(--stone);
+}
+
+.tipHeadline {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.2;
+}
+
+.tipBody {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 13px;
+  color: var(--stone);
+  line-height: 1.65;
+}
+
+/* ── Responsive ──────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .statsStrip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .actionRow {
+    grid-template-columns: 1fr;
+  }
+
+  .bottomRow {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .main {
+    padding: 24px 20px 60px;
+    gap: 24px;
+  }
+
+  .appHeaderInner {
+    padding: 0 20px;
+  }
+
+  .statsStrip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .welcomeHeadline {
+    font-size: 24px;
+  }
+
+  .sessionRow {
+    grid-template-columns: 30px 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .sessionCategories {
+    justify-content: flex-start;
+    grid-column: 2;
+  }
+
+  .sessionInsight {
+    grid-column: 1 / -1;
+  }
+}

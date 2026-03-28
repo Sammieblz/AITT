@@ -1,0 +1,70 @@
+.base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sharp);
+  font-family: var(--font-inter), 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  border: none;
+  white-space: nowrap;
+  transition: opacity 0.1s ease;
+  text-decoration: none;
+}
+
+.base:hover {
+  opacity: 0.88;
+}
+
+/* ── Variants ─────────────────────────────────────────────────────── */
+.primary {
+  background-color: var(--void);
+  color: var(--white);
+  border: none;
+}
+
+.volt {
+  background-color: var(--volt);
+  color: var(--void);
+  border: none;
+}
+
+.ghost-volt {
+  background-color: var(--void);
+  color: var(--volt);
+  border: none;
+}
+
+.outline {
+  background-color: transparent;
+  color: var(--void);
+  border: 1.5px solid var(--void);
+}
+
+/* ── Sizes ────────────────────────────────────────────────────────── */
+.sm {
+  padding: 7px 14px;
+  font-size: 12px;
+}
+
+.md {
+  padding: 10px 20px;
+  font-size: 13px;
+}
+
+.lg {
+  padding: 13px 28px;
+  font-size: 14px;
+}
+
+/* ── Modifiers ────────────────────────────────────────────────────── */
+.fullWidth {
+  width: 100%;
+}
+
+.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+}

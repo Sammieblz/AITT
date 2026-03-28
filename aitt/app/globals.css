@@ -1,26 +1,52 @@
-@import "tailwindcss";
+/* ── Reset ───────────────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+/* ── Design tokens ───────────────────────────────────────────────────── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --void:    #0A0A0A;   /* primary dark — hero, nav, primary buttons */
+  --volt:    #B4FF5B;   /* electric accent — CTAs, active states, AI elements */
+  --alert:   #FF4444;   /* scores 1–2, errors, needs-work states only */
+  --amber:   #FF8800;   /* score 3 only */
+  --chalk:   #F5F5F5;   /* page background */
+  --white:   #FFFFFF;   /* card surfaces on chalk */
+  --stone:   #888888;   /* body text, secondary labels */
+  --border:  #E5E5E5;   /* all borders — 1px on light */
+  --forest:  #1A3300;   /* text on volt backgrounds only */
+
+  --radius-sharp: 4px;  /* buttons, badges, score tiles */
+  --radius-card:  8px;  /* cards */
+  --radius-pill:  50%;  /* avatars only */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ── Base ────────────────────────────────────────────────────────────── */
+html {
+  font-family: var(--font-inter), 'Helvetica Neue', sans-serif;
+  background: var(--chalk);
+  color: var(--void);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--stone);
+  min-height: 100vh;
+}
+
+img,
+svg {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }

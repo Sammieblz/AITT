@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /c/Users/tajoh/Git/AITT/aitt/app -type f -name *.tsx -o -name *.ts -o -name *.jsx -o -name *.js)",
+      "Bash(find c:/Users/tajoh/Git/AITT/aitt/node_modules/next/dist/docs -name *.md -o -name *.mdx)",
+      "Bash(for dir:*)",
+      "Bash(echo \"=== $dir ===\")",
+      "Read(//c/Users/tajoh/Git/AITT/aitt/components/**)",
+      "Read(//c/Users/tajoh/Git/AITT/aitt/components/$dir/**)",
+      "Bash(npx next:*)",
+      "Bash(npm run:*)",
+      "Bash(git fetch:*)",
+      "Bash(git merge:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}
