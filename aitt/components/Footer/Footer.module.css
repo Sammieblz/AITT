@@ -1,0 +1,124 @@
+.footer {
+  background-color: var(--void);
+  padding: 48px 40px;
+}
+
+.inner {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* ── Column 1: Brand ──────────────────────────────────────────────── */
+.wordmark {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.wordmarkWhite {
+  color: var(--white);
+}
+
+.wordmarkVolt {
+  color: var(--volt);
+}
+
+.tagline {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #555555;
+  margin-bottom: 0;
+}
+
+.description {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #444444;
+  margin-top: 8px;
+  line-height: 1.6;
+}
+
+/* ── Column Labels ────────────────────────────────────────────────── */
+.colLabel {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #555555;
+  margin-bottom: 16px;
+}
+
+.colLinks {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.colLink {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #888888;
+  transition: color 0.1s ease;
+  text-decoration: none;
+}
+
+.colLink:hover {
+  color: var(--white);
+}
+
+/* ── Bottom strip ─────────────────────────────────────────────────── */
+.bottom {
+  border-top: 1px solid #1A1A1A;
+  margin-top: 40px;
+  padding-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copyright {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #444444;
+}
+
+.powered {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #444444;
+}
+
+/* ── Responsive ───────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 24px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}

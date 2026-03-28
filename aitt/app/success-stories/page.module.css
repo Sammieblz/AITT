@@ -1,0 +1,252 @@
+/* ── Hero ───────────────────────────────────────────────────────────── */
+.hero {
+  background-color: var(--void);
+  padding: 72px 40px;
+  text-align: center;
+}
+
+.heroInner {
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroBadge {
+  margin-bottom: 20px;
+}
+
+.heroHeadline {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  max-width: 600px;
+  margin-bottom: 16px;
+}
+
+.heroSub {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #888888;
+  max-width: 480px;
+  line-height: 1.7;
+}
+
+/* ── Stats Strip ────────────────────────────────────────────────────── */
+.statsStrip {
+  background-color: #111111;
+  padding: 48px 40px;
+}
+
+.statsInner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.statBlock {
+  text-align: center;
+}
+
+.statValue {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 44px;
+  font-weight: 800;
+  color: var(--volt);
+  line-height: 1;
+}
+
+.statLabel {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--stone);
+  margin-top: 8px;
+}
+
+/* ── Testimonials ───────────────────────────────────────────────────── */
+.testimonials {
+  background-color: var(--chalk);
+  padding: 80px 40px;
+}
+
+.testimonialsInner {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.testimonialGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.testimonialCard {
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.stars {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 14px;
+  color: var(--volt);
+  margin-bottom: 0;
+}
+
+.quote {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--stone);
+  font-style: italic;
+  line-height: 1.65;
+  margin: 12px 0;
+  flex: 1;
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+
+.name {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--void);
+}
+
+/* ── Companies ──────────────────────────────────────────────────────── */
+.companies {
+  background-color: var(--white);
+  padding: 48px 40px;
+  text-align: center;
+}
+
+.companiesInner {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.companiesHeadline {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--void);
+  margin-bottom: 32px;
+}
+
+.companiesList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.companyName {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--stone);
+}
+
+/* ── Bottom CTA ─────────────────────────────────────────────────────── */
+.cta {
+  background-color: var(--volt);
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.ctaInner {
+  max-width: 560px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ctaHeadline {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--void);
+  letter-spacing: -0.02em;
+  max-width: 500px;
+  line-height: 1.1;
+}
+
+.ctaSub {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #1A3300;
+  margin-top: 12px;
+  margin-bottom: 32px;
+}
+
+/* ── Responsive ─────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .testimonialGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 56px 24px;
+  }
+
+  .heroHeadline {
+    font-size: 36px;
+  }
+
+  .statsStrip {
+    padding: 40px 24px;
+  }
+
+  .statsInner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+
+  .testimonials {
+    padding: 60px 24px;
+  }
+
+  .testimonialGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .companies {
+    padding: 40px 24px;
+  }
+
+  .cta {
+    padding: 60px 24px;
+  }
+
+  .ctaHeadline {
+    font-size: 30px;
+  }
+}

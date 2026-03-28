@@ -1,0 +1,40 @@
+.tile {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: var(--radius-sharp);
+  font-family: var(--font-syne), sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+/* ── Score color map ──────────────────────────────────────────────── */
+.score1 {
+  background-color: #1A1A1A;
+  color: #555555;
+}
+
+.score2 {
+  background-color: #FF4444;
+  color: #FFFFFF;
+}
+
+.score3 {
+  background-color: #FF8800;
+  color: #FFFFFF;
+}
+
+.score4 {
+  background-color: #B4FF5B;
+  color: #1A3300;
+}
+
+.score5 {
+  background-color: #B4FF5B;
+  color: #0A0A0A;
+  outline: 2px solid #0A0A0A;
+}

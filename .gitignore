@@ -1,3 +1,4 @@
+
 # OS / editor
 .DS_Store
 Thumbs.db
@@ -52,3 +53,19 @@ local-services/interviewer-api/runtime-logs/
 local-services/interviewer-api/**/*.log
 local-services/interviewer-api/**/__pycache__/
 local-services/interviewer-api/tests/__pycache__/
+
+.DS_Store
+.idea
+.ipynb_checkpoints/
+.vscode
+__pycache__/
+*.bin
+*.pkl
+*.pt
+*.pyc
+input.txt
+env/
+venv/
+.env
+.env.local
+

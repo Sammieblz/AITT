@@ -1,0 +1,142 @@
+.section {
+  position: relative;
+  background-color: var(--void);
+  padding: 80px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* ── Ghost "AI" decorative background text ────────────────────────── */
+.section::after {
+  content: 'AI';
+  font-family: var(--font-syne), sans-serif;
+  font-size: 200px;
+  font-weight: 800;
+  color: #1A1A1A;
+  position: absolute;
+  top: -20px;
+  right: -10px;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+  letter-spacing: -0.04em;
+  z-index: 0;
+}
+
+/* ── HacKSU badge ─────────────────────────────────────────────────── */
+.badgeWrapper {
+  position: absolute;
+  top: 24px;
+  right: 40px;
+  z-index: 2;
+}
+
+.hacksuBadge {
+  border-color: var(--volt) !important;
+  color: #9FE1CB !important;
+}
+
+/* ── Content ──────────────────────────────────────────────────────── */
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 640px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ── Hero wordmark ────────────────────────────────────────────────── */
+.heroWordmark {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 42px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: baseline;
+}
+
+.heroWordmarkWhite {
+  color: var(--white);
+}
+
+.heroWordmarkVolt {
+  color: var(--volt);
+}
+
+/* ── Headline ─────────────────────────────────────────────────────── */
+.heading {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+/* ── Subheading ───────────────────────────────────────────────────── */
+.subheading {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #888888;
+  margin-bottom: 32px;
+  max-width: 480px;
+}
+
+/* ── CTA row ──────────────────────────────────────────────────────── */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.outlineOverride {
+  color: var(--white) !important;
+  border-color: var(--white) !important;
+}
+
+/* ── Responsive ───────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .section {
+    padding: 64px 24px 48px;
+  }
+
+  .badgeWrapper {
+    right: 24px;
+    top: 16px;
+  }
+
+  .heroWordmark {
+    font-size: 32px;
+  }
+
+  .heading {
+    font-size: 26px;
+  }
+
+  .section::after {
+    font-size: 120px;
+    right: -5px;
+  }
+
+  .actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .actions > * {
+    width: 100%;
+    justify-content: center;
+  }
+}
