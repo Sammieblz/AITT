@@ -70,6 +70,10 @@ def predict_fn(data, model_artifacts):
     output_ids = y[0].tolist()[len(input_ids):]
     feedback = enc.decode(output_ids)
 
+    # [AWS] strip everything from <|endoftext|> onward to prevent transcript looping
+    if "<|endoftext|>" in feedback:
+        feedback = feedback.split("<|endoftext|>")[0].strip()
+
     return {"feedback": feedback}
 
 
