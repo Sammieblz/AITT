@@ -268,8 +268,8 @@ function Interview({ onComplete }: { onComplete: (scores: StarScores[], question
     setIsProcessing(true)
 
     try {
-      // 1. Transcribe (skip if muted, use ref to avoid stale closure)
-      const transcript_text = isMutedRef.current ? '' : await transcribeAudio(audioBlob)
+      // 1. Transcribe
+      const transcript_text = await transcribeAudio(audioBlob)
       if (transcript_text) {
         setTranscript(prev => [...prev, { role: 'user', text: transcript_text }])
       }
