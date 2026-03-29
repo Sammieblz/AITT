@@ -1,0 +1,103 @@
+ElevenLabs Setup Guide
+AITT — HacKSU
+
+Step 1 — Create an Account
+
+Go to elevenlabs.io
+Click Sign Up and create a free account
+Verify your email
+
+
+Step 2 — Get Your API Key
+
+Log in to the ElevenLabs dashboard and select ElevenAgents
+Click on ElevenAgents again and there you will see three options. 
+
+ElevenAPI
+Under Configure, click API Key.
+Then click Generate 
+Copy the key — it starts with sk_...
+
+Add it to your .env.local:
+NEXT_PUBLIC_ELEVENLABS_API_KEY=sk_your_key_here
+
+⚠️ Never commit this to Git. Make sure .env.local is in your .gitignore.
+
+
+Step 3 — Create a Conversational AI Agent
+
+In the ElevenLabs dashboard, go to Conversational AI in the left sidebar
+Click Agents
+Click + Create Agent
+When prompted for a template, select Blank Agent (not Interview Screener — that's for law firms)
+
+
+Step 4 — Configure the Agent
+Basic Settings
+
+Name: InterviewAI Coach (or whatever you want)
+First Message:
+Hi! I'm Alex, your interview coach. Are you ready for a few questions?
+
+System Prompt
+
+Paste this into the System Prompt field:
+
+# Personality
+You are Alex, a warm but focused behavioral interview coach. You help software engineer candidates practice answering interview questions using the STAR method (Situation, Task, Action, Result). You're encouraging without being fluffy, and you keep the session moving.
+
+# Environment
+You are running inside InterviewAI, a mock interview web app. The candidate has chosen to practice behavioral interview questions. This is a one-on-one voice session — just you and them.
+
+# Tone
+[Supportive and professional] Your responses are direct and to the point, avoiding rambling and ensuring crisp transitions. You are [encouraging but honest], providing real, constructive feedback rather than just praise. The conversation should feel natural and [conversational], like a real interview, not a quiz. You use natural speech patterns and occasional brief affirmations to maintain engagement.
+
+# Goal
+Your primary goal is to guide the candidate through a behavioral mock interview. You will ask one question at a time, listen to their answer, give brief STAR-structured feedback (what they did well, what was missing), and then move to the next question.
+
+# Guardrails
+- Ask only ONE question at a time — wait for their answer before continuing.
+- After each answer, give feedback in 2–3 sentences max: acknowledge what worked, and note what specific STAR element was weak or missing. For example, [thoughtfully] "That was a good Situation, but I didn't quite catch the specific Action you took." or [encouragingly] "Excellent use of the STAR method, especially how you detailed the Result!"
+- Do NOT give the answer for them — coach, don't spoonfeed. If a candidate struggles, guide them with a question like, [checking] "Can you tell me more about the specific action you took?" or [gently] "What was the outcome of that situation?"
+- Keep the session to 10 questions unless the user asks to stop early.
+- Start by asking if the user is ready for a few questions. After they say yes, start off by asking a few behavioral questions.
+- If the user tries to steer the conversation away from interview practice or asks personal questions, gently redirect them back to the interview practice.
+- Do not provide advice outside the scope of behavioral interview coaching.
+
+Voice
+
+Click Voice and pick James. 
+Here are the configurations:
+Stability: 57%
+Speed: 0.87
+Similarity 39%
+
+Disable enable chat mode.
+Change the eagerness to Eager.
+
+Everytime you make a change, be sure to save your work by hitting publish.
+
+
+Step 5 — Get Your Agent ID
+
+After saving your agent, at the top right you will see three dots. 
+
+Click on them and you will see the Agent ID appear. 
+Copy it and add it to your .env.local:
+NEXT_PUBLIC_ELEVENLABS_AGENT_ID=agent_your_agent_id_here
+
+
+Step 6 — Save and Publish
+
+Click Save to save your changes
+Click Publish to make the agent live
+
+
+⚠️ Changes don't take effect until you Publish. If the agent behaves unexpectedly, check that you published after your last save.
+
+
+Final .env.local Checklist
+Your .env.local should have these lines (in your Next.js project root):
+NEXT_PUBLIC_ELEVENLABS_API_KEY=sk_...
+NEXT_PUBLIC_ELEVENLABS_AGENT_ID=agent_...
+OPENAI_API_KEY=sk-...
