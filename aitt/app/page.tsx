@@ -19,7 +19,7 @@ export default function Home() {
               You&apos;re losing jobs<br />you&apos;re qualified for.
             </h1>
             <p className={styles.heroSub}>
-              Most candidates fail behavioral interviews — not because they&apos;re unqualified, but because they&apos;ve never actually practiced. InterviewAI fixes that with real-time AI voice coaching tailored to software engineering roles.
+              Most candidates fail behavioral interviews — not because they&apos;re unqualified, but because they&apos;ve never actually practiced. AITT fixes that with real-time AI voice coaching tailored to software engineering roles.
             </p>
             <p className={styles.heroSocial}>
               ★★★★★&nbsp;&nbsp;&quot;Got my L5 offer at Google after 2 weeks of practice.&quot; — Marcus T.
@@ -71,12 +71,12 @@ export default function Home() {
         {/* ── Solution ──────────────────────────────────────────────────── */}
         <section className={styles.solution}>
           <div className={styles.solutionInner}>
-            <p className={styles.solutionOverline}>What InterviewAI does</p>
+            <p className={styles.solutionOverline}>What AITT does</p>
             <h2 className={styles.solutionHeadline}>
               Practice like it&apos;s real.<br />Walk in like you&apos;ve done it before.
             </h2>
             <p className={styles.solutionBody}>
-              InterviewAI puts you in a real conversation with an AI interviewer that listens to your voice, scores your answers, and coaches you on exactly what to improve — before the stakes are high.
+              AITT puts you in a real conversation with an AI interviewer that listens to your voice, scores your answers, and coaches you on exactly what to improve — before the stakes are high.
             </p>
 
             <div className={styles.featureRows}>
@@ -133,7 +133,7 @@ export default function Home() {
             <h2 className={styles.socialProofHeadline}>Real people. Real offers.</h2>
             <div className={styles.testimonialGrid}>
               <div className={styles.testimonialCard}>
-                <p className={styles.testimonialQuote}>&quot;I bombed 6 interviews in a row. Two weeks with InterviewAI and I had 3 offers. The real-time feedback is unlike anything else out there.&quot;</p>
+                <p className={styles.testimonialQuote}>&quot;I bombed 6 interviews in a row. Two weeks with AITT and I had 3 offers. The real-time feedback is unlike anything else out there.&quot;</p>
                 <div className={styles.testimonialFooter}>
                   <span className={styles.testimonialName}>Jordan M.</span>
                   <Badge variant="volt">Got offer at Stripe</Badge>
@@ -164,7 +164,7 @@ export default function Home() {
               Your next interview is closer<br />than you think.
             </h2>
             <p className={styles.finalCtaSub}>
-              Most engineers are one focused week away from being interview-ready. InterviewAI gets you there faster.
+              Most engineers are one focused week away from being interview-ready. AITT gets you there faster.
             </p>
             <Button variant="primary" size="lg" href="/get-started">
               Start practicing free →

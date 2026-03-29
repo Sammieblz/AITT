@@ -12,9 +12,9 @@ export default function Navbar() {
     <header className={styles.header}>
       <nav className={styles.nav}>
         {/* Wordmark */}
-        <Link href="/" className={styles.wordmark} aria-label="InterviewAI home">
-          <span className={styles.wordmarkVoid}>interview</span>
-          <span className={styles.wordmarkVolt}>AI</span>
+        <Link href="/" className={styles.wordmark} aria-label="AITT home">
+          <img src="/Logo.png" alt="AITT logo" width={80} height={80} style={{ marginRight: 10 }} />
+          <span className={styles.wordmarkText}>AITT</span>
         </Link>
 
         {/* Desktop nav links */}

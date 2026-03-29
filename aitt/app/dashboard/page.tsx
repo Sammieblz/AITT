@@ -92,9 +92,9 @@ export default function Dashboard() {
     <div className={styles.page}>
       <header className={styles.appHeader}>
         <div className={styles.appHeaderInner}>
-          <Link href="/" className={styles.wordmark}>
-            <span className={styles.wordmarkVoid}>interview</span>
-            <span className={styles.wordmarkVolt}>AI</span>
+          <Link href="/" className={styles.wordmark} aria-label="AITT home" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <img src="/Logo.png" alt="AITT logo" width={90} height={70} />
+            <span style={{ fontWeight: 800 }}>AITT</span>
           </Link>
           <nav className={styles.appNav}>
             <span className={styles.appNavItem}>Dashboard</span>
