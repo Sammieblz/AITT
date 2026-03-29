@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
+import { CognitoUserPool } from 'amazon-cognito-identity-js'
 import Button from '@/components/Button/Button'
 import Badge from '@/components/Badge/Badge'
 import ScoreIndicator from '@/components/ScoreIndicator/ScoreIndicator'
@@ -67,6 +68,15 @@ export default function Dashboard() {
     load()
   }, [authLoading, user, router])
 
+  function handleSignOut() {
+    const pool = new CognitoUserPool({
+      UserPoolId: process.env.NEXT_PUBLIC_COGNITO_USER_POOL_ID!,
+      ClientId: process.env.NEXT_PUBLIC_COGNITO_CLIENT_ID!,
+    })
+    pool.getCurrentUser()?.signOut()
+    router.replace('/login')
+  }
+
   if (authLoading || dataLoading || !profile) {
     return (
       <div className={styles.page}>
@@ -102,6 +112,7 @@ export default function Dashboard() {
           <div className={styles.appHeaderRight}>
             <Badge variant="volt">{streak}-day streak</Badge>
             <Button variant="volt" size="sm" href="/session">New session →</Button>
+            <Button variant="outline" size="sm" onClick={handleSignOut}>Sign out</Button>
           </div>
         </div>
       </header>
