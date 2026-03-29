@@ -8,7 +8,7 @@ import Button from '@/components/Button/Button'
 import styles from './page.module.css'
 
 // ── Types ──────────────────────────────────────────────────────────────────
-type Phase = 'mic-check' | 'interview' | 'results'
+type Phase = 'quiet-notice' | 'mic-check' | 'interview' | 'results'
 type Score = 1 | 2 | 3 | 4 | 5
 
 interface TranscriptLine {
@@ -23,7 +23,32 @@ const QUESTIONS = [
   'What has been your most impactful achievement and how did you measure it?',
 ]
 
-const SCORE_RE = /STAR Score:\s*([1-5])\/5/i
+function extractScore(text: string): Score | null {
+  const m =
+    /STAR\s+[Ss]core[^.]{0,30}([1-5])\s*\/\s*5/i.exec(text) ??
+    /\b([1-5])\s*\/\s*5/i.exec(text) ??
+    /\b([1-5])\s+out\s+of\s+5/i.exec(text)
+  return m ? (parseInt(m[1], 10) as Score) : null
+}
+
+// ── Quiet Notice ───────────────────────────────────────────────────────────
+function QuietNotice({ onReady }: { onReady: () => void }) {
+  return (
+    <div className={styles.phase}>
+      <div className={styles.phaseHeader}>
+        <h1 className={styles.phaseHeadline}>Find a quiet space</h1>
+        <p className={styles.phaseSub}>
+          The AI listens carefully to your answers. Background noise can
+          interrupt scoring and disrupt the flow of the session. Take a moment
+          to find somewhere you won't be disturbed.
+        </p>
+      </div>
+      <Button variant="volt" size="lg" onClick={onReady}>
+        I&apos;m in a quiet space →
+      </Button>
+    </div>
+  )
+}
 
 // ── Mic Check ─────────────────────────────────────────────────────────────
 function MicCheck({ onReady }: { onReady: () => void }) {
@@ -136,12 +161,14 @@ function Interview({ onComplete }: { onComplete: (scores: Score[]) => void }) {
   const [scores, setScores] = useState<Score[]>([])
   const [questionNumber, setQuestionNumber] = useState(0)
   const [connError, setConnError] = useState<string | null>(null)
+  const [isMuted, setIsMuted] = useState(false)
   const transcriptEndRef = useRef<HTMLDivElement>(null)
   const scoresRef = useRef<Score[]>([])
   // True once the agent sends its first message — session is real, not a dropped connection
   const sessionStartedRef = useRef(false)
 
   const conversation = useConversation({
+    micMuted: isMuted,
     onConnect: () => console.log('[ElevenLabs] connected'),
     onDisconnect: () => {
       console.log('[ElevenLabs] disconnected')
@@ -165,9 +192,8 @@ function Interview({ onComplete }: { onComplete: (scores: Score[]) => void }) {
       setTranscript(prev => [...prev, { role, text }])
 
       if (role === 'ai') {
-        const match = SCORE_RE.exec(text)
-        if (match) {
-          const score = parseInt(match[1], 10) as Score
+        const score = extractScore(text)
+        if (score !== null) {
           const next = [...scoresRef.current, score]
           scoresRef.current = next
           setScores(next)
@@ -245,24 +271,36 @@ function Interview({ onComplete }: { onComplete: (scores: Score[]) => void }) {
           {isConnected ? 'Live' : conversation.status === 'connecting' ? 'Connecting…' : 'Ready'}
         </span>
         {isConnected && (
-          <span className={styles.speakingIndicator}>
-            {conversation.isSpeaking ? '🔊 Alex' : '🎙 You'}
+          <span className={[
+            styles.speakingIndicator,
+            isMuted ? styles.speakingIndicatorMuted : '',
+          ].filter(Boolean).join(' ')}>
+            {conversation.isSpeaking ? '🔊 Alex' : isMuted ? '🔇 Muted' : '🎙 You'}
           </span>
         )}
       </div>
 
       {/* Transcript */}
-      <div className={styles.transcript}>
-        {transcript.length === 0 && (
-          <p className={styles.transcriptEmpty}>Transcript will appear here…</p>
-        )}
-        {transcript.map((line, i) => (
-          <p key={i} className={line.role === 'ai' ? styles.lineAi : styles.lineUser}>
-            <span className={styles.lineRole}>{line.role === 'ai' ? 'Alex' : 'You'}</span>
-            {line.text}
-          </p>
-        ))}
-        <div ref={transcriptEndRef} />
+      <div className={styles.transcriptWrap}>
+        <div className={styles.transcript}>
+          {transcript.length === 0 && (
+            <p className={styles.transcriptEmpty}>Transcript will appear here…</p>
+          )}
+          {transcript.map((line, i) => (
+            <p key={i} className={line.role === 'ai' ? styles.lineAi : styles.lineUser}>
+              <span className={styles.lineRole}>{line.role === 'ai' ? 'Alex' : 'You'}</span>
+              {line.text}
+            </p>
+          ))}
+          <div ref={transcriptEndRef} />
+        </div>
+        <button
+          className={[styles.muteFab, isMuted ? styles.muteFabMuted : ''].filter(Boolean).join(' ')}
+          onClick={() => setIsMuted(m => !m)}
+          aria-label={isMuted ? 'Unmute microphone' : 'Mute microphone'}
+        >
+          {isMuted ? '🎙 Unmute' : '🔇 Mute'}
+        </button>
       </div>
 
       {/* Error */}
@@ -336,7 +374,7 @@ function Results({ scores }: { scores: Score[] }) {
 
 // ── Page ───────────────────────────────────────────────────────────────────
 export default function SessionPage() {
-  const [phase, setPhase] = useState<Phase>('mic-check')
+  const [phase, setPhase] = useState<Phase>('quiet-notice')
   const [scores, setScores] = useState<Score[]>([])
 
   return (
@@ -363,6 +401,9 @@ export default function SessionPage() {
       </header>
 
       <main className={styles.main}>
+        {phase === 'quiet-notice' && (
+          <QuietNotice onReady={() => setPhase('mic-check')} />
+        )}
         {phase === 'mic-check' && (
           <MicCheck onReady={() => setPhase('interview')} />
         )}
