@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 import {
   CognitoUserPool,
   CognitoUser,
@@ -85,6 +86,11 @@ export default function LoginPage() {
         >
           {loading ? 'Signing in…' : 'Sign in'}
         </button>
+
+        <p style={{ textAlign: 'center', fontSize: '0.875rem', color: '#888' }}>
+          Don&apos;t have an account?{' '}
+          <Link href="/sign-up" style={{ color: '#B4FF5B' }}>Sign up</Link>
+        </p>
       </form>
     </div>
   )
