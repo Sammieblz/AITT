@@ -78,7 +78,7 @@ def _call_endpoint(prompt: str) -> str:
     config = Config(read_timeout=300, connect_timeout=30)
     runtime = boto3.client("sagemaker-runtime", region_name=REGION, config=config)
     # [AWS] 250 tokens gives the model enough room to complete the improved answer section
-    payload = json.dumps({"prompt": prompt, "max_new_tokens": 250, "temperature": 0.8})
+    payload = json.dumps({"prompt": prompt, "max_new_tokens": 400, "temperature": 0.8})
     response = runtime.invoke_endpoint(
         EndpointName=ENDPOINT_NAME,
         ContentType="application/json",
