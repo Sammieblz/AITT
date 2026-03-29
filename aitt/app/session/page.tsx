@@ -5,6 +5,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import ScoreIndicator from '@/components/ScoreIndicator/ScoreIndicator'
 import Button from '@/components/Button/Button'
+import { useAuth } from '@/lib/AuthContext'
 import styles from './page.module.css'
 
 // ── Types ──────────────────────────────────────────────────────────────────
@@ -21,6 +22,13 @@ const QUESTIONS = [
   'Describe a situation where you had to solve a complex technical problem with limited information.',
   'Tell me about a time you failed and what you learned.',
   'What has been your most impactful achievement and how did you measure it?',
+]
+
+const QUESTION_CATEGORIES = [
+  'Leadership',
+  'Problem solving',
+  'Conflict & collaboration',
+  'Achievement & impact',
 ]
 
 function extractScore(text: string): Score | null {
@@ -375,8 +383,29 @@ function Results({ scores }: { scores: Score[] }) {
 // ── Page ───────────────────────────────────────────────────────────────────
 import { ConversationProvider } from '@elevenlabs/react'
 export default function SessionPage() {
+  const { user } = useAuth()
   const [phase, setPhase] = useState<Phase>('quiet-notice')
   const [scores, setScores] = useState<Score[]>([])
+  const interviewStartRef = useRef<Date | null>(null)
+
+  useEffect(() => {
+    if (phase === 'interview') interviewStartRef.current = new Date()
+  }, [phase])
+
+  async function handleComplete(s: Score[]) {
+    setScores(s)
+    setPhase('results')
+    if (!user) return
+    const durationMinutes = interviewStartRef.current
+      ? Math.round((Date.now() - interviewStartRef.current.getTime()) / 60000)
+      : 0
+    const categories = [...new Set(s.map((_, i) => QUESTION_CATEGORIES[i]).filter(Boolean))]
+    await fetch('/api/sessions', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ userId: user.userId, scores: s, durationMinutes, categories }),
+    })
+  }
 
   return (
     <div className={styles.page}>
@@ -409,12 +438,7 @@ export default function SessionPage() {
           <MicCheck onReady={() => setPhase('interview')} />
         )}
         {phase === 'interview' && (
-          <Interview
-            onComplete={(s) => {
-              setScores(s)
-              setPhase('results')
-            }}
-          />
+          <Interview onComplete={handleComplete} />
         )}
         {phase === 'results' && (
           <Results scores={scores} />

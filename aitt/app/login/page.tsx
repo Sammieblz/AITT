@@ -28,7 +28,25 @@ export default function LoginPage() {
     const authDetails = new AuthenticationDetails({ Username: email, Password: password })
 
     user.authenticateUser(authDetails, {
-      onSuccess: () => router.replace('/dashboard'),
+      onSuccess: async () => {
+        const clientId = process.env.NEXT_PUBLIC_COGNITO_CLIENT_ID!
+        const prefix = `CognitoIdentityServiceProvider.${clientId}`
+        const username = localStorage.getItem(`${prefix}.LastAuthUser`)
+        const idToken = username ? localStorage.getItem(`${prefix}.${username}.idToken`) : null
+        let userId: string | null = null
+        if (idToken) {
+          try {
+            const payload = JSON.parse(atob(idToken.split('.')[1].replace(/-/g, '+').replace(/_/g, '/')))
+            userId = payload.sub
+          } catch { /* ignore */ }
+        }
+        if (userId) {
+          const res = await fetch(`/api/user?userId=${userId}`)
+          router.replace(res.ok ? '/dashboard' : '/setup')
+        } else {
+          router.replace('/dashboard')
+        }
+      },
       onFailure: (err) => {
         setError(err.message ?? 'Login failed')
         setLoading(false)
