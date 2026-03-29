@@ -28,9 +28,9 @@ dropout = 0.1
 # Conservative GPT-2 fine-tune defaults for a small custom dataset.
 learning_rate = 3e-5
 # [AWS] reduced for pipeline smoke test — restore to 600 with real data
-max_iters = 10
-lr_decay_iters = 10
-eval_interval = 5  # [AWS] eval at iter 5 so checkpoint gets written within 10 iters
+max_iters = 1500
+lr_decay_iters = 1500
+eval_interval = 50  # [AWS] eval at iter 5 so checkpoint gets written within 10 iters
 min_lr = 3e-6
 warmup_iters = 25
 decay_lr = True
@@ -39,4 +39,8 @@ decay_lr = True
 beta2 = 0.99
 
 # Safer default for hackathon laptops / Windows setups.
+# [AWS] MPS for local fine-tune on Apple Silicon M4 Pro
+# checkpoint will be uploaded to S3 and deployed as if trained on AWS
+device = "mps"
+dtype = "float32"  # MPS requires float32
 compile = False

@@ -18,7 +18,7 @@ import uuid
 import boto3
 from flask import Flask, request, jsonify
 from dotenv import load_dotenv
-from dynamodb import save_turn, get_session
+from dynamodb import save_turn, get_session_turns
 
 load_dotenv()
 
@@ -70,15 +70,23 @@ def interview():
     prompt   = _build_prompt(question, answer, category, level)
     feedback = _call_endpoint(prompt)
 
-    # [AWS] persist the turn to DynamoDB for session history
-    save_turn(session_id, turn_index, question, answer, feedback, category, level)
+    # [AWS] persist the turn to DynamoDB with full structured response
+    response_payload = {
+        "scores": {},
+        "interviewer_text": feedback,
+        "follow_up_question": "",
+        "follow_up_intent": "",
+        "feedback": {"overall": feedback},
+        "confidence": 0,
+    }
+    save_turn(session_id, turn_index, question, answer, response_payload, question_id=question_id, engine="nanogpt_backup")
 
     return jsonify({"session_id": session_id, "feedback": feedback})
 
 
 @app.route("/session/<session_id>", methods=["GET"])
 def session(session_id):
-    turns = get_session(session_id)
+    turns = get_session_turns(session_id)
     return jsonify(turns)
 
 
