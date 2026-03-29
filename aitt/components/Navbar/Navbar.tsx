@@ -26,7 +26,7 @@ export default function Navbar() {
 
         {/* Desktop CTAs */}
         <div className={styles.ctas}>
-          <Button variant="outline" size="sm" href="/get-started">Sign in</Button>
+          <Button variant="outline" size="sm" href="/login">Sign in</Button>
           <Button variant="volt" size="sm" href="/get-started">Start free →</Button>
         </div>
 
@@ -65,7 +65,7 @@ export default function Navbar() {
             </li>
           </ul>
           <div className={styles.mobileCtas}>
-            <Button variant="outline" size="sm" href="/get-started">Sign in</Button>
+            <Button variant="outline" size="sm" href="/login">Sign in</Button>
             <Button variant="volt" size="sm" href="/get-started">Start free →</Button>
           </div>
         </div>

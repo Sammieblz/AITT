@@ -1,0 +1,120 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background: #0a0a0a;
+}
+
+.card {
+  width: 100%;
+  max-width: 560px;
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+}
+
+.headline {
+  font-family: var(--font-syne);
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.sub {
+  color: #888;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.input {
+  padding: 0.65rem 0.75rem;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.input:focus {
+  border-color: #B4FF5B;
+}
+
+.fieldset {
+  border: 1px solid #222;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+}
+
+.legend {
+  font-size: 0.85rem;
+  color: #aaa;
+  padding: 0 0.25rem;
+}
+
+.optional {
+  color: #555;
+}
+
+.checkboxGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+  margin-top: 0.75rem;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.error {
+  color: #ff4444;
+  font-size: 0.875rem;
+}
+
+.submit {
+  padding: 0.85rem;
+  background: #B4FF5B;
+  color: #000;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

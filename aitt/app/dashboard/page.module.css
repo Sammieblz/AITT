@@ -4,6 +4,31 @@
   min-height: 100vh;
 }
 
+.loadingState {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #888;
+  font-size: 1rem;
+}
+
+.editProfileBtn {
+  background: none;
+  border: 1px solid #333;
+  color: #aaa;
+  font-size: 0.8rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.editProfileBtn:hover {
+  color: #fff;
+  border-color: #666;
+}
+
 .main {
   max-width: 1120px;
   margin: 0 auto;
