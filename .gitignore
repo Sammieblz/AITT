@@ -24,7 +24,12 @@ venv/
 *.bin
 *.pkl
 *.pt
+*.tar.gz
 input.txt
+
+# Cloud model training outputs
+cloud-model/out/
+cloud-model/out-behavioral/
 
 # Next.js app build/runtime artifacts
 aitt/node_modules/
