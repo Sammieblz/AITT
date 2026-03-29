@@ -11,9 +11,7 @@
       "Bash(npm run:*)",
       "Bash(git fetch:*)",
       "Bash(git merge:*)",
-      "Bash(git add:*)",
-      "Bash(grep -r \"elevenlabs\\\\|ElevenLabs\" /c/Users/tajoh/Git/AITT/aitt --include=*.ts --include=*.tsx --include=*.js --include=*.jsx)",
-      "Bash(grep -r \"dynamodb\\\\|DynamoDB\\\\|cognito\\\\|Cognito\\\\|aws-sdk\\\\|@aws-sdk\" c:UserstajohGitAITTaitt --include=*.ts --include=*.tsx --include=*.js --include=*.json)"
+      "Bash(git add:*)"
     ]
   }
 }
