@@ -137,8 +137,8 @@ function MicCheck({ onReady }: { onReady: () => void }) {
             {hasPermission === null
               ? 'Requesting mic access…'
               : hasSpeaking
-              ? '✓ We can hear you'
-              : 'Say something to test your mic'}
+                ? '✓ We can hear you'
+                : 'Say something to test your mic'}
           </p>
 
           <Button
@@ -373,6 +373,7 @@ function Results({ scores }: { scores: Score[] }) {
 }
 
 // ── Page ───────────────────────────────────────────────────────────────────
+import { ConversationProvider } from '@elevenlabs/react'
 export default function SessionPage() {
   const [phase, setPhase] = useState<Phase>('quiet-notice')
   const [scores, setScores] = useState<Score[]>([])

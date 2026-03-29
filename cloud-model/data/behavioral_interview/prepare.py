@@ -20,6 +20,15 @@ from typing import Iterable, List
 import numpy as np
 import tiktoken
 
+# [AWS] added: load .env for AWS credentials and import boto3 for S3 upload
+from dotenv import load_dotenv
+import boto3
+load_dotenv()
+
+# [AWS] S3 bucket where tokenized data will be stored for SageMaker training
+S3_BUCKET = os.getenv("AWS_S3_BUCKET")
+S3_DATA_PREFIX = "behavioral_interview"
+
 
 DATA_DIR = os.path.dirname(__file__)
 END_OF_TEXT = "<|endoftext|>"
@@ -184,3 +193,18 @@ if __name__ == "__main__":
     print(f"wrote {train_path} with {train_ids.size:,} tokens")
     print(f"wrote {val_path} with {val_ids.size:,} tokens")
     print(json.dumps(meta, indent=2))
+
+    # [AWS] upload tokenized data and metadata to S3 so SageMaker can access them during training
+    if S3_BUCKET:
+        s3 = boto3.client("s3")
+        uploads = [
+            (train_path, f"{S3_DATA_PREFIX}/train.bin"),
+            (val_path, f"{S3_DATA_PREFIX}/val.bin"),
+            (os.path.join(DATA_DIR, "dataset_meta.json"), f"{S3_DATA_PREFIX}/dataset_meta.json"),
+        ]
+        for local_path, s3_key in uploads:
+            print(f"uploading {os.path.basename(local_path)} to s3://{S3_BUCKET}/{s3_key}")
+            s3.upload_file(local_path, S3_BUCKET, s3_key)
+        print("S3 upload complete.")
+    else:
+        print("AWS_S3_BUCKET not set in .env — skipping S3 upload.")
