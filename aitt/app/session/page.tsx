@@ -381,7 +381,6 @@ function Results({ scores }: { scores: Score[] }) {
 }
 
 // ── Page ───────────────────────────────────────────────────────────────────
-import { ConversationProvider } from '@elevenlabs/react'
 export default function SessionPage() {
   const { user } = useAuth()
   const [phase, setPhase] = useState<Phase>('quiet-notice')
