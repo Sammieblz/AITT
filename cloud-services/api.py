@@ -79,7 +79,7 @@ def interview():
         "feedback": {"overall": feedback},
         "confidence": 0,
     }
-    save_turn(session_id, turn_index, question, answer, response_payload, question_id=question_id, engine="nanogpt_backup")
+    save_turn(session_id, turn_index, question, answer, response_payload, question_id="", engine="nanogpt_backup")
 
     return jsonify({"session_id": session_id, "feedback": feedback})
 
