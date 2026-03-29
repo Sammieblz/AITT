@@ -57,7 +57,8 @@ export default function LoginPage() {
 
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
-      <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem', width: '320px' }}>
+      <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem', width: '320px', alignItems: 'center' }}>
+        <img src="/Logo.png" alt="AITT logo" width={250} height={170} style={{ marginBottom: '0.75rem' }} />
         <h1 style={{ fontWeight: 700, fontSize: '1.5rem' }}>Sign in</h1>
 
         <input

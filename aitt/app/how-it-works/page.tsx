@@ -16,7 +16,7 @@ export default function HowItWorks() {
               From &quot;I don&apos;t know&quot; to<br />&quot;I&apos;ve got this&quot; — in minutes.
             </h1>
             <p className={styles.heroSub}>
-              InterviewAI puts you inside a real interview conversation. You speak, the AI listens, scores your answers, and coaches you on what to improve.
+              AITT puts you inside a real interview conversation. You speak, the AI listens, scores your answers, and coaches you on what to improve.
             </p>
           </div>
         </section>

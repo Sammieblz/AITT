@@ -17,9 +17,8 @@ export default function Hero() {
       {/* Centered content */}
       <div className={styles.content}>
         {/* Hero wordmark */}
-        <div className={styles.heroWordmark} aria-label="interviewAI">
-          <span className={styles.heroWordmarkWhite}>interview</span>
-          <span className={styles.heroWordmarkVolt}>AI</span>
+        <div className={styles.heroWordmark} aria-label="AITT">
+          <img src="/Logo.png" alt="AITT logo" width={120} height={54} />
         </div>
 
         <h1 className={styles.heading}>

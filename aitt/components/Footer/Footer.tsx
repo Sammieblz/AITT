@@ -9,8 +9,7 @@ export default function Footer() {
           {/* Column 1: Brand */}
           <div className={styles.col}>
             <div className={styles.wordmark}>
-              <span className={styles.wordmarkWhite}>interview</span>
-              <span className={styles.wordmarkVolt}>AI</span>
+              <span className={styles.wordmarkWhite}>AITT</span>
             </div>
             <p className={styles.tagline}>Stop guessing. Start acing.</p>
             <p className={styles.description}>AI-powered behavioral interview coaching for software engineers.</p>
@@ -40,7 +39,7 @@ export default function Footer() {
         </div>
 
         <div className={styles.bottom}>
-          <p className={styles.copyright}>© 2026 InterviewAI. All rights reserved.</p>
+          <p className={styles.copyright}>© 2026 AITT. All rights reserved.</p>
           <p className={styles.powered}>Powered by ElevenLabs voice AI</p>
         </div>
       </div>

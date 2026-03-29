@@ -51,7 +51,7 @@ const features = [
       </svg>
     ),
     heading: 'Tailored to your role',
-    body: 'Pick your experience level and focus areas. InterviewAI adapts the questions to match your track.',
+    body: 'Pick your experience level and focus areas. AITT adapts the questions to match your track.',
   },
 ]
 
@@ -59,7 +59,7 @@ export default function Features() {
   return (
     <section id="features" className={styles.section}>
       <div className={styles.container}>
-        <p className={styles.label}>Why InterviewAI</p>
+        <p className={styles.label}>Why AITT</p>
         <h2 className={styles.heading}>
           Everything you need to interview with confidence.
         </h2>

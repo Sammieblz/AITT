@@ -120,7 +120,7 @@ export default function Pricing() {
 
             <div className={styles.faqItem}>
               <h3 className={styles.faqQuestion}>How is this different from practicing with a friend or ChatGPT?</h3>
-              <p className={styles.faqAnswer}>A friend doesn&apos;t know the STAR method and won&apos;t push back consistently. ChatGPT can&apos;t hear you. InterviewAI listens to your actual voice, evaluates your structure in real time, and gives you specific coaching — not generic feedback.</p>
+              <p className={styles.faqAnswer}>A friend doesn&apos;t know the STAR method and won&apos;t push back consistently. ChatGPT can&apos;t hear you. AITT listens to your actual voice, evaluates your structure in real time, and gives you specific coaching — not generic feedback.</p>
             </div>
 
             <div className={styles.faqItem}>

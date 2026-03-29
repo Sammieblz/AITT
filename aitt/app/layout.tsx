@@ -7,7 +7,7 @@ const syne = Syne({ subsets: ['latin'], weight: ['700', '800'], variable: '--fon
 const inter = Inter({ subsets: ['latin'], weight: ['400', '600'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
-  title: 'InterviewAI — Behavioral Interview Coach',
+  title: 'AITT — Behavioral Interview Coach',
   description: 'AI-powered behavioral interview coaching with real-time voice feedback.',
 }
 

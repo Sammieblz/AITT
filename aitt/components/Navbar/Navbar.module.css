@@ -35,6 +35,13 @@
   color: var(--volt);
 }
 
+.wordmarkText {
+  color: var(--void);
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
 /* ── Nav links ────────────────────────────────────────────────────── */
 .links {
   display: flex;
