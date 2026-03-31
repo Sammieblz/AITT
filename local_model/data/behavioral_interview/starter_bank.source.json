@@ -1,0 +1,569 @@
+[
+  {
+    "id": "ownership-release-bug",
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "category": "ownership",
+    "level": "new_grad",
+    "question": "Tell me about a time you took ownership of a problem that was affecting other people.",
+    "variants": [
+      {
+        "quality": "strong",
+        "candidate_answer": "During my internship, a reporting bug started returning stale data to the operations team a day before their weekly review. Even though I did not write the original query, I was the engineer on call for the dashboard service. I reproduced the issue, traced it to a cache invalidation problem, and coordinated with another intern to patch the query layer and add a temporary manual refresh button. I also wrote a short incident summary so the team would understand the root cause. We restored correct data before the review, and the ops manager later said the report was accurate enough to avoid delaying the meeting.",
+        "follow_up_question": "What permanent change did you make after the immediate fix?",
+        "feedback": {
+          "interviewer_reply": "Thanks. That answer shows clear ownership and calm execution under pressure.",
+          "overall": "Strong ownership example. Your actions and impact are clear, and the answer would be even stronger with one measurable detail about the operational impact.",
+          "star": {
+            "situation": {
+              "rating": "strong",
+              "feedback": "You set the context, timing, and business risk clearly."
+            },
+            "task": {
+              "rating": "strong",
+              "feedback": "Your responsibility as the on-call engineer is explicit."
+            },
+            "action": {
+              "rating": "strong",
+              "feedback": "You explained the investigation, coordination, and communication steps in sequence."
+            },
+            "result": {
+              "rating": "good",
+              "feedback": "The outcome is positive, but one specific metric or avoided cost would make it sharper."
+            }
+          },
+          "strengths": [
+            "You took responsibility without focusing on who caused the bug.",
+            "You balanced immediate mitigation with communication."
+          ],
+          "improvements": [
+            "Add one measurable detail about time saved or stakeholders helped.",
+            "Mention the longer-term prevention step in one sentence."
+          ],
+          "improved_answer": "During my internship, a reporting bug began showing stale data the day before the operations team's weekly review. I was the engineer on call for the dashboard service, so I took ownership even though I had not written the original query. I reproduced the issue, traced it to cache invalidation, patched the query layer with another intern, and added a temporary manual refresh so the operations team could keep working. I also sent a short incident summary so stakeholders knew what happened and what to expect next. As a result, the team had accurate numbers before their review and avoided rescheduling the meeting. Afterward, I added an automated cache test so the same issue would be caught earlier."
+        }
+      },
+      {
+        "quality": "weak",
+        "candidate_answer": "At my internship there was a bug in one of our dashboards and people were complaining about it. I jumped in and helped look at the issue because it seemed important. I talked to a few people, changed some code, and eventually it started working again. The team appreciated that I was willing to help, and it showed that I can take ownership when something goes wrong.",
+        "follow_up_question": "What exactly did you change, and how did you know it fixed the root cause?",
+        "feedback": {
+          "interviewer_reply": "There is a good ownership theme here, but the answer stays too general.",
+          "overall": "The example has the right direction, but it needs more detail about your role, what you actually did, and the final outcome.",
+          "star": {
+            "situation": {
+              "rating": "good",
+              "feedback": "We understand there was a dashboard bug, but the stakes are still vague."
+            },
+            "task": {
+              "rating": "weak",
+              "feedback": "Your personal responsibility is not clearly defined."
+            },
+            "action": {
+              "rating": "weak",
+              "feedback": "Saying you talked to people and changed code is too generic to show problem-solving."
+            },
+            "result": {
+              "rating": "weak",
+              "feedback": "The answer does not explain what improved or how success was measured."
+            }
+          },
+          "strengths": [
+            "You chose a relevant ownership example.",
+            "You avoided blaming other people."
+          ],
+          "improvements": [
+            "State your exact role and the business impact.",
+            "Describe the concrete steps you took and the final result."
+          ],
+          "improved_answer": "At my internship, a dashboard bug caused the operations team to see stale data before an important weekly review. I was the engineer on call for the service, so my job was to restore accurate reporting quickly. I reproduced the issue, traced it to a cache invalidation problem, and worked with another intern to patch the query layer and verify the fix with real report data. As a result, the operations team used the dashboard on time for their review, and I later added a regression test to prevent the same bug from returning."
+        }
+      }
+    ]
+  },
+  {
+    "id": "ambiguity-requirements",
+    "source_url": "https://capd.mit.edu/resources/career-toolkit-interviewing/",
+    "category": "ambiguity",
+    "level": "intern",
+    "question": "Tell me about a time you had to move forward with unclear requirements.",
+    "variants": [
+      {
+        "quality": "strong",
+        "candidate_answer": "In a product design course, my team was asked to build a campus event app, but the requirements from our teaching assistant were intentionally broad. I was responsible for the first clickable prototype. Instead of guessing, I interviewed five students about how they currently found events, grouped their pain points, and turned those into a short list of must-have features. I reviewed that list with my team before building the prototype. Because we aligned early, we finished the prototype a week ahead of the checkpoint and received feedback that the flow felt focused instead of overloaded.",
+        "follow_up_question": "What tradeoff did your team make because of what you learned in those interviews?",
+        "feedback": {
+          "interviewer_reply": "That is a strong ambiguity example because you created structure instead of waiting for clarity to appear.",
+          "overall": "Strong answer. You show initiative, a clear decision-making process, and a concrete outcome.",
+          "star": {
+            "situation": {
+              "rating": "strong",
+              "feedback": "The ambiguous project context is easy to understand."
+            },
+            "task": {
+              "rating": "strong",
+              "feedback": "Your responsibility for the prototype is clear."
+            },
+            "action": {
+              "rating": "strong",
+              "feedback": "You explained how you gathered information and turned it into decisions."
+            },
+            "result": {
+              "rating": "strong",
+              "feedback": "You included both delivery timing and user feedback."
+            }
+          },
+          "strengths": [
+            "You showed initiative instead of waiting for perfect direction.",
+            "You grounded your decision-making in user input."
+          ],
+          "improvements": [
+            "Add one sentence about a feature you deliberately excluded.",
+            "Mention how your team reacted to your recommendation."
+          ],
+          "improved_answer": "In a product design course, my team was asked to build a campus event app, but the assignment intentionally left the requirements broad. I owned the first clickable prototype, so I needed a way to turn vague direction into something concrete. Instead of guessing, I interviewed five students about how they found events, grouped their pain points, and used that input to define a short list of must-have features. I then reviewed those priorities with my team before building the prototype. As a result, we aligned quickly, finished the prototype a week before the checkpoint, and got feedback that the flow felt focused rather than cluttered. The experience taught me to reduce ambiguity by creating lightweight evidence and then turning it into clear decisions."
+        }
+      },
+      {
+        "quality": "weak",
+        "candidate_answer": "In one class project, the requirements were not very clear, so my team had to figure things out as we went. I mostly kept working on the prototype and adjusted it when people gave comments. We eventually got something done and the project turned out okay. It taught me to be flexible when directions are not fully defined.",
+        "follow_up_question": "How did you decide what to build first when the requirements were unclear?",
+        "feedback": {
+          "interviewer_reply": "The topic fits the question, but the answer is still too vague to be convincing.",
+          "overall": "You identify an ambiguous situation, but you need to explain your role, your decision process, and the outcome with more precision.",
+          "star": {
+            "situation": {
+              "rating": "good",
+              "feedback": "We know the requirements were unclear, but the project context is thin."
+            },
+            "task": {
+              "rating": "weak",
+              "feedback": "Your specific responsibility is not well defined."
+            },
+            "action": {
+              "rating": "weak",
+              "feedback": "Saying you adjusted as comments came in does not show a deliberate approach."
+            },
+            "result": {
+              "rating": "weak",
+              "feedback": "The project turning out okay is not a strong or measurable result."
+            }
+          },
+          "strengths": [
+            "You picked an example that matches ambiguity.",
+            "You mention adaptability as a takeaway."
+          ],
+          "improvements": [
+            "Explain how you created structure or gathered missing information.",
+            "State a clearer result and your specific contribution."
+          ],
+          "improved_answer": "In a product design course, my team was asked to build an app with intentionally broad requirements. I was responsible for the first prototype, so I needed to define a practical starting point. I interviewed several students about how they currently found events, identified the top pain points, and used those patterns to recommend three must-have features for the prototype. After aligning with my team, I built the flow around those priorities. As a result, we finished the prototype early and received feedback that it was focused and easy to use. That experience taught me to handle ambiguity by creating structure from user input instead of waiting for perfect direction."
+        }
+      }
+    ]
+  },
+  {
+    "id": "prioritization-deadlines",
+    "source_url": "https://lsa.umich.edu/onsf/resources/applicantresources/behavioral-interviews.html",
+    "category": "prioritization",
+    "level": "new_grad",
+    "question": "Tell me about a time you had to balance multiple deadlines at once.",
+    "variants": [
+      {
+        "quality": "strong",
+        "candidate_answer": "Last semester, I was taking two project-heavy CS classes while also serving as logistics lead for a student hackathon. In the same week, I had a systems project milestone, an algorithms assignment, and vendor confirmations due for the event. I mapped every deliverable by deadline and effort, identified which tasks required coordination with other people, and blocked my week around those first. I also delegated one vendor follow-up to another organizer after sharing the context. I submitted both assignments on time, finalized the vendor list before the event, and avoided the last-minute scramble we had in the previous semester.",
+        "follow_up_question": "What did you intentionally choose not to do that week so you could focus on the highest-priority work?",
+        "feedback": {
+          "interviewer_reply": "This is a strong prioritization answer because it shows a clear system, not just hard work.",
+          "overall": "Strong answer. You explain the competing demands, your prioritization method, and the result clearly.",
+          "star": {
+            "situation": {
+              "rating": "strong",
+              "feedback": "The competing responsibilities and timing are well defined."
+            },
+            "task": {
+              "rating": "strong",
+              "feedback": "Your obligation across classes and event work is explicit."
+            },
+            "action": {
+              "rating": "strong",
+              "feedback": "You show a deliberate prioritization process and smart delegation."
+            },
+            "result": {
+              "rating": "good",
+              "feedback": "The outcome is clear; one more measurable detail would make it even stronger."
+            }
+          },
+          "strengths": [
+            "You demonstrate an actual prioritization framework.",
+            "You show judgment about coordination risk and delegation."
+          ],
+          "improvements": [
+            "Quantify the event impact or workload if possible.",
+            "Add one short reflection on what the experience changed for you."
+          ],
+          "improved_answer": "Last semester, I was juggling two project-heavy CS classes while serving as logistics lead for a student hackathon. In one week, I had a systems project milestone, an algorithms assignment, and multiple vendor confirmations due. My job was to keep all three moving without missing anything important. I listed every deliverable by deadline and effort, prioritized the items that depended on other people first, and blocked time for the remaining coursework around them. I also delegated one vendor follow-up to another organizer after sharing the context and expected outcome. As a result, I submitted both assignments on time, finalized the vendor list before the event, and avoided the last-minute scramble we had dealt with the previous semester. The experience taught me that good prioritization is about sequencing and coordination, not just working longer hours."
+        }
+      },
+      {
+        "quality": "weak",
+        "candidate_answer": "I have had a lot of weeks in college where several deadlines happened at once. Usually I just make a to-do list and stay up late until everything is done. One time I had classes and club work piling up, but I pushed through and finished it all. It was stressful, but it showed I can work hard when there is pressure.",
+        "follow_up_question": "Can you walk me through one specific week and how you decided what to do first?",
+        "feedback": {
+          "interviewer_reply": "The answer shows effort, but it is missing the specific prioritization story the question is looking for.",
+          "overall": "This sounds hardworking, but it needs a concrete example and a clearer explanation of how you decided what mattered most.",
+          "star": {
+            "situation": {
+              "rating": "weak",
+              "feedback": "The example is too general because it blends multiple situations together."
+            },
+            "task": {
+              "rating": "weak",
+              "feedback": "Your responsibilities and deadlines are not clearly defined."
+            },
+            "action": {
+              "rating": "weak",
+              "feedback": "Making a to-do list and staying up late does not reveal your prioritization logic."
+            },
+            "result": {
+              "rating": "weak",
+              "feedback": "The result is generic and does not show what success looked like."
+            }
+          },
+          "strengths": [
+            "You communicate willingness to work under pressure.",
+            "The theme matches the question."
+          ],
+          "improvements": [
+            "Use one specific situation with clear competing deadlines.",
+            "Explain how you ranked work and what the final outcome was."
+          ],
+          "improved_answer": "Last semester, I had a systems project milestone, an algorithms assignment, and important logistics work for a student hackathon all due in the same week. I needed to keep everything on track without missing the tasks that depended on other people. I listed each deliverable by deadline and effort, handled the vendor items first because they affected others, and then blocked time for the coursework around them. I also delegated one organizer task after sharing the needed context. As a result, I submitted both assignments on time and finalized the vendor list before the event. That experience showed me that prioritization is strongest when I sequence work based on deadlines, dependencies, and impact."
+        }
+      }
+    ]
+  },
+  {
+    "id": "feedback-received",
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "category": "feedback",
+    "level": "new_grad",
+    "question": "Tell me about a time you received difficult feedback and how you responded.",
+    "variants": [
+      {
+        "quality": "strong",
+        "candidate_answer": "During my internship, my manager told me that my status updates were too detailed and made it hard for the team to spot blockers quickly. I had been trying to be thorough, but I realized the updates were not serving the audience well. I asked for two examples of stronger updates, then started using a simple structure: what changed, current blocker, and next step. I also sent my next few updates to my manager first to make sure I was improving. Within two weeks, he told me the updates were easier to scan, and the team started resolving blockers faster during standup because the key issue was obvious.",
+        "follow_up_question": "What did that feedback change about how you communicate now?",
+        "feedback": {
+          "interviewer_reply": "That is a strong feedback example because you show receptiveness, adjustment, and measurable improvement.",
+          "overall": "Strong answer. You explain the difficult feedback clearly, show no defensiveness, and demonstrate a specific behavior change.",
+          "star": {
+            "situation": {
+              "rating": "strong",
+              "feedback": "The context and feedback are easy to understand."
+            },
+            "task": {
+              "rating": "strong",
+              "feedback": "Your responsibility to communicate effectively is clear."
+            },
+            "action": {
+              "rating": "strong",
+              "feedback": "You asked for examples, changed your process, and validated the improvement."
+            },
+            "result": {
+              "rating": "strong",
+              "feedback": "You show a clear positive change in team communication."
+            }
+          },
+          "strengths": [
+            "You show maturity by focusing on improvement instead of defensiveness.",
+            "You turned feedback into a repeatable communication pattern."
+          ],
+          "improvements": [
+            "If possible, add one more concrete sign that the team benefited.",
+            "Mention what mindset helped you receive the feedback well."
+          ],
+          "improved_answer": "During my internship, my manager told me that my status updates were too detailed and made it harder for the team to spot blockers quickly. I had been trying to be thorough, but I realized I was optimizing for completeness instead of usefulness. My job was to improve how I communicated so the team could make decisions faster. I asked my manager for examples of better updates, then switched to a simple format: what changed, current blocker, and next step. I also shared my next few updates with him first so I could adjust quickly. Within two weeks, he told me the updates were much easier to scan, and blockers were resolved faster in standup because the key issue was clear right away. The experience taught me to tailor communication to the audience instead of assuming more detail is always better."
+        }
+      },
+      {
+        "quality": "weak",
+        "candidate_answer": "A professor once told me that my presentations could be clearer. I took that feedback seriously and tried to improve for the next one. I practiced more and made some changes to the slides. The next presentation went better, and I think the feedback helped me improve my communication overall.",
+        "follow_up_question": "What specifically was unclear before, and what did you change because of that feedback?",
+        "feedback": {
+          "interviewer_reply": "The answer has the right idea, but it needs more detail to show how you handled the feedback.",
+          "overall": "You demonstrate receptiveness, but the example is still too general. Clarify the original issue, your changes, and the result.",
+          "star": {
+            "situation": {
+              "rating": "good",
+              "feedback": "We know you received feedback on presentations, but the context is still broad."
+            },
+            "task": {
+              "rating": "weak",
+              "feedback": "Your specific goal after receiving the feedback is not clearly defined."
+            },
+            "action": {
+              "rating": "weak",
+              "feedback": "Practicing more and changing slides is too vague to show a thoughtful response."
+            },
+            "result": {
+              "rating": "weak",
+              "feedback": "The presentation going better is not specific enough."
+            }
+          },
+          "strengths": [
+            "You show willingness to take feedback seriously.",
+            "The example is relevant to communication."
+          ],
+          "improvements": [
+            "Describe the exact feedback and what you changed.",
+            "Explain how you knew the next presentation was better."
+          ],
+          "improved_answer": "A professor once told me that my technical presentations had too much detail on each slide, which made the main point harder to follow. I needed to improve my communication before the next class presentation. I reviewed the presentation with that feedback in mind, reduced each slide to one core takeaway, and practiced explaining the material out loud so I could focus on the narrative instead of reading text. As a result, the next presentation was easier for classmates to follow, and the professor specifically noted that the structure was much clearer. That experience taught me to optimize presentations for audience understanding rather than information density."
+        }
+      }
+    ]
+  },
+  {
+    "id": "leadership-project-team",
+    "source_url": "https://lsa.umich.edu/onsf/resources/applicantresources/behavioral-interviews.html",
+    "category": "leadership",
+    "level": "intern",
+    "question": "Tell me about a time you led a team or drove a project forward.",
+    "variants": [
+      {
+        "quality": "strong",
+        "candidate_answer": "In my software engineering course, our team fell behind after the first sprint because tasks were assigned loosely and nobody had a clear owner. I was not the official team lead, but I suggested we spend thirty minutes creating a lightweight board with owners, deadlines, and blockers for each task. I also volunteered to run a short check-in twice a week so issues would surface earlier. After we adopted that structure, we finished the next sprint on schedule and reduced duplicate work because everyone knew who owned what. By the final demo, our team had caught up and delivered all core features.",
+        "follow_up_question": "How did you get buy-in from teammates if you were not the formal leader?",
+        "feedback": {
+          "interviewer_reply": "This is a strong leadership example because it shows initiative and influence without relying on a title.",
+          "overall": "Strong answer. You show leadership through structure, communication, and outcome rather than formal authority.",
+          "star": {
+            "situation": {
+              "rating": "strong",
+              "feedback": "The project challenge and why the team was struggling are clear."
+            },
+            "task": {
+              "rating": "strong",
+              "feedback": "Your goal of helping the team regain momentum is easy to understand."
+            },
+            "action": {
+              "rating": "strong",
+              "feedback": "You describe the process change you introduced and how you supported it."
+            },
+            "result": {
+              "rating": "strong",
+              "feedback": "You show improved execution and final project delivery."
+            }
+          },
+          "strengths": [
+            "You demonstrate leadership without waiting for formal authority.",
+            "You connect the process change directly to team results."
+          ],
+          "improvements": [
+            "Add one sentence about how teammates responded initially.",
+            "If possible, mention one measurable improvement such as fewer blockers."
+          ],
+          "improved_answer": "In my software engineering course, our team fell behind after the first sprint because tasks were assigned loosely and nobody had clear ownership. I was not the formal team lead, but I saw that the project needed more structure to recover. I proposed that we create a lightweight board with owners, deadlines, and blockers for every task, and I volunteered to run short check-ins twice a week so issues surfaced earlier. Once the team agreed, I kept the board updated and used the check-ins to unblock people quickly. As a result, we finished the next sprint on schedule, reduced duplicate work, and delivered all core features by the final demo. The experience taught me that leadership often means creating clarity and momentum even when you do not have the title."
+        }
+      },
+      {
+        "quality": "weak",
+        "candidate_answer": "I have been in several group projects where I naturally became a leader because I like to stay organized. One example was in software engineering, where I tried to keep everyone on track by sending reminders and checking in. The project ended up going well, and I think my leadership helped us stay organized overall.",
+        "follow_up_question": "What specific problem was the team facing, and what did you do that changed the outcome?",
+        "feedback": {
+          "interviewer_reply": "You describe a leadership theme, but the answer needs a more specific story.",
+          "overall": "This answer is too general. It needs a concrete situation, a clearer action, and a stronger result.",
+          "star": {
+            "situation": {
+              "rating": "weak",
+              "feedback": "The project context and challenge are not specific enough."
+            },
+            "task": {
+              "rating": "weak",
+              "feedback": "Your leadership responsibility is implied, but not clearly stated."
+            },
+            "action": {
+              "rating": "weak",
+              "feedback": "Sending reminders and checking in is too vague to show meaningful leadership."
+            },
+            "result": {
+              "rating": "weak",
+              "feedback": "Saying the project went well does not demonstrate impact."
+            }
+          },
+          "strengths": [
+            "You picked a relevant leadership setting.",
+            "You signal initiative and organization."
+          ],
+          "improvements": [
+            "Use one concrete project with a real challenge.",
+            "Explain what you changed and how the team benefited."
+          ],
+          "improved_answer": "In my software engineering course, our team fell behind after the first sprint because tasks did not have clear owners. I stepped in to create structure even though I was not the formal team lead. I proposed a simple board with task owners, deadlines, and blockers, and I ran short check-ins twice a week so problems surfaced earlier. As a result, we finished the next sprint on time and delivered all core features by the final demo. That example shows how I lead by creating clarity and momentum for the team."
+        }
+      }
+    ]
+  },
+  {
+    "id": "mistake-recovery",
+    "source_url": "https://capd.mit.edu/resources/the-star-method-for-behavioral-interviews/",
+    "category": "accountability",
+    "level": "intern",
+    "question": "Tell me about a time you made a mistake. How did you handle it?",
+    "variants": [
+      {
+        "quality": "strong",
+        "candidate_answer": "In a data structures assignment, I submitted a version of my code that passed my local tests but failed the grader because I had overlooked an edge case with empty input. As soon as I saw the failure, I reviewed the grader output, reproduced the issue locally, and identified the branch that assumed at least one element. I fixed the logic, added a new test for the empty case, and wrote a note to my professor explaining what I had learned before the regrade window closed. The corrected version passed, and after that I started checking my code against edge cases explicitly before every submission.",
+        "follow_up_question": "What process change from that mistake still affects how you work today?",
+        "feedback": {
+          "interviewer_reply": "This is a strong accountability answer because you own the mistake and show what changed afterward.",
+          "overall": "Strong answer. You explain the mistake clearly, take responsibility, and describe both the immediate fix and the longer-term learning.",
+          "star": {
+            "situation": {
+              "rating": "strong",
+              "feedback": "The academic setting and failure point are easy to understand."
+            },
+            "task": {
+              "rating": "strong",
+              "feedback": "Your responsibility for submission quality is clear."
+            },
+            "action": {
+              "rating": "strong",
+              "feedback": "You show both debugging steps and reflection."
+            },
+            "result": {
+              "rating": "strong",
+              "feedback": "The answer includes the corrected result and a lasting process improvement."
+            }
+          },
+          "strengths": [
+            "You take ownership without making excuses.",
+            "You connect the mistake to a practical habit change."
+          ],
+          "improvements": [
+            "If useful, mention the time pressure or why you missed the edge case.",
+            "Keep the professor note brief so the result remains the focus."
+          ],
+          "improved_answer": "In a data structures assignment, I submitted code that passed my local tests but failed the grader because I had missed an empty-input edge case. I was responsible for the submission quality, so once I saw the failure I reproduced the issue locally, found the branch that assumed at least one element, and fixed the logic. I also added a specific test for the empty-input case and sent my professor a short note explaining what I had learned before the regrade window closed. The corrected version passed, and since then I explicitly test edge cases like empty input and boundary values before every submission. That experience taught me that owning a mistake matters less than building a better process afterward."
+        }
+      },
+      {
+        "quality": "weak",
+        "candidate_answer": "I have definitely made mistakes before, especially in coding assignments. Usually I figure out what went wrong and fix it. One time my code did not pass, so I corrected it and learned to be more careful. It was frustrating, but I think mistakes are part of learning.",
+        "follow_up_question": "Can you give me one specific mistake and what you changed afterward?",
+        "feedback": {
+          "interviewer_reply": "The mindset is fine, but the example is too abstract to answer the question well.",
+          "overall": "You need a single concrete mistake, a clearer explanation of what you did, and a stronger takeaway.",
+          "star": {
+            "situation": {
+              "rating": "weak",
+              "feedback": "The story is too general because it does not describe one specific incident."
+            },
+            "task": {
+              "rating": "weak",
+              "feedback": "Your responsibility in the moment is not clearly stated."
+            },
+            "action": {
+              "rating": "weak",
+              "feedback": "Saying you fixed it and were more careful does not show a meaningful response."
+            },
+            "result": {
+              "rating": "weak",
+              "feedback": "There is no specific outcome or lasting process change."
+            }
+          },
+          "strengths": [
+            "You show accountability rather than blaming others.",
+            "The topic is relevant to the question."
+          ],
+          "improvements": [
+            "Use one concrete mistake with a clear root cause.",
+            "Explain the fix and the habit change that came from it."
+          ],
+          "improved_answer": "In a data structures assignment, I submitted code that passed my local tests but failed the grader because I had overlooked an empty-input edge case. Once I saw the failure, I reproduced the problem locally, fixed the branch that assumed at least one element, and added a new test for that case. The corrected version passed, and afterward I made edge-case checks part of my normal submission process. That example shows how I handle mistakes by fixing the issue quickly and improving how I work."
+        }
+      }
+    ]
+  },
+  {
+    "id": "learning-new-tool",
+    "source_url": "https://careerservices.fas.harvard.edu/resources/technical-interviews/",
+    "category": "learning",
+    "level": "intern",
+    "question": "Tell me about a time you had to learn something quickly in order to deliver.",
+    "variants": [
+      {
+        "quality": "strong",
+        "candidate_answer": "In my database class, my team decided to deploy our project with Docker even though I had never used it before. I volunteered to own the deployment because our previous local setup was inconsistent across machines. Over one weekend, I worked through the official docs, built a simple container for our app, and documented the commands the rest of the team needed. I also added a short troubleshooting section after hitting a dependency issue on Windows. By the next class, everyone could run the same environment, which saved setup time and let us spend more of our meetings on features instead of fixing local issues.",
+        "follow_up_question": "How did you make sure you were learning the right amount instead of getting lost in the tool itself?",
+        "feedback": {
+          "interviewer_reply": "This is a strong example because you connect rapid learning directly to delivery impact.",
+          "overall": "Strong answer. You show initiative, a practical learning approach, and a clear team benefit.",
+          "star": {
+            "situation": {
+              "rating": "strong",
+              "feedback": "The project context and need for Docker are clear."
+            },
+            "task": {
+              "rating": "strong",
+              "feedback": "You clearly owned deployment and environment consistency."
+            },
+            "action": {
+              "rating": "strong",
+              "feedback": "You explain how you learned and immediately applied the new tool."
+            },
+            "result": {
+              "rating": "strong",
+              "feedback": "The result is concrete and tied to team productivity."
+            }
+          },
+          "strengths": [
+            "You learned with a specific delivery goal in mind.",
+            "You multiplied the impact by documenting the process for others."
+          ],
+          "improvements": [
+            "Add one estimate of time saved if you have one.",
+            "Mention one thing you would improve in the deployment setup next time."
+          ],
+          "improved_answer": "In my database class, my team decided to deploy our project with Docker even though I had never used it before. I took ownership of deployment because our local environments kept drifting and slowing us down. Over one weekend, I worked through the official documentation, built a container for our app, and documented the exact commands the rest of the team needed. After hitting a dependency issue on Windows, I added a short troubleshooting guide as well. As a result, everyone could run the same environment by the next class, which cut setup issues during team meetings and let us focus on building features. The experience taught me to learn new tools just deeply enough to unblock the real deliverable, then capture that knowledge so the whole team benefits."
+        }
+      },
+      {
+        "quality": "weak",
+        "candidate_answer": "There have been many times when I had to learn things quickly in college. Usually I watch some videos, read documentation, and then try to use the tool until it works. For one project, I learned some Docker basics so we could deploy, and it ended up helping. I am generally a fast learner, so I can ramp up quickly when needed.",
+        "follow_up_question": "What was the actual project problem you were solving, and what did your learning change for the team?",
+        "feedback": {
+          "interviewer_reply": "The answer claims you learn quickly, but it needs a more concrete story.",
+          "overall": "This has the right theme, but the example is too broad and does not show the task, actions, or result in enough detail.",
+          "star": {
+            "situation": {
+              "rating": "weak",
+              "feedback": "The project context is barely described."
+            },
+            "task": {
+              "rating": "weak",
+              "feedback": "Your specific responsibility is not clearly stated."
+            },
+            "action": {
+              "rating": "good",
+              "feedback": "You mention documentation and practice, but the learning process is still generic."
+            },
+            "result": {
+              "rating": "weak",
+              "feedback": "Saying it helped is not enough to show impact."
+            }
+          },
+          "strengths": [
+            "You answer the prompt directly.",
+            "You mention a relevant technical tool."
+          ],
+          "improvements": [
+            "Use one specific project and clearly define your goal.",
+            "Explain what changed after you learned the tool."
+          ],
+          "improved_answer": "In my database class, my team wanted to deploy our project with Docker, but none of us had a stable setup and I had never used the tool before. I took ownership of deployment so our team would stop losing time to environment issues. Over one weekend, I learned the Docker basics from the official docs, built a container for our app, and wrote setup instructions for the rest of the team. As a result, everyone could run the same environment by the next class, which reduced setup problems and let us spend more time on features. That experience showed me that I learn fastest when I tie the learning directly to a concrete delivery goal."
+        }
+      }
+    ]
+  }
+]

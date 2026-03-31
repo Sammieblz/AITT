@@ -1,0 +1,410 @@
+/* ── Page shell ─────────────────────────────────────────────────────────── */
+.page {
+  min-height: 100vh;
+  background: var(--void);
+  color: var(--chalk);
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Header ─────────────────────────────────────────────────────────────── */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.wordmark {
+  font-family: var(--font-syne), sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  display: flex;
+  gap: 1px;
+}
+
+.wordmarkVoid {
+  color: var(--chalk);
+}
+
+.wordmarkVolt {
+  color: var(--volt);
+}
+
+.headerRight {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.phasePip {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  transition: background 0.2s ease;
+}
+
+.phasePipActive {
+  background: var(--volt);
+}
+
+.phasePipDone {
+  background: rgba(180, 255, 91, 0.35);
+}
+
+/* ── Main ───────────────────────────────────────────────────────────────── */
+.main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+}
+
+/* ── Phase container ────────────────────────────────────────────────────── */
+.phase {
+  width: 100%;
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.phaseHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stepPill {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--volt);
+}
+
+.phaseHeadline {
+  font-family: var(--font-syne), sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  letter-spacing: -0.03em;
+  color: var(--chalk);
+  line-height: 1.1;
+}
+
+.phaseSub {
+  font-size: 15px;
+  color: rgba(245, 245, 245, 0.5);
+  line-height: 1.5;
+}
+
+/* ── Mic check ──────────────────────────────────────────────────────────── */
+.meterWrap {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  height: 72px;
+  padding: 12px 0;
+}
+
+.meterBar {
+  display: block;
+  width: 12px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.12);
+  transition: background 0.08s ease, transform 0.08s ease;
+  transform-origin: bottom;
+}
+
+.meterBarActive {
+  background: var(--volt);
+}
+
+.micStatus {
+  font-size: 14px;
+  color: rgba(245, 245, 245, 0.6);
+}
+
+.micError {
+  background: rgba(255, 68, 68, 0.1);
+  border: 1px solid rgba(255, 68, 68, 0.3);
+  border-radius: var(--radius-card);
+  padding: 20px;
+}
+
+.micErrorText {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--alert);
+  margin-bottom: 6px;
+}
+
+.micErrorSub {
+  font-size: 13px;
+  color: rgba(245, 245, 245, 0.5);
+  line-height: 1.5;
+}
+
+/* ── Question progress ──────────────────────────────────────────────────── */
+.questionProgress {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.questionItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+}
+
+.questionDot {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(245, 245, 245, 0.35);
+  transition: all 0.2s ease;
+}
+
+.questionDotActive {
+  border-color: var(--volt);
+  color: var(--volt);
+  box-shadow: 0 0 0 3px rgba(180, 255, 91, 0.15);
+}
+
+.questionDotDone {
+  background: rgba(180, 255, 91, 0.15);
+  border-color: var(--volt);
+  color: var(--volt);
+}
+
+.questionLabel {
+  font-size: 11px;
+  color: rgba(245, 245, 245, 0.35);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+/* ── Status row ─────────────────────────────────────────────────────────── */
+.statusRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.statusDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: background 0.2s ease;
+}
+
+.statusDotLive {
+  background: var(--volt);
+  box-shadow: 0 0 0 3px rgba(180, 255, 91, 0.2);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 3px rgba(180, 255, 91, 0.2); }
+  50%       { box-shadow: 0 0 0 6px rgba(180, 255, 91, 0.05); }
+}
+
+.statusText {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(245, 245, 245, 0.5);
+}
+
+.speakingIndicator {
+  font-size: 13px;
+  color: rgba(245, 245, 245, 0.5);
+  margin-left: 8px;
+}
+
+.speakingIndicatorMuted {
+  color: var(--alert);
+  opacity: 0.75;
+}
+
+/* ── Transcript ─────────────────────────────────────────────────────────── */
+.transcriptWrap {
+  position: relative;
+}
+
+.muteFab {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(10, 10, 10, 0.88);
+  border: 1.5px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius-sharp);
+  padding: 5px 11px;
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(245, 245, 245, 0.6);
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.muteFab:hover {
+  border-color: rgba(255, 255, 255, 0.28);
+  color: rgba(245, 245, 245, 0.9);
+}
+
+.muteFabMuted {
+  border-color: rgba(255, 68, 68, 0.5);
+  color: var(--alert);
+}
+
+.muteFabMuted:hover {
+  border-color: var(--alert);
+}
+
+.transcript {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-card);
+  padding: 20px;
+  min-height: 160px;
+  max-height: 280px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  scroll-behavior: smooth;
+}
+
+.transcriptEmpty {
+  font-size: 13px;
+  color: rgba(245, 245, 245, 0.25);
+  font-style: italic;
+  margin: auto;
+  text-align: center;
+}
+
+.lineAi,
+.lineUser {
+  font-size: 13px;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.lineAi {
+  color: rgba(245, 245, 245, 0.8);
+}
+
+.lineUser {
+  color: var(--volt);
+  align-items: flex-end;
+}
+
+.lineRole {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(245, 245, 245, 0.3);
+  margin-bottom: 2px;
+}
+
+.lineUser .lineRole {
+  color: rgba(180, 255, 91, 0.5);
+}
+
+/* ── Controls ───────────────────────────────────────────────────────────── */
+.controls {
+  display: flex;
+  gap: 12px;
+}
+
+/* ── Results ────────────────────────────────────────────────────────────── */
+.resultsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.resultRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-card);
+}
+
+.resultLeft {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.resultQNum {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(180, 255, 91, 0.6);
+}
+
+.resultQuestion {
+  font-size: 13px;
+  color: rgba(245, 245, 245, 0.6);
+  line-height: 1.5;
+}
+
+.resultScoreMissing {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sharp);
+  border: 1.5px dashed rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: rgba(245, 245, 245, 0.2);
+  flex-shrink: 0;
+}
+
+.avgRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: rgba(180, 255, 91, 0.06);
+  border: 1px solid rgba(180, 255, 91, 0.2);
+  border-radius: var(--radius-card);
+}
+
+.avgLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(245, 245, 245, 0.7);
+}
+
+.avgValue {
+  font-family: var(--font-syne), sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  color: var(--volt);
+  letter-spacing: -0.02em;
+}

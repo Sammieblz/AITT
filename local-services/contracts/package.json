@@ -1,0 +1,12 @@
+{
+  "name": "@aitt/interviewer-contracts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./interviewer.ts",
+    "./interviewer": "./interviewer.ts"
+  },
+  "main": "./interviewer.ts",
+  "types": "./interviewer.ts"
+}

@@ -1,3 +1,64 @@
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Python caches / venvs
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+env/
+venv/
+.venv/
+
+# Generic local secrets
+.env
+
+# Large local model artifacts
+*.bin
+*.pkl
+*.pt
+*.tar.gz
+input.txt
+
+# Cloud model training outputs
+cloud-model/out/
+cloud-model/out-behavioral/
+
+# Next.js app build/runtime artifacts
+aitt/node_modules/
+aitt/.next/
+aitt/out/
+aitt/.env.local
+aitt/npm-debug.log*
+aitt/yarn-debug.log*
+aitt/yarn-error.log*
+aitt/.pnpm-debug.log*
+
+# Local model workspace generated outputs
+local_model/out-behavioral/
+local_model/out-behavioral-smoke/
+local_model/**/__pycache__/
+local_model/tests/__pycache__/
+local_model/data/behavioral_interview/behavioral_content.db
+local_model/data/behavioral_interview/*.sqlite
+local_model/data/behavioral_interview/*.sqlite-shm
+local_model/data/behavioral_interview/*.sqlite-wal
+
+# Backend service runtime artifacts
+local-services/interviewer-api/.env
+local-services/interviewer-api/runtime/
+local-services/interviewer-api/runtime-logs/
+local-services/interviewer-api/**/*.log
+local-services/interviewer-api/**/__pycache__/
+local-services/interviewer-api/tests/__pycache__/
+
 .DS_Store
 .idea
 .ipynb_checkpoints/
@@ -10,3 +71,77 @@ __pycache__/
 input.txt
 env/
 venv/
+.env
+.env.local
+
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Python caches / venvs
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+env/
+venv/
+.venv/
+
+# Generic local secrets
+.env
+
+# Large local model artifacts
+*.bin
+*.pkl
+*.pt
+input.txt
+
+# Next.js app build/runtime artifacts
+aitt/node_modules/
+aitt/.next/
+aitt/out/
+aitt/.env.local
+aitt/npm-debug.log*
+aitt/yarn-debug.log*
+aitt/yarn-error.log*
+aitt/.pnpm-debug.log*
+
+# Local model workspace generated outputs
+local_model/out-behavioral/
+local_model/out-behavioral-smoke/
+local_model/**/__pycache__/
+local_model/tests/__pycache__/
+local_model/data/behavioral_interview/behavioral_content.db
+local_model/data/behavioral_interview/*.sqlite
+local_model/data/behavioral_interview/*.sqlite-shm
+local_model/data/behavioral_interview/*.sqlite-wal
+
+# Backend service runtime artifacts
+local-services/interviewer-api/.env
+local-services/interviewer-api/runtime/
+local-services/interviewer-api/runtime-logs/
+local-services/interviewer-api/**/*.log
+local-services/interviewer-api/**/__pycache__/
+local-services/interviewer-api/tests/__pycache__/
+
+.DS_Store
+.idea
+.ipynb_checkpoints/
+.vscode
+__pycache__/
+*.bin
+*.pkl
+*.pt
+*.pyc
+input.txt
+env/
+venv/
+.env
+.env.local
+

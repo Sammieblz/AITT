@@ -1,0 +1,2510 @@
+[
+  {
+    "eval_case_id": "lead_without_authority--intern--strong--baseline--0",
+    "question_id": "lead_without_authority",
+    "question_family_id": "lead_without_authority--intern",
+    "group": "Leadership & Influence",
+    "tags": [
+      "leadership",
+      "influence",
+      "ownership",
+      "alignment",
+      "initiative"
+    ],
+    "level": "intern",
+    "answer_profile": "strong",
+    "question": "Tell me about a time you led a project without formal authority.",
+    "candidate_answer": "In a recent software engineering project, our software engineering capstone team drifted after the first sprint because nobody owned cross-team coordination. My responsibility was to create clarity and momentum without an official lead title. I created a lightweight task board, proposed short unblocker check-ins, and used those meetings to surface ownership gaps early. As a result, the team recovered the schedule, reduced duplicate work, and delivered the agreed scope on time. The experience taught me that leadership often means creating structure before anyone asks for it.",
+    "expected_follow_up_intent": "praise_strong",
+    "expected_scores": {
+      "situation": 5,
+      "task": 5,
+      "action": 5,
+      "result": 5
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "Strong answer. The ownership, actions, and impact are all clear."
+    }
+  },
+  {
+    "eval_case_id": "lead_without_authority--new_grad--missing_result--missing_result--0",
+    "question_id": "lead_without_authority",
+    "question_family_id": "lead_without_authority--new_grad",
+    "group": "Leadership & Influence",
+    "tags": [
+      "leadership",
+      "influence",
+      "ownership",
+      "alignment",
+      "initiative"
+    ],
+    "level": "new_grad",
+    "answer_profile": "missing_result",
+    "question": "Tell me about a time you led a project without formal authority.",
+    "candidate_answer": "During my internship, a release working group was slipping because engineers were waiting on each other and no single person owned the delivery rhythm. My responsibility was to create clarity and momentum without an official lead title. I created a lightweight task board, proposed short unblocker check-ins, and used those meetings to surface ownership gaps early. The experience taught me that leadership often means creating structure before anyone asks for it.",
+    "expected_follow_up_intent": "clarify_result",
+    "expected_scores": {
+      "situation": 4,
+      "task": 4,
+      "action": 4,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The story is credible, but it stops before the interviewer learns what changed because of your actions."
+    }
+  },
+  {
+    "eval_case_id": "lead_without_authority--intern--strong--edge--0",
+    "question_id": "lead_without_authority",
+    "question_family_id": "lead_without_authority--intern",
+    "group": "Leadership & Influence",
+    "tags": [
+      "leadership",
+      "influence",
+      "ownership",
+      "alignment",
+      "initiative"
+    ],
+    "level": "intern",
+    "answer_profile": "strong",
+    "question": "Tell me about a time you led a project without formal authority.",
+    "candidate_answer": "In a recent software engineering project, our software engineering capstone team drifted after the first sprint because nobody owned cross-team coordination. My responsibility was to create clarity and momentum without an official lead title. I created a lightweight task board, proposed short unblocker check-ins, and used those meetings to surface ownership gaps early. As a result, the team recovered the schedule, reduced duplicate work, and delivered the agreed scope on time. The experience taught me that leadership often means creating structure before anyone asks for it.",
+    "expected_follow_up_intent": "praise_strong",
+    "expected_scores": {
+      "situation": 5,
+      "task": 5,
+      "action": 5,
+      "result": 5
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "Strong answer. The ownership, actions, and impact are all clear."
+    }
+  },
+  {
+    "eval_case_id": "influence_decision--intern--strong--baseline--1",
+    "question_id": "influence_decision",
+    "question_family_id": "influence_decision--intern",
+    "group": "Leadership & Influence",
+    "tags": [
+      "leadership",
+      "influence",
+      "ownership",
+      "technical-judgment",
+      "stakeholder-management"
+    ],
+    "level": "intern",
+    "answer_profile": "strong",
+    "question": "Describe a situation where you had to influence a decision you disagreed with.",
+    "candidate_answer": "In a recent software engineering project, my team wanted to change the database schema right before a demo even though the API integration was already stable. My responsibility was to present a different direction without creating unnecessary conflict. I gathered examples of the regression risk, framed the tradeoffs in terms of delivery impact, and proposed a safer phased alternative. As a result, the group adopted the phased approach, met the deadline, and avoided the failure mode I had raised. The experience taught me that influence works best when I anchor disagreement in evidence and shared goals.",
+    "expected_follow_up_intent": "praise_strong",
+    "expected_scores": {
+      "situation": 5,
+      "task": 5,
+      "action": 5,
+      "result": 5
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "Strong answer. The ownership, actions, and impact are all clear."
+    }
+  },
+  {
+    "eval_case_id": "influence_decision--new_grad--missing_result--missing_result--1",
+    "question_id": "influence_decision",
+    "question_family_id": "influence_decision--new_grad",
+    "group": "Leadership & Influence",
+    "tags": [
+      "leadership",
+      "influence",
+      "ownership",
+      "technical-judgment",
+      "stakeholder-management"
+    ],
+    "level": "new_grad",
+    "answer_profile": "missing_result",
+    "question": "Describe a situation where you had to influence a decision you disagreed with.",
+    "candidate_answer": "During my internship, a cross-functional team wanted to launch a brittle implementation quickly, but I believed it would create avoidable operational risk. My responsibility was to present a different direction without creating unnecessary conflict. I gathered examples of the regression risk, framed the tradeoffs in terms of delivery impact, and proposed a safer phased alternative. The experience taught me that influence works best when I anchor disagreement in evidence and shared goals.",
+    "expected_follow_up_intent": "clarify_result",
+    "expected_scores": {
+      "situation": 4,
+      "task": 4,
+      "action": 4,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The story is credible, but it stops before the interviewer learns what changed because of your actions."
+    }
+  },
+  {
+    "eval_case_id": "influence_decision--intern--missing_result--edge--1",
+    "question_id": "influence_decision",
+    "question_family_id": "influence_decision--intern",
+    "group": "Leadership & Influence",
+    "tags": [
+      "leadership",
+      "influence",
+      "ownership",
+      "technical-judgment",
+      "stakeholder-management"
+    ],
+    "level": "intern",
+    "answer_profile": "missing_result",
+    "question": "Describe a situation where you had to influence a decision you disagreed with.",
+    "candidate_answer": "In a recent software engineering project, my team wanted to change the database schema right before a demo even though the API integration was already stable. My responsibility was to present a different direction without creating unnecessary conflict. I gathered examples of the regression risk, framed the tradeoffs in terms of delivery impact, and proposed a safer phased alternative. The experience taught me that influence works best when I anchor disagreement in evidence and shared goals.",
+    "expected_follow_up_intent": "clarify_result",
+    "expected_scores": {
+      "situation": 4,
+      "task": 4,
+      "action": 4,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The story is credible, but it stops before the interviewer learns what changed because of your actions."
+    }
+  },
+  {
+    "eval_case_id": "mentor_teammate--intern--strong--baseline--2",
+    "question_id": "mentor_teammate",
+    "question_family_id": "mentor_teammate--intern",
+    "group": "Leadership & Influence",
+    "tags": [
+      "leadership",
+      "influence",
+      "ownership",
+      "mentorship",
+      "communication",
+      "growth"
+    ],
+    "level": "intern",
+    "answer_profile": "strong",
+    "question": "Tell me about a time you mentored or coached a teammate.",
+    "candidate_answer": "In a recent software engineering project, a teammate in my project group was struggling to debug asynchronous code and had started avoiding backend tasks. My responsibility was to help them grow without taking over the work. I paired on one debugging session, broke the process into a repeatable checklist, and reviewed the next change with them after they tried it independently. As a result, they started solving similar issues on their own and the team depended less on me for the same class of problem. The experience taught me that good mentoring builds confidence and independence, not dependence.",
+    "expected_follow_up_intent": "praise_strong",
+    "expected_scores": {
+      "situation": 5,
+      "task": 5,
+      "action": 5,
+      "result": 5
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "Strong answer. The ownership, actions, and impact are all clear."
+    }
+  },
+  {
+    "eval_case_id": "mentor_teammate--new_grad--missing_result--missing_result--2",
+    "question_id": "mentor_teammate",
+    "question_family_id": "mentor_teammate--new_grad",
+    "group": "Leadership & Influence",
+    "tags": [
+      "leadership",
+      "influence",
+      "ownership",
+      "mentorship",
+      "communication",
+      "growth"
+    ],
+    "level": "new_grad",
+    "answer_profile": "missing_result",
+    "question": "Tell me about a time you mentored or coached a teammate.",
+    "candidate_answer": "During my internship, a junior teammate on a delivery squad was hesitant to touch an unfamiliar service and kept getting blocked on the same kind of issue. My responsibility was to help them grow without taking over the work. I paired on one debugging session, broke the process into a repeatable checklist, and reviewed the next change with them after they tried it independently. The experience taught me that good mentoring builds confidence and independence, not dependence.",
+    "expected_follow_up_intent": "clarify_result",
+    "expected_scores": {
+      "situation": 4,
+      "task": 4,
+      "action": 4,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The story is credible, but it stops before the interviewer learns what changed because of your actions."
+    }
+  },
+  {
+    "eval_case_id": "mentor_teammate--intern--we_language--edge--2",
+    "question_id": "mentor_teammate",
+    "question_family_id": "mentor_teammate--intern",
+    "group": "Leadership & Influence",
+    "tags": [
+      "leadership",
+      "influence",
+      "ownership",
+      "mentorship",
+      "communication",
+      "growth"
+    ],
+    "level": "intern",
+    "answer_profile": "we_language",
+    "question": "Tell me about a time you mentored or coached a teammate.",
+    "candidate_answer": "In a recent software engineering project, a teammate in our project group was struggling to debug asynchronous code and had started avoiding backend tasks. Our responsibility was to help them grow without taking over the work. we paired on one debugging session, broke the process into a repeatable checklist, and reviewed the next change with them after they tried it independently. The experience taught us that good mentoring builds confidence and independence, not dependence. We delivered a good outcome for the team.",
+    "expected_follow_up_intent": "reduce_we_language",
+    "expected_scores": {
+      "situation": 4,
+      "task": 2,
+      "action": 2,
+      "result": 3
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The answer sounds collaborative, but your individual ownership is still blurry."
+    }
+  },
+  {
+    "eval_case_id": "rally_team_goal--intern--strong--baseline--3",
+    "question_id": "rally_team_goal",
+    "question_family_id": "rally_team_goal--intern",
+    "group": "Leadership & Influence",
+    "tags": [
+      "leadership",
+      "influence",
+      "ownership",
+      "motivation",
+      "delivery"
+    ],
+    "level": "intern",
+    "answer_profile": "strong",
+    "question": "Give an example of when you had to rally a team around a difficult goal.",
+    "candidate_answer": "In a recent software engineering project, our hackathon team had a working core demo but morale dropped when a late integration failed the night before judging. My responsibility was to keep the team focused on a realistic version of success. I reframed the goal around the must-have experience, cut nonessential work, and kept everyone aligned on the next few hours of execution. As a result, we delivered a polished core experience instead of a broken ambitious one, and the team stayed engaged through the finish. The experience taught me that teams rally when the goal becomes concrete and emotionally believable.",
+    "expected_follow_up_intent": "praise_strong",
+    "expected_scores": {
+      "situation": 5,
+      "task": 5,
+      "action": 5,
+      "result": 5
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "Strong answer. The ownership, actions, and impact are all clear."
+    }
+  },
+  {
+    "eval_case_id": "rally_team_goal--new_grad--missing_result--missing_result--3",
+    "question_id": "rally_team_goal",
+    "question_family_id": "rally_team_goal--new_grad",
+    "group": "Leadership & Influence",
+    "tags": [
+      "leadership",
+      "influence",
+      "ownership",
+      "motivation",
+      "delivery"
+    ],
+    "level": "new_grad",
+    "answer_profile": "missing_result",
+    "question": "Give an example of when you had to rally a team around a difficult goal.",
+    "candidate_answer": "During my internship, a product team had to hit an aggressive launch window even after an important dependency slipped. My responsibility was to keep the team focused on a realistic version of success. I reframed the goal around the must-have experience, cut nonessential work, and kept everyone aligned on the next few hours of execution. The experience taught me that teams rally when the goal becomes concrete and emotionally believable.",
+    "expected_follow_up_intent": "clarify_result",
+    "expected_scores": {
+      "situation": 4,
+      "task": 4,
+      "action": 4,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The story is credible, but it stops before the interviewer learns what changed because of your actions."
+    }
+  },
+  {
+    "eval_case_id": "rally_team_goal--intern--rambling--edge--3",
+    "question_id": "rally_team_goal",
+    "question_family_id": "rally_team_goal--intern",
+    "group": "Leadership & Influence",
+    "tags": [
+      "leadership",
+      "influence",
+      "ownership",
+      "motivation",
+      "delivery"
+    ],
+    "level": "intern",
+    "answer_profile": "rambling",
+    "question": "Give an example of when you had to rally a team around a difficult goal.",
+    "candidate_answer": "To give a little background, this happened during a period when several priorities were moving at once and there were more details than anyone really needed in the interview. In a recent software engineering project, our hackathon team had a working core demo but morale dropped when a late integration failed the night before judging. My responsibility was to keep the team focused on a realistic version of success. I reframed the goal around the must-have experience, cut nonessential work, and kept everyone aligned on the next few hours of execution. As a result, we delivered a polished core experience instead of a broken ambitious one, and the team stayed engaged through the finish. The experience taught me that teams rally when the goal becomes concrete and emotionally believable. Looking back, I would probably tell the story more directly.",
+    "expected_follow_up_intent": "tighten_rambling",
+    "expected_scores": {
+      "situation": 2,
+      "task": 3,
+      "action": 4,
+      "result": 3
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "There is a useful example here, but the setup is longer than it needs to be and dilutes the key point."
+    }
+  },
+  {
+    "eval_case_id": "ownership_outside_role--intern--strong--baseline--4",
+    "question_id": "ownership_outside_role",
+    "question_family_id": "ownership_outside_role--intern",
+    "group": "Leadership & Influence",
+    "tags": [
+      "leadership",
+      "influence",
+      "ownership",
+      "initiative",
+      "cross-functional"
+    ],
+    "level": "intern",
+    "answer_profile": "strong",
+    "question": "Tell me about a time you took ownership of something outside your role.",
+    "candidate_answer": "In a recent software engineering project, a testing gap was repeatedly slowing our class project even though QA was nobody's formal responsibility. My responsibility was to step in without creating territorial friction. I proposed a narrow fix, built the first version myself, and documented the handoff so the team could keep using it. As a result, the repeated issue stopped consuming the same time every week and the team adopted the new process. The experience taught me that taking ownership outside my role works when I reduce friction instead of creating more.",
+    "expected_follow_up_intent": "praise_strong",
+    "expected_scores": {
+      "situation": 5,
+      "task": 5,
+      "action": 5,
+      "result": 5
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "Strong answer. The ownership, actions, and impact are all clear."
+    }
+  },
+  {
+    "eval_case_id": "ownership_outside_role--new_grad--missing_result--missing_result--4",
+    "question_id": "ownership_outside_role",
+    "question_family_id": "ownership_outside_role--new_grad",
+    "group": "Leadership & Influence",
+    "tags": [
+      "leadership",
+      "influence",
+      "ownership",
+      "initiative",
+      "cross-functional"
+    ],
+    "level": "new_grad",
+    "answer_profile": "missing_result",
+    "question": "Tell me about a time you took ownership of something outside your role.",
+    "candidate_answer": "During my internship, a recurring support issue was frustrating internal users, but it sat between engineering and operations and nobody owned it directly. My responsibility was to step in without creating territorial friction. I proposed a narrow fix, built the first version myself, and documented the handoff so the team could keep using it. The experience taught me that taking ownership outside my role works when I reduce friction instead of creating more.",
+    "expected_follow_up_intent": "clarify_result",
+    "expected_scores": {
+      "situation": 4,
+      "task": 4,
+      "action": 4,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The story is credible, but it stops before the interviewer learns what changed because of your actions."
+    }
+  },
+  {
+    "eval_case_id": "ownership_outside_role--intern--no_example--edge--4",
+    "question_id": "ownership_outside_role",
+    "question_family_id": "ownership_outside_role--intern",
+    "group": "Leadership & Influence",
+    "tags": [
+      "leadership",
+      "influence",
+      "ownership",
+      "initiative",
+      "cross-functional"
+    ],
+    "level": "intern",
+    "answer_profile": "no_example",
+    "question": "Tell me about a time you took ownership of something outside your role.",
+    "candidate_answer": "I do not have a perfect example of that, but I think I would stay calm, communicate clearly, and try to solve the problem with the team.",
+    "expected_follow_up_intent": "reframe_no_example",
+    "expected_scores": {
+      "situation": 1,
+      "task": 1,
+      "action": 2,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "This does not answer the question directly because it stays hypothetical."
+    }
+  },
+  {
+    "eval_case_id": "disagree_technical_decision--intern--strong--baseline--5",
+    "question_id": "disagree_technical_decision",
+    "question_family_id": "disagree_technical_decision--intern",
+    "group": "Conflict & Collaboration",
+    "tags": [
+      "collaboration",
+      "communication",
+      "conflict",
+      "technical-judgment",
+      "tradeoffs"
+    ],
+    "level": "intern",
+    "answer_profile": "strong",
+    "question": "Tell me about a time you disagreed with a technical decision. How did you handle it?",
+    "candidate_answer": "In a recent software engineering project, a teammate wanted to remove validation checks to speed up delivery right before our demo. My responsibility was to challenge the decision without turning it personal. I used concrete examples of the failure mode, compared the time tradeoff to the recovery cost, and suggested a smaller safe compromise. As a result, the team kept the critical safeguards, still hit the deadline, and avoided the class of bug I had highlighted. The experience taught me that I try to disagree on tradeoffs, not on people.",
+    "expected_follow_up_intent": "praise_strong",
+    "expected_scores": {
+      "situation": 5,
+      "task": 5,
+      "action": 5,
+      "result": 5
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "Strong answer. The ownership, actions, and impact are all clear."
+    }
+  },
+  {
+    "eval_case_id": "disagree_technical_decision--new_grad--missing_result--missing_result--5",
+    "question_id": "disagree_technical_decision",
+    "question_family_id": "disagree_technical_decision--new_grad",
+    "group": "Conflict & Collaboration",
+    "tags": [
+      "collaboration",
+      "communication",
+      "conflict",
+      "technical-judgment",
+      "tradeoffs"
+    ],
+    "level": "new_grad",
+    "answer_profile": "missing_result",
+    "question": "Tell me about a time you disagreed with a technical decision. How did you handle it?",
+    "candidate_answer": "During my internship, a design review proposed a shortcut that would have shipped faster but created support and reliability risk. My responsibility was to challenge the decision without turning it personal. I used concrete examples of the failure mode, compared the time tradeoff to the recovery cost, and suggested a smaller safe compromise. The experience taught me that I try to disagree on tradeoffs, not on people.",
+    "expected_follow_up_intent": "clarify_result",
+    "expected_scores": {
+      "situation": 4,
+      "task": 4,
+      "action": 4,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The story is credible, but it stops before the interviewer learns what changed because of your actions."
+    }
+  },
+  {
+    "eval_case_id": "disagree_technical_decision--intern--emotional--edge--5",
+    "question_id": "disagree_technical_decision",
+    "question_family_id": "disagree_technical_decision--intern",
+    "group": "Conflict & Collaboration",
+    "tags": [
+      "collaboration",
+      "communication",
+      "conflict",
+      "technical-judgment",
+      "tradeoffs"
+    ],
+    "level": "intern",
+    "answer_profile": "emotional",
+    "question": "Tell me about a time you disagreed with a technical decision. How did you handle it?",
+    "candidate_answer": "This was a difficult one for me emotionally. In a recent software engineering project, a teammate wanted to remove validation checks to speed up delivery right before our demo. My responsibility was to challenge the decision without turning it personal. I used concrete examples of the failure mode, compared the time tradeoff to the recovery cost, and suggested a smaller safe compromise. The experience taught me that I try to disagree on tradeoffs, not on people. At the time I felt stressed and disappointed, but I tried to handle it professionally and learn from it.",
+    "expected_follow_up_intent": "support_emotional",
+    "expected_scores": {
+      "situation": 3,
+      "task": 3,
+      "action": 3,
+      "result": 2
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The answer has real emotional weight, but it needs a clearer professional summary of your response and learning."
+    }
+  },
+  {
+    "eval_case_id": "coworker_conflict--intern--strong--baseline--6",
+    "question_id": "coworker_conflict",
+    "question_family_id": "coworker_conflict--intern",
+    "group": "Conflict & Collaboration",
+    "tags": [
+      "collaboration",
+      "communication",
+      "conflict"
+    ],
+    "level": "intern",
+    "answer_profile": "strong",
+    "question": "Describe a conflict with a coworker and how you resolved it.",
+    "candidate_answer": "In a recent software engineering project, a teammate and I kept stepping on each other's changes because our task boundaries were unclear. My responsibility was to resolve the conflict while protecting delivery. I asked for a direct conversation, clarified responsibilities, and agreed on a handoff and review process for overlapping work. As a result, the tension dropped, the workstream became smoother, and we stopped reworking each other's changes. The experience taught me that conflict improves when I replace assumptions with explicit agreements.",
+    "expected_follow_up_intent": "praise_strong",
+    "expected_scores": {
+      "situation": 5,
+      "task": 5,
+      "action": 5,
+      "result": 5
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "Strong answer. The ownership, actions, and impact are all clear."
+    }
+  },
+  {
+    "eval_case_id": "coworker_conflict--new_grad--missing_result--missing_result--6",
+    "question_id": "coworker_conflict",
+    "question_family_id": "coworker_conflict--new_grad",
+    "group": "Conflict & Collaboration",
+    "tags": [
+      "collaboration",
+      "communication",
+      "conflict"
+    ],
+    "level": "new_grad",
+    "answer_profile": "missing_result",
+    "question": "Describe a conflict with a coworker and how you resolved it.",
+    "candidate_answer": "During my internship, a coworker and I had tension around ownership because we were making overlapping changes to the same release area. My responsibility was to resolve the conflict while protecting delivery. I asked for a direct conversation, clarified responsibilities, and agreed on a handoff and review process for overlapping work. The experience taught me that conflict improves when I replace assumptions with explicit agreements.",
+    "expected_follow_up_intent": "clarify_result",
+    "expected_scores": {
+      "situation": 4,
+      "task": 4,
+      "action": 4,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The story is credible, but it stops before the interviewer learns what changed because of your actions."
+    }
+  },
+  {
+    "eval_case_id": "coworker_conflict--intern--strong--edge--6",
+    "question_id": "coworker_conflict",
+    "question_family_id": "coworker_conflict--intern",
+    "group": "Conflict & Collaboration",
+    "tags": [
+      "collaboration",
+      "communication",
+      "conflict"
+    ],
+    "level": "intern",
+    "answer_profile": "strong",
+    "question": "Describe a conflict with a coworker and how you resolved it.",
+    "candidate_answer": "In a recent software engineering project, a teammate and I kept stepping on each other's changes because our task boundaries were unclear. My responsibility was to resolve the conflict while protecting delivery. I asked for a direct conversation, clarified responsibilities, and agreed on a handoff and review process for overlapping work. As a result, the tension dropped, the workstream became smoother, and we stopped reworking each other's changes. The experience taught me that conflict improves when I replace assumptions with explicit agreements.",
+    "expected_follow_up_intent": "praise_strong",
+    "expected_scores": {
+      "situation": 5,
+      "task": 5,
+      "action": 5,
+      "result": 5
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "Strong answer. The ownership, actions, and impact are all clear."
+    }
+  },
+  {
+    "eval_case_id": "difficult_stakeholder--intern--strong--baseline--7",
+    "question_id": "difficult_stakeholder",
+    "question_family_id": "difficult_stakeholder--intern",
+    "group": "Conflict & Collaboration",
+    "tags": [
+      "collaboration",
+      "communication",
+      "conflict",
+      "stakeholder-management",
+      "alignment"
+    ],
+    "level": "intern",
+    "answer_profile": "strong",
+    "question": "Tell me about a time you had to work with a difficult stakeholder.",
+    "candidate_answer": "In a recent software engineering project, a student organization sponsor kept changing expectations for a project portal without explaining the priority behind each request. My responsibility was to understand the real concern and reset expectations. I translated the requests into priorities, walked through the impact of each change, and proposed a ranked roadmap instead of reacting request by request. As a result, the stakeholder stopped changing direction every few days and we delivered the highest-value improvements first. The experience taught me that difficult stakeholders become easier when I surface the real priorities underneath the requests.",
+    "expected_follow_up_intent": "praise_strong",
+    "expected_scores": {
+      "situation": 5,
+      "task": 5,
+      "action": 5,
+      "result": 5
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "Strong answer. The ownership, actions, and impact are all clear."
+    }
+  },
+  {
+    "eval_case_id": "difficult_stakeholder--new_grad--missing_result--missing_result--7",
+    "question_id": "difficult_stakeholder",
+    "question_family_id": "difficult_stakeholder--new_grad",
+    "group": "Conflict & Collaboration",
+    "tags": [
+      "collaboration",
+      "communication",
+      "conflict",
+      "stakeholder-management",
+      "alignment"
+    ],
+    "level": "new_grad",
+    "answer_profile": "missing_result",
+    "question": "Tell me about a time you had to work with a difficult stakeholder.",
+    "candidate_answer": "During my internship, a nontechnical stakeholder wanted frequent changes but was not seeing the engineering tradeoffs or sequencing constraints. My responsibility was to understand the real concern and reset expectations. I translated the requests into priorities, walked through the impact of each change, and proposed a ranked roadmap instead of reacting request by request. The experience taught me that difficult stakeholders become easier when I surface the real priorities underneath the requests.",
+    "expected_follow_up_intent": "clarify_result",
+    "expected_scores": {
+      "situation": 4,
+      "task": 4,
+      "action": 4,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The story is credible, but it stops before the interviewer learns what changed because of your actions."
+    }
+  },
+  {
+    "eval_case_id": "difficult_stakeholder--intern--missing_result--edge--7",
+    "question_id": "difficult_stakeholder",
+    "question_family_id": "difficult_stakeholder--intern",
+    "group": "Conflict & Collaboration",
+    "tags": [
+      "collaboration",
+      "communication",
+      "conflict",
+      "stakeholder-management",
+      "alignment"
+    ],
+    "level": "intern",
+    "answer_profile": "missing_result",
+    "question": "Tell me about a time you had to work with a difficult stakeholder.",
+    "candidate_answer": "In a recent software engineering project, a student organization sponsor kept changing expectations for a project portal without explaining the priority behind each request. My responsibility was to understand the real concern and reset expectations. I translated the requests into priorities, walked through the impact of each change, and proposed a ranked roadmap instead of reacting request by request. The experience taught me that difficult stakeholders become easier when I surface the real priorities underneath the requests.",
+    "expected_follow_up_intent": "clarify_result",
+    "expected_scores": {
+      "situation": 4,
+      "task": 4,
+      "action": 4,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The story is credible, but it stops before the interviewer learns what changed because of your actions."
+    }
+  },
+  {
+    "eval_case_id": "critical_feedback_peer--intern--strong--baseline--8",
+    "question_id": "critical_feedback_peer",
+    "question_family_id": "critical_feedback_peer--intern",
+    "group": "Conflict & Collaboration",
+    "tags": [
+      "collaboration",
+      "communication",
+      "conflict",
+      "feedback",
+      "teamwork"
+    ],
+    "level": "intern",
+    "answer_profile": "strong",
+    "question": "Give an example of when you had to give critical feedback to a peer.",
+    "candidate_answer": "In a recent software engineering project, a teammate kept merging changes without tests, which caused avoidable breakages in our shared project branch. My responsibility was to raise the issue respectfully and make it actionable. I gave the feedback privately, used recent examples, and suggested a lightweight checklist so the ask felt concrete rather than personal. As a result, the quality issue improved and the peer responded positively because the feedback was specific and respectful. The experience taught me that critical feedback lands better when it is private, concrete, and tied to team impact.",
+    "expected_follow_up_intent": "praise_strong",
+    "expected_scores": {
+      "situation": 5,
+      "task": 5,
+      "action": 5,
+      "result": 5
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "Strong answer. The ownership, actions, and impact are all clear."
+    }
+  },
+  {
+    "eval_case_id": "critical_feedback_peer--new_grad--missing_result--missing_result--8",
+    "question_id": "critical_feedback_peer",
+    "question_family_id": "critical_feedback_peer--new_grad",
+    "group": "Conflict & Collaboration",
+    "tags": [
+      "collaboration",
+      "communication",
+      "conflict",
+      "feedback",
+      "teamwork"
+    ],
+    "level": "new_grad",
+    "answer_profile": "missing_result",
+    "question": "Give an example of when you had to give critical feedback to a peer.",
+    "candidate_answer": "During my internship, a peer on my team was shipping code quickly but skipping an agreed quality step that created cleanup work for others. My responsibility was to raise the issue respectfully and make it actionable. I gave the feedback privately, used recent examples, and suggested a lightweight checklist so the ask felt concrete rather than personal. The experience taught me that critical feedback lands better when it is private, concrete, and tied to team impact.",
+    "expected_follow_up_intent": "clarify_result",
+    "expected_scores": {
+      "situation": 4,
+      "task": 4,
+      "action": 4,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The story is credible, but it stops before the interviewer learns what changed because of your actions."
+    }
+  },
+  {
+    "eval_case_id": "critical_feedback_peer--intern--we_language--edge--8",
+    "question_id": "critical_feedback_peer",
+    "question_family_id": "critical_feedback_peer--intern",
+    "group": "Conflict & Collaboration",
+    "tags": [
+      "collaboration",
+      "communication",
+      "conflict",
+      "feedback",
+      "teamwork"
+    ],
+    "level": "intern",
+    "answer_profile": "we_language",
+    "question": "Give an example of when you had to give critical feedback to a peer.",
+    "candidate_answer": "In a recent software engineering project, a teammate kept merging changes without tests, which caused avoidable breakages in our shared project branch. Our responsibility was to raise the issue respectfully and make it actionable. we gave the feedback privately, used recent examples, and suggested a lightweight checklist so the ask felt concrete rather than personal. The experience taught us that critical feedback lands better when it is private, concrete, and tied to team impact. We delivered a good outcome for the team.",
+    "expected_follow_up_intent": "reduce_we_language",
+    "expected_scores": {
+      "situation": 4,
+      "task": 2,
+      "action": 2,
+      "result": 3
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The answer sounds collaborative, but your individual ownership is still blurry."
+    }
+  },
+  {
+    "eval_case_id": "underperforming_teammate--intern--strong--baseline--9",
+    "question_id": "underperforming_teammate",
+    "question_family_id": "underperforming_teammate--intern",
+    "group": "Conflict & Collaboration",
+    "tags": [
+      "collaboration",
+      "communication",
+      "conflict",
+      "accountability",
+      "support"
+    ],
+    "level": "intern",
+    "answer_profile": "strong",
+    "question": "Tell me about a time a teammate wasn't pulling their weight.",
+    "candidate_answer": "In a recent software engineering project, one teammate stopped finishing assigned tasks during our group project and the rest of us were quietly covering for it. My responsibility was to address the issue fairly before it damaged the whole team. I checked in first to understand the blocker, then reset expectations and narrowed the next commitment to something concrete and observable. As a result, either the teammate re-engaged on a realistic scope or we escalated earlier instead of absorbing the problem silently. The experience taught me that accountability works best when I combine empathy with explicit expectations.",
+    "expected_follow_up_intent": "praise_strong",
+    "expected_scores": {
+      "situation": 5,
+      "task": 5,
+      "action": 5,
+      "result": 5
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "Strong answer. The ownership, actions, and impact are all clear."
+    }
+  },
+  {
+    "eval_case_id": "underperforming_teammate--new_grad--missing_result--missing_result--9",
+    "question_id": "underperforming_teammate",
+    "question_family_id": "underperforming_teammate--new_grad",
+    "group": "Conflict & Collaboration",
+    "tags": [
+      "collaboration",
+      "communication",
+      "conflict",
+      "accountability",
+      "support"
+    ],
+    "level": "new_grad",
+    "answer_profile": "missing_result",
+    "question": "Tell me about a time a teammate wasn't pulling their weight.",
+    "candidate_answer": "During my internship, a team member repeatedly missed commitments on a shared deliverable and the impact started spreading to everyone else. My responsibility was to address the issue fairly before it damaged the whole team. I checked in first to understand the blocker, then reset expectations and narrowed the next commitment to something concrete and observable. The experience taught me that accountability works best when I combine empathy with explicit expectations.",
+    "expected_follow_up_intent": "clarify_result",
+    "expected_scores": {
+      "situation": 4,
+      "task": 4,
+      "action": 4,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The story is credible, but it stops before the interviewer learns what changed because of your actions."
+    }
+  },
+  {
+    "eval_case_id": "underperforming_teammate--intern--rambling--edge--9",
+    "question_id": "underperforming_teammate",
+    "question_family_id": "underperforming_teammate--intern",
+    "group": "Conflict & Collaboration",
+    "tags": [
+      "collaboration",
+      "communication",
+      "conflict",
+      "accountability",
+      "support"
+    ],
+    "level": "intern",
+    "answer_profile": "rambling",
+    "question": "Tell me about a time a teammate wasn't pulling their weight.",
+    "candidate_answer": "To give a little background, this happened during a period when several priorities were moving at once and there were more details than anyone really needed in the interview. In a recent software engineering project, one teammate stopped finishing assigned tasks during our group project and the rest of us were quietly covering for it. My responsibility was to address the issue fairly before it damaged the whole team. I checked in first to understand the blocker, then reset expectations and narrowed the next commitment to something concrete and observable. As a result, either the teammate re-engaged on a realistic scope or we escalated earlier instead of absorbing the problem silently. The experience taught me that accountability works best when I combine empathy with explicit expectations. Looking back, I would probably tell the story more directly.",
+    "expected_follow_up_intent": "tighten_rambling",
+    "expected_scores": {
+      "situation": 2,
+      "task": 3,
+      "action": 4,
+      "result": 3
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "There is a useful example here, but the setup is longer than it needs to be and dilutes the key point."
+    }
+  },
+  {
+    "eval_case_id": "hardest_technical_problem--intern--strong--baseline--10",
+    "question_id": "hardest_technical_problem",
+    "question_family_id": "hardest_technical_problem--intern",
+    "group": "Problem Solving & Technical Judgment",
+    "tags": [
+      "problem-solving",
+      "technical-judgment",
+      "tradeoffs",
+      "debugging",
+      "systems"
+    ],
+    "level": "intern",
+    "answer_profile": "strong",
+    "question": "Tell me about the hardest technical problem you've solved.",
+    "candidate_answer": "In a recent software engineering project, our project had a race condition that only appeared under parallel requests and none of our basic tests reproduced it. My responsibility was to find the real root cause instead of treating the symptom. I reduced the problem to a smaller repro, added targeted logging, and isolated the timing assumption that was breaking under load. As a result, the fix removed the intermittent failure and gave the team a clearer mental model of the system. The experience taught me that hard problems usually get easier once I make the failure reproducible.",
+    "expected_follow_up_intent": "praise_strong",
+    "expected_scores": {
+      "situation": 5,
+      "task": 5,
+      "action": 5,
+      "result": 5
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "Strong answer. The ownership, actions, and impact are all clear."
+    }
+  },
+  {
+    "eval_case_id": "hardest_technical_problem--new_grad--missing_result--missing_result--10",
+    "question_id": "hardest_technical_problem",
+    "question_family_id": "hardest_technical_problem--new_grad",
+    "group": "Problem Solving & Technical Judgment",
+    "tags": [
+      "problem-solving",
+      "technical-judgment",
+      "tradeoffs",
+      "debugging",
+      "systems"
+    ],
+    "level": "new_grad",
+    "answer_profile": "missing_result",
+    "question": "Tell me about the hardest technical problem you've solved.",
+    "candidate_answer": "During my internship, a production-adjacent service had an intermittent data inconsistency issue that was hard to reproduce and easy to dismiss. My responsibility was to find the real root cause instead of treating the symptom. I reduced the problem to a smaller repro, added targeted logging, and isolated the timing assumption that was breaking under load. The experience taught me that hard problems usually get easier once I make the failure reproducible.",
+    "expected_follow_up_intent": "clarify_result",
+    "expected_scores": {
+      "situation": 4,
+      "task": 4,
+      "action": 4,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The story is credible, but it stops before the interviewer learns what changed because of your actions."
+    }
+  },
+  {
+    "eval_case_id": "hardest_technical_problem--intern--no_example--edge--10",
+    "question_id": "hardest_technical_problem",
+    "question_family_id": "hardest_technical_problem--intern",
+    "group": "Problem Solving & Technical Judgment",
+    "tags": [
+      "problem-solving",
+      "technical-judgment",
+      "tradeoffs",
+      "debugging",
+      "systems"
+    ],
+    "level": "intern",
+    "answer_profile": "no_example",
+    "question": "Tell me about the hardest technical problem you've solved.",
+    "candidate_answer": "I do not have a perfect example of that, but I think I would stay calm, communicate clearly, and try to solve the problem with the team.",
+    "expected_follow_up_intent": "reframe_no_example",
+    "expected_scores": {
+      "situation": 1,
+      "task": 1,
+      "action": 2,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "This does not answer the question directly because it stays hypothetical."
+    }
+  },
+  {
+    "eval_case_id": "decision_incomplete_info--intern--strong--baseline--11",
+    "question_id": "decision_incomplete_info",
+    "question_family_id": "decision_incomplete_info--intern",
+    "group": "Problem Solving & Technical Judgment",
+    "tags": [
+      "problem-solving",
+      "technical-judgment",
+      "tradeoffs",
+      "ambiguity",
+      "risk-management"
+    ],
+    "level": "intern",
+    "answer_profile": "strong",
+    "question": "Describe a time you had to make a technical decision with incomplete information.",
+    "candidate_answer": "In a recent software engineering project, we had to choose an implementation approach before we had complete user feedback or enough time for a full spike. My responsibility was to move forward with enough confidence while limiting downside. I identified the assumptions that mattered most, chose the option with the safest rollback path, and documented what signal would trigger a change. As a result, we moved forward without blocking delivery and still had a clear path to adjust when new information arrived. The experience taught me that with incomplete information, I try to optimize for reversibility and learning speed.",
+    "expected_follow_up_intent": "praise_strong",
+    "expected_scores": {
+      "situation": 5,
+      "task": 5,
+      "action": 5,
+      "result": 5
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "Strong answer. The ownership, actions, and impact are all clear."
+    }
+  },
+  {
+    "eval_case_id": "decision_incomplete_info--new_grad--missing_result--missing_result--11",
+    "question_id": "decision_incomplete_info",
+    "question_family_id": "decision_incomplete_info--new_grad",
+    "group": "Problem Solving & Technical Judgment",
+    "tags": [
+      "problem-solving",
+      "technical-judgment",
+      "tradeoffs",
+      "ambiguity",
+      "risk-management"
+    ],
+    "level": "new_grad",
+    "answer_profile": "missing_result",
+    "question": "Describe a time you had to make a technical decision with incomplete information.",
+    "candidate_answer": "During my internship, I needed to make a technical decision even though usage patterns and stakeholder expectations were still evolving. My responsibility was to move forward with enough confidence while limiting downside. I identified the assumptions that mattered most, chose the option with the safest rollback path, and documented what signal would trigger a change. The experience taught me that with incomplete information, I try to optimize for reversibility and learning speed.",
+    "expected_follow_up_intent": "clarify_result",
+    "expected_scores": {
+      "situation": 4,
+      "task": 4,
+      "action": 4,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The story is credible, but it stops before the interviewer learns what changed because of your actions."
+    }
+  },
+  {
+    "eval_case_id": "decision_incomplete_info--intern--emotional--edge--11",
+    "question_id": "decision_incomplete_info",
+    "question_family_id": "decision_incomplete_info--intern",
+    "group": "Problem Solving & Technical Judgment",
+    "tags": [
+      "problem-solving",
+      "technical-judgment",
+      "tradeoffs",
+      "ambiguity",
+      "risk-management"
+    ],
+    "level": "intern",
+    "answer_profile": "emotional",
+    "question": "Describe a time you had to make a technical decision with incomplete information.",
+    "candidate_answer": "This was a difficult one for me emotionally. In a recent software engineering project, we had to choose an implementation approach before we had complete user feedback or enough time for a full spike. My responsibility was to move forward with enough confidence while limiting downside. I identified the assumptions that mattered most, chose the option with the safest rollback path, and documented what signal would trigger a change. The experience taught me that with incomplete information, I try to optimize for reversibility and learning speed. At the time I felt stressed and disappointed, but I tried to handle it professionally and learn from it.",
+    "expected_follow_up_intent": "support_emotional",
+    "expected_scores": {
+      "situation": 3,
+      "task": 3,
+      "action": 3,
+      "result": 2
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The answer has real emotional weight, but it needs a clearer professional summary of your response and learning."
+    }
+  },
+  {
+    "eval_case_id": "technical_debt_tradeoff--intern--strong--baseline--12",
+    "question_id": "technical_debt_tradeoff",
+    "question_family_id": "technical_debt_tradeoff--intern",
+    "group": "Problem Solving & Technical Judgment",
+    "tags": [
+      "problem-solving",
+      "technical-judgment",
+      "tradeoffs",
+      "technical-debt",
+      "delivery"
+    ],
+    "level": "intern",
+    "answer_profile": "strong",
+    "question": "Tell me about a time you had to balance technical debt vs. shipping speed.",
+    "candidate_answer": "In a recent software engineering project, our project needed one more feature before demo day, but the code path we wanted to extend was already messy and fragile. My responsibility was to balance delivery pressure against long-term maintainability. I scoped the minimum clean-up needed to ship safely, deferred the noncritical refactor, and documented the debt that still remained. As a result, we shipped on time without creating the worst version of the long-term maintenance problem. The experience taught me that the right debt decision is rarely yes or no; it is about how much risk to buy today.",
+    "expected_follow_up_intent": "praise_strong",
+    "expected_scores": {
+      "situation": 5,
+      "task": 5,
+      "action": 5,
+      "result": 5
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "Strong answer. The ownership, actions, and impact are all clear."
+    }
+  },
+  {
+    "eval_case_id": "technical_debt_tradeoff--new_grad--missing_result--missing_result--12",
+    "question_id": "technical_debt_tradeoff",
+    "question_family_id": "technical_debt_tradeoff--new_grad",
+    "group": "Problem Solving & Technical Judgment",
+    "tags": [
+      "problem-solving",
+      "technical-judgment",
+      "tradeoffs",
+      "technical-debt",
+      "delivery"
+    ],
+    "level": "new_grad",
+    "answer_profile": "missing_result",
+    "question": "Tell me about a time you had to balance technical debt vs. shipping speed.",
+    "candidate_answer": "During my internship, the team needed to ship an important capability, but a quick implementation would have deepened debt in a risky part of the codebase. My responsibility was to balance delivery pressure against long-term maintainability. I scoped the minimum clean-up needed to ship safely, deferred the noncritical refactor, and documented the debt that still remained. The experience taught me that the right debt decision is rarely yes or no; it is about how much risk to buy today.",
+    "expected_follow_up_intent": "clarify_result",
+    "expected_scores": {
+      "situation": 4,
+      "task": 4,
+      "action": 4,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The story is credible, but it stops before the interviewer learns what changed because of your actions."
+    }
+  },
+  {
+    "eval_case_id": "technical_debt_tradeoff--intern--strong--edge--12",
+    "question_id": "technical_debt_tradeoff",
+    "question_family_id": "technical_debt_tradeoff--intern",
+    "group": "Problem Solving & Technical Judgment",
+    "tags": [
+      "problem-solving",
+      "technical-judgment",
+      "tradeoffs",
+      "technical-debt",
+      "delivery"
+    ],
+    "level": "intern",
+    "answer_profile": "strong",
+    "question": "Tell me about a time you had to balance technical debt vs. shipping speed.",
+    "candidate_answer": "In a recent software engineering project, our project needed one more feature before demo day, but the code path we wanted to extend was already messy and fragile. My responsibility was to balance delivery pressure against long-term maintainability. I scoped the minimum clean-up needed to ship safely, deferred the noncritical refactor, and documented the debt that still remained. As a result, we shipped on time without creating the worst version of the long-term maintenance problem. The experience taught me that the right debt decision is rarely yes or no; it is about how much risk to buy today.",
+    "expected_follow_up_intent": "praise_strong",
+    "expected_scores": {
+      "situation": 5,
+      "task": 5,
+      "action": 5,
+      "result": 5
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "Strong answer. The ownership, actions, and impact are all clear."
+    }
+  },
+  {
+    "eval_case_id": "identified_problem_early--intern--strong--baseline--13",
+    "question_id": "identified_problem_early",
+    "question_family_id": "identified_problem_early--intern",
+    "group": "Problem Solving & Technical Judgment",
+    "tags": [
+      "problem-solving",
+      "technical-judgment",
+      "tradeoffs",
+      "proactivity",
+      "monitoring",
+      "risk-management"
+    ],
+    "level": "intern",
+    "answer_profile": "strong",
+    "question": "Give an example of a time you identified a problem before it became critical.",
+    "candidate_answer": "In a recent software engineering project, I noticed a growing pattern of flaky tests and duplicate failures before the project team treated it as a real issue. My responsibility was to investigate before the issue became urgent. I traced the pattern back to one common dependency, raised it early, and proposed a preventive fix before the next milestone. As a result, we avoided a more visible failure later and saved time that would have gone into reactive cleanup. The experience taught me that small signals are often worth following before everyone agrees they matter.",
+    "expected_follow_up_intent": "praise_strong",
+    "expected_scores": {
+      "situation": 5,
+      "task": 5,
+      "action": 5,
+      "result": 5
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "Strong answer. The ownership, actions, and impact are all clear."
+    }
+  },
+  {
+    "eval_case_id": "identified_problem_early--new_grad--missing_result--missing_result--13",
+    "question_id": "identified_problem_early",
+    "question_family_id": "identified_problem_early--new_grad",
+    "group": "Problem Solving & Technical Judgment",
+    "tags": [
+      "problem-solving",
+      "technical-judgment",
+      "tradeoffs",
+      "proactivity",
+      "monitoring",
+      "risk-management"
+    ],
+    "level": "new_grad",
+    "answer_profile": "missing_result",
+    "question": "Give an example of a time you identified a problem before it became critical.",
+    "candidate_answer": "During my internship, I saw an early signal in logs and support complaints that suggested a reliability problem was forming. My responsibility was to investigate before the issue became urgent. I traced the pattern back to one common dependency, raised it early, and proposed a preventive fix before the next milestone. The experience taught me that small signals are often worth following before everyone agrees they matter.",
+    "expected_follow_up_intent": "clarify_result",
+    "expected_scores": {
+      "situation": 4,
+      "task": 4,
+      "action": 4,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The story is credible, but it stops before the interviewer learns what changed because of your actions."
+    }
+  },
+  {
+    "eval_case_id": "identified_problem_early--intern--missing_result--edge--13",
+    "question_id": "identified_problem_early",
+    "question_family_id": "identified_problem_early--intern",
+    "group": "Problem Solving & Technical Judgment",
+    "tags": [
+      "problem-solving",
+      "technical-judgment",
+      "tradeoffs",
+      "proactivity",
+      "monitoring",
+      "risk-management"
+    ],
+    "level": "intern",
+    "answer_profile": "missing_result",
+    "question": "Give an example of a time you identified a problem before it became critical.",
+    "candidate_answer": "In a recent software engineering project, I noticed a growing pattern of flaky tests and duplicate failures before the project team treated it as a real issue. My responsibility was to investigate before the issue became urgent. I traced the pattern back to one common dependency, raised it early, and proposed a preventive fix before the next milestone. The experience taught me that small signals are often worth following before everyone agrees they matter.",
+    "expected_follow_up_intent": "clarify_result",
+    "expected_scores": {
+      "situation": 4,
+      "task": 4,
+      "action": 4,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The story is credible, but it stops before the interviewer learns what changed because of your actions."
+    }
+  },
+  {
+    "eval_case_id": "simplified_system--intern--strong--baseline--14",
+    "question_id": "simplified_system",
+    "question_family_id": "simplified_system--intern",
+    "group": "Problem Solving & Technical Judgment",
+    "tags": [
+      "problem-solving",
+      "technical-judgment",
+      "tradeoffs",
+      "simplification",
+      "process",
+      "impact"
+    ],
+    "level": "intern",
+    "answer_profile": "strong",
+    "question": "Tell me about a time you simplified a complex system or process.",
+    "candidate_answer": "In a recent software engineering project, our team had a manual release checklist spread across messages, docs, and memory, which made every deployment stressful. My responsibility was to remove unnecessary complexity without losing the important safeguards. I mapped the workflow end to end, removed redundant steps, and turned the essential parts into one documented path. As a result, the process became faster, easier to onboard to, and less likely to fail because of missed handoffs. The experience taught me that simplification is valuable when it preserves the guardrails that actually matter.",
+    "expected_follow_up_intent": "praise_strong",
+    "expected_scores": {
+      "situation": 5,
+      "task": 5,
+      "action": 5,
+      "result": 5
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "Strong answer. The ownership, actions, and impact are all clear."
+    }
+  },
+  {
+    "eval_case_id": "simplified_system--new_grad--missing_result--missing_result--14",
+    "question_id": "simplified_system",
+    "question_family_id": "simplified_system--new_grad",
+    "group": "Problem Solving & Technical Judgment",
+    "tags": [
+      "problem-solving",
+      "technical-judgment",
+      "tradeoffs",
+      "simplification",
+      "process",
+      "impact"
+    ],
+    "level": "new_grad",
+    "answer_profile": "missing_result",
+    "question": "Tell me about a time you simplified a complex system or process.",
+    "candidate_answer": "During my internship, a recurring engineering process had become too complex, slow, and dependent on tribal knowledge. My responsibility was to remove unnecessary complexity without losing the important safeguards. I mapped the workflow end to end, removed redundant steps, and turned the essential parts into one documented path. The experience taught me that simplification is valuable when it preserves the guardrails that actually matter.",
+    "expected_follow_up_intent": "clarify_result",
+    "expected_scores": {
+      "situation": 4,
+      "task": 4,
+      "action": 4,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The story is credible, but it stops before the interviewer learns what changed because of your actions."
+    }
+  },
+  {
+    "eval_case_id": "simplified_system--intern--we_language--edge--14",
+    "question_id": "simplified_system",
+    "question_family_id": "simplified_system--intern",
+    "group": "Problem Solving & Technical Judgment",
+    "tags": [
+      "problem-solving",
+      "technical-judgment",
+      "tradeoffs",
+      "simplification",
+      "process",
+      "impact"
+    ],
+    "level": "intern",
+    "answer_profile": "we_language",
+    "question": "Tell me about a time you simplified a complex system or process.",
+    "candidate_answer": "In a recent software engineering project, our team had a manual release checklist spread across messages, docs, and memory, which made every deployment stressful. Our responsibility was to remove unnecessary complexity without losing the important safeguards. we mapped the workflow end to end, removed redundant steps, and turned the essential parts into one documented path. The experience taught us that simplification is valuable when it preserves the guardrails that actually matter. We delivered a good outcome for the team.",
+    "expected_follow_up_intent": "reduce_we_language",
+    "expected_scores": {
+      "situation": 4,
+      "task": 2,
+      "action": 2,
+      "result": 3
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The answer sounds collaborative, but your individual ownership is still blurry."
+    }
+  },
+  {
+    "eval_case_id": "project_failed--intern--strong--baseline--15",
+    "question_id": "project_failed",
+    "question_family_id": "project_failed--intern",
+    "group": "Failure & Resilience",
+    "tags": [
+      "resilience",
+      "reflection",
+      "accountability",
+      "failure",
+      "ownership"
+    ],
+    "level": "intern",
+    "answer_profile": "strong",
+    "question": "Tell me about a project that failed. What did you learn?",
+    "candidate_answer": "In a recent software engineering project, our team built too much before validating the core user need, and the project did not land the way we expected. My responsibility was to own what I could have done differently and learn from it. I reviewed where our assumptions went unchecked, identified the decision points we rushed past, and changed how I approached the next project. As a result, the failure itself stood, but the lesson improved how I scoped and validated future work. The experience taught me that good failure stories show ownership and changed behavior, not blame.",
+    "expected_follow_up_intent": "praise_strong",
+    "expected_scores": {
+      "situation": 5,
+      "task": 5,
+      "action": 5,
+      "result": 5
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "Strong answer. The ownership, actions, and impact are all clear."
+    }
+  },
+  {
+    "eval_case_id": "project_failed--new_grad--missing_result--missing_result--15",
+    "question_id": "project_failed",
+    "question_family_id": "project_failed--new_grad",
+    "group": "Failure & Resilience",
+    "tags": [
+      "resilience",
+      "reflection",
+      "accountability",
+      "failure",
+      "ownership"
+    ],
+    "level": "new_grad",
+    "answer_profile": "missing_result",
+    "question": "Tell me about a project that failed. What did you learn?",
+    "candidate_answer": "During my internship, a project I worked on missed its core goal because we optimized for implementation speed before validating assumptions. My responsibility was to own what I could have done differently and learn from it. I reviewed where our assumptions went unchecked, identified the decision points we rushed past, and changed how I approached the next project. The experience taught me that good failure stories show ownership and changed behavior, not blame.",
+    "expected_follow_up_intent": "clarify_result",
+    "expected_scores": {
+      "situation": 4,
+      "task": 4,
+      "action": 4,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The story is credible, but it stops before the interviewer learns what changed because of your actions."
+    }
+  },
+  {
+    "eval_case_id": "project_failed--intern--rambling--edge--15",
+    "question_id": "project_failed",
+    "question_family_id": "project_failed--intern",
+    "group": "Failure & Resilience",
+    "tags": [
+      "resilience",
+      "reflection",
+      "accountability",
+      "failure",
+      "ownership"
+    ],
+    "level": "intern",
+    "answer_profile": "rambling",
+    "question": "Tell me about a project that failed. What did you learn?",
+    "candidate_answer": "To give a little background, this happened during a period when several priorities were moving at once and there were more details than anyone really needed in the interview. In a recent software engineering project, our team built too much before validating the core user need, and the project did not land the way we expected. My responsibility was to own what I could have done differently and learn from it. I reviewed where our assumptions went unchecked, identified the decision points we rushed past, and changed how I approached the next project. As a result, the failure itself stood, but the lesson improved how I scoped and validated future work. The experience taught me that good failure stories show ownership and changed behavior, not blame. Looking back, I would probably tell the story more directly.",
+    "expected_follow_up_intent": "tighten_rambling",
+    "expected_scores": {
+      "situation": 2,
+      "task": 3,
+      "action": 4,
+      "result": 3
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "There is a useful example here, but the setup is longer than it needs to be and dilutes the key point."
+    }
+  },
+  {
+    "eval_case_id": "missed_deadline--intern--strong--baseline--16",
+    "question_id": "missed_deadline",
+    "question_family_id": "missed_deadline--intern",
+    "group": "Failure & Resilience",
+    "tags": [
+      "resilience",
+      "reflection",
+      "accountability",
+      "deadline",
+      "communication"
+    ],
+    "level": "intern",
+    "answer_profile": "strong",
+    "question": "Describe a time you missed a deadline. What happened?",
+    "candidate_answer": "In a recent software engineering project, I underestimated integration work on a class project and realized too late that I would miss the milestone I had committed to. My responsibility was to mitigate the miss responsibly and improve my planning. I communicated the risk as soon as I understood it, cut the scope to the most important pieces, and changed how I estimated similar work afterward. As a result, the deadline miss still happened, but the impact was contained and my future planning improved. The experience taught me that missing a deadline matters less than how quickly and honestly I respond once I see it.",
+    "expected_follow_up_intent": "praise_strong",
+    "expected_scores": {
+      "situation": 5,
+      "task": 5,
+      "action": 5,
+      "result": 5
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "Strong answer. The ownership, actions, and impact are all clear."
+    }
+  },
+  {
+    "eval_case_id": "missed_deadline--new_grad--missing_result--missing_result--16",
+    "question_id": "missed_deadline",
+    "question_family_id": "missed_deadline--new_grad",
+    "group": "Failure & Resilience",
+    "tags": [
+      "resilience",
+      "reflection",
+      "accountability",
+      "deadline",
+      "communication"
+    ],
+    "level": "new_grad",
+    "answer_profile": "missing_result",
+    "question": "Describe a time you missed a deadline. What happened?",
+    "candidate_answer": "During my internship, I owned a deliverable that slipped because I underestimated the dependency and did not surface the risk early enough. My responsibility was to mitigate the miss responsibly and improve my planning. I communicated the risk as soon as I understood it, cut the scope to the most important pieces, and changed how I estimated similar work afterward. The experience taught me that missing a deadline matters less than how quickly and honestly I respond once I see it.",
+    "expected_follow_up_intent": "clarify_result",
+    "expected_scores": {
+      "situation": 4,
+      "task": 4,
+      "action": 4,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The story is credible, but it stops before the interviewer learns what changed because of your actions."
+    }
+  },
+  {
+    "eval_case_id": "missed_deadline--intern--no_example--edge--16",
+    "question_id": "missed_deadline",
+    "question_family_id": "missed_deadline--intern",
+    "group": "Failure & Resilience",
+    "tags": [
+      "resilience",
+      "reflection",
+      "accountability",
+      "deadline",
+      "communication"
+    ],
+    "level": "intern",
+    "answer_profile": "no_example",
+    "question": "Describe a time you missed a deadline. What happened?",
+    "candidate_answer": "I do not have a perfect example of that, but I think I would stay calm, communicate clearly, and try to solve the problem with the team.",
+    "expected_follow_up_intent": "reframe_no_example",
+    "expected_scores": {
+      "situation": 1,
+      "task": 1,
+      "action": 2,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "This does not answer the question directly because it stays hypothetical."
+    }
+  },
+  {
+    "eval_case_id": "harsh_feedback--intern--strong--baseline--17",
+    "question_id": "harsh_feedback",
+    "question_family_id": "harsh_feedback--intern",
+    "group": "Failure & Resilience",
+    "tags": [
+      "resilience",
+      "reflection",
+      "accountability",
+      "feedback",
+      "growth",
+      "communication"
+    ],
+    "level": "intern",
+    "answer_profile": "strong",
+    "question": "Tell me about a time you received harsh feedback. How did you respond?",
+    "candidate_answer": "In a recent software engineering project, my manager told me my updates were too detailed and slowed decision-making because the blockers were buried. My responsibility was to process the feedback without defensiveness and change my behavior. I asked for examples, changed the format, and checked the next few updates with the reviewer to make sure the improvement was real. As a result, the feedback translated into clearer communication and faster decisions from the team. The experience taught me that difficult feedback is most useful when I turn it into a repeatable habit change.",
+    "expected_follow_up_intent": "praise_strong",
+    "expected_scores": {
+      "situation": 5,
+      "task": 5,
+      "action": 5,
+      "result": 5
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "Strong answer. The ownership, actions, and impact are all clear."
+    }
+  },
+  {
+    "eval_case_id": "harsh_feedback--new_grad--missing_result--missing_result--17",
+    "question_id": "harsh_feedback",
+    "question_family_id": "harsh_feedback--new_grad",
+    "group": "Failure & Resilience",
+    "tags": [
+      "resilience",
+      "reflection",
+      "accountability",
+      "feedback",
+      "growth",
+      "communication"
+    ],
+    "level": "new_grad",
+    "answer_profile": "missing_result",
+    "question": "Tell me about a time you received harsh feedback. How did you respond?",
+    "candidate_answer": "During my internship, I received direct feedback that my communication style made it harder for the team to act quickly. My responsibility was to process the feedback without defensiveness and change my behavior. I asked for examples, changed the format, and checked the next few updates with the reviewer to make sure the improvement was real. The experience taught me that difficult feedback is most useful when I turn it into a repeatable habit change.",
+    "expected_follow_up_intent": "clarify_result",
+    "expected_scores": {
+      "situation": 4,
+      "task": 4,
+      "action": 4,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The story is credible, but it stops before the interviewer learns what changed because of your actions."
+    }
+  },
+  {
+    "eval_case_id": "harsh_feedback--intern--emotional--edge--17",
+    "question_id": "harsh_feedback",
+    "question_family_id": "harsh_feedback--intern",
+    "group": "Failure & Resilience",
+    "tags": [
+      "resilience",
+      "reflection",
+      "accountability",
+      "feedback",
+      "growth",
+      "communication"
+    ],
+    "level": "intern",
+    "answer_profile": "emotional",
+    "question": "Tell me about a time you received harsh feedback. How did you respond?",
+    "candidate_answer": "This was a difficult one for me emotionally. In a recent software engineering project, my manager told me my updates were too detailed and slowed decision-making because the blockers were buried. My responsibility was to process the feedback without defensiveness and change my behavior. I asked for examples, changed the format, and checked the next few updates with the reviewer to make sure the improvement was real. The experience taught me that difficult feedback is most useful when I turn it into a repeatable habit change. At the time I felt stressed and disappointed, but I tried to handle it professionally and learn from it.",
+    "expected_follow_up_intent": "support_emotional",
+    "expected_scores": {
+      "situation": 3,
+      "task": 3,
+      "action": 3,
+      "result": 2
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The answer has real emotional weight, but it needs a clearer professional summary of your response and learning."
+    }
+  },
+  {
+    "eval_case_id": "regretted_decision--intern--strong--baseline--18",
+    "question_id": "regretted_decision",
+    "question_family_id": "regretted_decision--intern",
+    "group": "Failure & Resilience",
+    "tags": [
+      "resilience",
+      "reflection",
+      "accountability",
+      "technical-judgment",
+      "learning"
+    ],
+    "level": "intern",
+    "answer_profile": "strong",
+    "question": "Give an example of a technical decision you regret. What would you do differently?",
+    "candidate_answer": "In a recent software engineering project, I chose a shortcut implementation for a project because it looked faster, but it created cleanup work later. My responsibility was to explain the original logic honestly and show what I learned. I revisited the assumptions, identified why the shortcut was attractive in the moment, and changed how I now evaluate reversibility and maintenance cost. As a result, I would still explain the context, but I would choose the more maintainable option next time. The experience taught me that regret stories land better when I show honest reasoning and changed judgment.",
+    "expected_follow_up_intent": "praise_strong",
+    "expected_scores": {
+      "situation": 5,
+      "task": 5,
+      "action": 5,
+      "result": 5
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "Strong answer. The ownership, actions, and impact are all clear."
+    }
+  },
+  {
+    "eval_case_id": "regretted_decision--new_grad--missing_result--missing_result--18",
+    "question_id": "regretted_decision",
+    "question_family_id": "regretted_decision--new_grad",
+    "group": "Failure & Resilience",
+    "tags": [
+      "resilience",
+      "reflection",
+      "accountability",
+      "technical-judgment",
+      "learning"
+    ],
+    "level": "new_grad",
+    "answer_profile": "missing_result",
+    "question": "Give an example of a technical decision you regret. What would you do differently?",
+    "candidate_answer": "During my internship, I made a technical decision that optimized for speed but cost the team flexibility and cleanup time later. My responsibility was to explain the original logic honestly and show what I learned. I revisited the assumptions, identified why the shortcut was attractive in the moment, and changed how I now evaluate reversibility and maintenance cost. The experience taught me that regret stories land better when I show honest reasoning and changed judgment.",
+    "expected_follow_up_intent": "clarify_result",
+    "expected_scores": {
+      "situation": 4,
+      "task": 4,
+      "action": 4,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The story is credible, but it stops before the interviewer learns what changed because of your actions."
+    }
+  },
+  {
+    "eval_case_id": "regretted_decision--intern--strong--edge--18",
+    "question_id": "regretted_decision",
+    "question_family_id": "regretted_decision--intern",
+    "group": "Failure & Resilience",
+    "tags": [
+      "resilience",
+      "reflection",
+      "accountability",
+      "technical-judgment",
+      "learning"
+    ],
+    "level": "intern",
+    "answer_profile": "strong",
+    "question": "Give an example of a technical decision you regret. What would you do differently?",
+    "candidate_answer": "In a recent software engineering project, I chose a shortcut implementation for a project because it looked faster, but it created cleanup work later. My responsibility was to explain the original logic honestly and show what I learned. I revisited the assumptions, identified why the shortcut was attractive in the moment, and changed how I now evaluate reversibility and maintenance cost. As a result, I would still explain the context, but I would choose the more maintainable option next time. The experience taught me that regret stories land better when I show honest reasoning and changed judgment.",
+    "expected_follow_up_intent": "praise_strong",
+    "expected_scores": {
+      "situation": 5,
+      "task": 5,
+      "action": 5,
+      "result": 5
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "Strong answer. The ownership, actions, and impact are all clear."
+    }
+  },
+  {
+    "eval_case_id": "midproject_change--intern--strong--baseline--19",
+    "question_id": "midproject_change",
+    "question_family_id": "midproject_change--intern",
+    "group": "Failure & Resilience",
+    "tags": [
+      "resilience",
+      "reflection",
+      "accountability",
+      "adaptability",
+      "execution"
+    ],
+    "level": "intern",
+    "answer_profile": "strong",
+    "question": "Tell me about a time things didn't go as planned mid-project.",
+    "candidate_answer": "In a recent software engineering project, midway through the project, a core dependency failed and our original plan stopped making sense. My responsibility was to reassess the plan and protect the most valuable outcome. I re-scoped the work, reset priorities with the team, and communicated the revised plan clearly instead of pretending the original one still worked. As a result, we delivered a narrower but reliable result instead of missing the milestone entirely. The experience taught me that adaptability is strongest when I update the plan openly instead of clinging to a broken one.",
+    "expected_follow_up_intent": "praise_strong",
+    "expected_scores": {
+      "situation": 5,
+      "task": 5,
+      "action": 5,
+      "result": 5
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "Strong answer. The ownership, actions, and impact are all clear."
+    }
+  },
+  {
+    "eval_case_id": "midproject_change--new_grad--missing_result--missing_result--19",
+    "question_id": "midproject_change",
+    "question_family_id": "midproject_change--new_grad",
+    "group": "Failure & Resilience",
+    "tags": [
+      "resilience",
+      "reflection",
+      "accountability",
+      "adaptability",
+      "execution"
+    ],
+    "level": "new_grad",
+    "answer_profile": "missing_result",
+    "question": "Tell me about a time things didn't go as planned mid-project.",
+    "candidate_answer": "During my internship, a project changed shape midstream because an assumption or dependency broke, and we had to reorient quickly. My responsibility was to reassess the plan and protect the most valuable outcome. I re-scoped the work, reset priorities with the team, and communicated the revised plan clearly instead of pretending the original one still worked. The experience taught me that adaptability is strongest when I update the plan openly instead of clinging to a broken one.",
+    "expected_follow_up_intent": "clarify_result",
+    "expected_scores": {
+      "situation": 4,
+      "task": 4,
+      "action": 4,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The story is credible, but it stops before the interviewer learns what changed because of your actions."
+    }
+  },
+  {
+    "eval_case_id": "midproject_change--intern--missing_result--edge--19",
+    "question_id": "midproject_change",
+    "question_family_id": "midproject_change--intern",
+    "group": "Failure & Resilience",
+    "tags": [
+      "resilience",
+      "reflection",
+      "accountability",
+      "adaptability",
+      "execution"
+    ],
+    "level": "intern",
+    "answer_profile": "missing_result",
+    "question": "Tell me about a time things didn't go as planned mid-project.",
+    "candidate_answer": "In a recent software engineering project, midway through the project, a core dependency failed and our original plan stopped making sense. My responsibility was to reassess the plan and protect the most valuable outcome. I re-scoped the work, reset priorities with the team, and communicated the revised plan clearly instead of pretending the original one still worked. The experience taught me that adaptability is strongest when I update the plan openly instead of clinging to a broken one.",
+    "expected_follow_up_intent": "clarify_result",
+    "expected_scores": {
+      "situation": 4,
+      "task": 4,
+      "action": 4,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The story is credible, but it stops before the interviewer learns what changed because of your actions."
+    }
+  },
+  {
+    "eval_case_id": "proudest_technical_achievement--intern--strong--baseline--20",
+    "question_id": "proudest_technical_achievement",
+    "question_family_id": "proudest_technical_achievement--intern",
+    "group": "Achievement & Impact",
+    "tags": [
+      "impact",
+      "execution",
+      "delivery",
+      "achievement",
+      "technical-depth"
+    ],
+    "level": "intern",
+    "answer_profile": "strong",
+    "question": "Tell me about your proudest technical achievement.",
+    "candidate_answer": "In a recent software engineering project, I built the most reliable part of our capstone demo after several earlier attempts had failed under realistic load. My responsibility was to show why the achievement was hard and why it mattered. I broke the problem down, chose a practical design, and kept iterating until it held up under the real usage pattern. As a result, the final result was stable, visible, and clearly improved the product or user experience. The experience taught me that the best achievement stories connect technical difficulty to real impact.",
+    "expected_follow_up_intent": "praise_strong",
+    "expected_scores": {
+      "situation": 5,
+      "task": 5,
+      "action": 5,
+      "result": 5
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "Strong answer. The ownership, actions, and impact are all clear."
+    }
+  },
+  {
+    "eval_case_id": "proudest_technical_achievement--new_grad--missing_result--missing_result--20",
+    "question_id": "proudest_technical_achievement",
+    "question_family_id": "proudest_technical_achievement--new_grad",
+    "group": "Achievement & Impact",
+    "tags": [
+      "impact",
+      "execution",
+      "delivery",
+      "achievement",
+      "technical-depth"
+    ],
+    "level": "new_grad",
+    "answer_profile": "missing_result",
+    "question": "Tell me about your proudest technical achievement.",
+    "candidate_answer": "During my internship, I led a technical improvement that solved a problem the team had been working around for weeks. My responsibility was to show why the achievement was hard and why it mattered. I broke the problem down, chose a practical design, and kept iterating until it held up under the real usage pattern. The experience taught me that the best achievement stories connect technical difficulty to real impact.",
+    "expected_follow_up_intent": "clarify_result",
+    "expected_scores": {
+      "situation": 4,
+      "task": 4,
+      "action": 4,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The story is credible, but it stops before the interviewer learns what changed because of your actions."
+    }
+  },
+  {
+    "eval_case_id": "proudest_technical_achievement--intern--we_language--edge--20",
+    "question_id": "proudest_technical_achievement",
+    "question_family_id": "proudest_technical_achievement--intern",
+    "group": "Achievement & Impact",
+    "tags": [
+      "impact",
+      "execution",
+      "delivery",
+      "achievement",
+      "technical-depth"
+    ],
+    "level": "intern",
+    "answer_profile": "we_language",
+    "question": "Tell me about your proudest technical achievement.",
+    "candidate_answer": "In a recent software engineering project, we built the most reliable part of our capstone demo after several earlier attempts had failed under realistic load. Our responsibility was to show why the achievement was hard and why it mattered. we broke the problem down, chose a practical design, and kept iterating until it held up under the real usage pattern. The experience taught us that the best achievement stories connect technical difficulty to real impact. We delivered a good outcome for the team.",
+    "expected_follow_up_intent": "reduce_we_language",
+    "expected_scores": {
+      "situation": 4,
+      "task": 2,
+      "action": 2,
+      "result": 3
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The answer sounds collaborative, but your individual ownership is still blurry."
+    }
+  },
+  {
+    "eval_case_id": "deliver_under_pressure--intern--strong--baseline--21",
+    "question_id": "deliver_under_pressure",
+    "question_family_id": "deliver_under_pressure--intern",
+    "group": "Achievement & Impact",
+    "tags": [
+      "impact",
+      "execution",
+      "delivery",
+      "prioritization"
+    ],
+    "level": "intern",
+    "answer_profile": "strong",
+    "question": "Describe a time you delivered results under pressure or tight constraints.",
+    "candidate_answer": "In a recent software engineering project, our team had one night left to stabilize the demo after a late integration failure. My responsibility was to deliver the core outcome without getting distracted by lower-value work. I cut scope, protected the essential flow, and coordinated the team around the smallest set of tasks that would make the result credible. As a result, we delivered something polished enough to meet the moment instead of missing it while chasing completeness. The experience taught me that under pressure, clear priorities matter more than heroic effort.",
+    "expected_follow_up_intent": "praise_strong",
+    "expected_scores": {
+      "situation": 5,
+      "task": 5,
+      "action": 5,
+      "result": 5
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "Strong answer. The ownership, actions, and impact are all clear."
+    }
+  },
+  {
+    "eval_case_id": "deliver_under_pressure--new_grad--missing_result--missing_result--21",
+    "question_id": "deliver_under_pressure",
+    "question_family_id": "deliver_under_pressure--new_grad",
+    "group": "Achievement & Impact",
+    "tags": [
+      "impact",
+      "execution",
+      "delivery",
+      "prioritization"
+    ],
+    "level": "new_grad",
+    "answer_profile": "missing_result",
+    "question": "Describe a time you delivered results under pressure or tight constraints.",
+    "candidate_answer": "During my internship, we had a fixed delivery deadline and fewer resources than expected, so every decision had to favor the critical path. My responsibility was to deliver the core outcome without getting distracted by lower-value work. I cut scope, protected the essential flow, and coordinated the team around the smallest set of tasks that would make the result credible. The experience taught me that under pressure, clear priorities matter more than heroic effort.",
+    "expected_follow_up_intent": "clarify_result",
+    "expected_scores": {
+      "situation": 4,
+      "task": 4,
+      "action": 4,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The story is credible, but it stops before the interviewer learns what changed because of your actions."
+    }
+  },
+  {
+    "eval_case_id": "deliver_under_pressure--intern--rambling--edge--21",
+    "question_id": "deliver_under_pressure",
+    "question_family_id": "deliver_under_pressure--intern",
+    "group": "Achievement & Impact",
+    "tags": [
+      "impact",
+      "execution",
+      "delivery",
+      "prioritization"
+    ],
+    "level": "intern",
+    "answer_profile": "rambling",
+    "question": "Describe a time you delivered results under pressure or tight constraints.",
+    "candidate_answer": "To give a little background, this happened during a period when several priorities were moving at once and there were more details than anyone really needed in the interview. In a recent software engineering project, our team had one night left to stabilize the demo after a late integration failure. My responsibility was to deliver the core outcome without getting distracted by lower-value work. I cut scope, protected the essential flow, and coordinated the team around the smallest set of tasks that would make the result credible. As a result, we delivered something polished enough to meet the moment instead of missing it while chasing completeness. The experience taught me that under pressure, clear priorities matter more than heroic effort. Looking back, I would probably tell the story more directly.",
+    "expected_follow_up_intent": "tighten_rambling",
+    "expected_scores": {
+      "situation": 2,
+      "task": 3,
+      "action": 4,
+      "result": 3
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "There is a useful example here, but the setup is longer than it needs to be and dilutes the key point."
+    }
+  },
+  {
+    "eval_case_id": "above_and_beyond--intern--strong--baseline--22",
+    "question_id": "above_and_beyond",
+    "question_family_id": "above_and_beyond--intern",
+    "group": "Achievement & Impact",
+    "tags": [
+      "impact",
+      "execution",
+      "delivery",
+      "ownership",
+      "initiative"
+    ],
+    "level": "intern",
+    "answer_profile": "strong",
+    "question": "Tell me about a time you went above and beyond what was asked.",
+    "candidate_answer": "In a recent software engineering project, after finishing my assigned backend work, I saw that onboarding the rest of the team was still taking too long. My responsibility was to do extra work that materially helps, not just work that looks impressive. I built a small internal tool or guide that removed the repeated friction and documented how to use it. As a result, the team moved faster afterward because the extra work solved a real bottleneck. The experience taught me that going above and beyond is strongest when the extra effort solves the right problem.",
+    "expected_follow_up_intent": "praise_strong",
+    "expected_scores": {
+      "situation": 5,
+      "task": 5,
+      "action": 5,
+      "result": 5
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "Strong answer. The ownership, actions, and impact are all clear."
+    }
+  },
+  {
+    "eval_case_id": "above_and_beyond--new_grad--missing_result--missing_result--22",
+    "question_id": "above_and_beyond",
+    "question_family_id": "above_and_beyond--new_grad",
+    "group": "Achievement & Impact",
+    "tags": [
+      "impact",
+      "execution",
+      "delivery",
+      "ownership",
+      "initiative"
+    ],
+    "level": "new_grad",
+    "answer_profile": "missing_result",
+    "question": "Tell me about a time you went above and beyond what was asked.",
+    "candidate_answer": "During my internship, I noticed a repeated pain point beyond my assigned scope and chose to solve it because the team kept losing time to it. My responsibility was to do extra work that materially helps, not just work that looks impressive. I built a small internal tool or guide that removed the repeated friction and documented how to use it. The experience taught me that going above and beyond is strongest when the extra effort solves the right problem.",
+    "expected_follow_up_intent": "clarify_result",
+    "expected_scores": {
+      "situation": 4,
+      "task": 4,
+      "action": 4,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The story is credible, but it stops before the interviewer learns what changed because of your actions."
+    }
+  },
+  {
+    "eval_case_id": "above_and_beyond--intern--no_example--edge--22",
+    "question_id": "above_and_beyond",
+    "question_family_id": "above_and_beyond--intern",
+    "group": "Achievement & Impact",
+    "tags": [
+      "impact",
+      "execution",
+      "delivery",
+      "ownership",
+      "initiative"
+    ],
+    "level": "intern",
+    "answer_profile": "no_example",
+    "question": "Tell me about a time you went above and beyond what was asked.",
+    "candidate_answer": "I do not have a perfect example of that, but I think I would stay calm, communicate clearly, and try to solve the problem with the team.",
+    "expected_follow_up_intent": "reframe_no_example",
+    "expected_scores": {
+      "situation": 1,
+      "task": 1,
+      "action": 2,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "This does not answer the question directly because it stays hypothetical."
+    }
+  },
+  {
+    "eval_case_id": "business_impact--intern--strong--baseline--23",
+    "question_id": "business_impact",
+    "question_family_id": "business_impact--intern",
+    "group": "Achievement & Impact",
+    "tags": [
+      "impact",
+      "execution",
+      "delivery",
+      "metrics",
+      "stakeholder-value"
+    ],
+    "level": "intern",
+    "answer_profile": "strong",
+    "question": "Give an example of a time your work had a measurable impact on the business.",
+    "candidate_answer": "In a recent software engineering project, a recurring issue in our student project workflow kept wasting time and causing avoidable rework. My responsibility was to connect technical work to a metric that matters. I identified the root cause, changed the workflow or system behavior, and tracked the before-and-after effect. As a result, the result was measurable in time saved, reliability improved, or incidents reduced. The experience taught me that impact stories are stronger when the metric reflects a stakeholder problem, not just technical elegance.",
+    "expected_follow_up_intent": "praise_strong",
+    "expected_scores": {
+      "situation": 5,
+      "task": 5,
+      "action": 5,
+      "result": 5
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "Strong answer. The ownership, actions, and impact are all clear."
+    }
+  },
+  {
+    "eval_case_id": "business_impact--new_grad--missing_result--missing_result--23",
+    "question_id": "business_impact",
+    "question_family_id": "business_impact--new_grad",
+    "group": "Achievement & Impact",
+    "tags": [
+      "impact",
+      "execution",
+      "delivery",
+      "metrics",
+      "stakeholder-value"
+    ],
+    "level": "new_grad",
+    "answer_profile": "missing_result",
+    "question": "Give an example of a time your work had a measurable impact on the business.",
+    "candidate_answer": "During my internship, my work improved a process tied to internal stakeholders, time savings, or reliability in a way the team could actually measure. My responsibility was to connect technical work to a metric that matters. I identified the root cause, changed the workflow or system behavior, and tracked the before-and-after effect. The experience taught me that impact stories are stronger when the metric reflects a stakeholder problem, not just technical elegance.",
+    "expected_follow_up_intent": "clarify_result",
+    "expected_scores": {
+      "situation": 4,
+      "task": 4,
+      "action": 4,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The story is credible, but it stops before the interviewer learns what changed because of your actions."
+    }
+  },
+  {
+    "eval_case_id": "business_impact--intern--emotional--edge--23",
+    "question_id": "business_impact",
+    "question_family_id": "business_impact--intern",
+    "group": "Achievement & Impact",
+    "tags": [
+      "impact",
+      "execution",
+      "delivery",
+      "metrics",
+      "stakeholder-value"
+    ],
+    "level": "intern",
+    "answer_profile": "emotional",
+    "question": "Give an example of a time your work had a measurable impact on the business.",
+    "candidate_answer": "This was a difficult one for me emotionally. In a recent software engineering project, a recurring issue in our student project workflow kept wasting time and causing avoidable rework. My responsibility was to connect technical work to a metric that matters. I identified the root cause, changed the workflow or system behavior, and tracked the before-and-after effect. The experience taught me that impact stories are stronger when the metric reflects a stakeholder problem, not just technical elegance. At the time I felt stressed and disappointed, but I tried to handle it professionally and learn from it.",
+    "expected_follow_up_intent": "support_emotional",
+    "expected_scores": {
+      "situation": 3,
+      "task": 3,
+      "action": 3,
+      "result": 2
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The answer has real emotional weight, but it needs a clearer professional summary of your response and learning."
+    }
+  },
+  {
+    "eval_case_id": "improved_process--intern--strong--baseline--24",
+    "question_id": "improved_process",
+    "question_family_id": "improved_process--intern",
+    "group": "Achievement & Impact",
+    "tags": [
+      "impact",
+      "execution",
+      "delivery",
+      "process"
+    ],
+    "level": "intern",
+    "answer_profile": "strong",
+    "question": "Tell me about a time you improved a process or system significantly.",
+    "candidate_answer": "In a recent software engineering project, a repeated setup or release task was wasting effort every week and confusing newer teammates. My responsibility was to improve the system in a way that lasts beyond one sprint. I mapped the friction, automated or simplified the highest-leverage step, and documented the new path. As a result, the process became faster, easier to repeat, and less dependent on one person remembering hidden steps. The experience taught me that significant improvements usually come from fixing repeated friction, not one-off heroics.",
+    "expected_follow_up_intent": "praise_strong",
+    "expected_scores": {
+      "situation": 5,
+      "task": 5,
+      "action": 5,
+      "result": 5
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "Strong answer. The ownership, actions, and impact are all clear."
+    }
+  },
+  {
+    "eval_case_id": "improved_process--new_grad--missing_result--missing_result--24",
+    "question_id": "improved_process",
+    "question_family_id": "improved_process--new_grad",
+    "group": "Achievement & Impact",
+    "tags": [
+      "impact",
+      "execution",
+      "delivery",
+      "process"
+    ],
+    "level": "new_grad",
+    "answer_profile": "missing_result",
+    "question": "Tell me about a time you improved a process or system significantly.",
+    "candidate_answer": "During my internship, an internal workflow had become slow and fragile, and the team had normalized the pain even though it was fixable. My responsibility was to improve the system in a way that lasts beyond one sprint. I mapped the friction, automated or simplified the highest-leverage step, and documented the new path. The experience taught me that significant improvements usually come from fixing repeated friction, not one-off heroics.",
+    "expected_follow_up_intent": "clarify_result",
+    "expected_scores": {
+      "situation": 4,
+      "task": 4,
+      "action": 4,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The story is credible, but it stops before the interviewer learns what changed because of your actions."
+    }
+  },
+  {
+    "eval_case_id": "improved_process--intern--strong--edge--24",
+    "question_id": "improved_process",
+    "question_family_id": "improved_process--intern",
+    "group": "Achievement & Impact",
+    "tags": [
+      "impact",
+      "execution",
+      "delivery",
+      "process"
+    ],
+    "level": "intern",
+    "answer_profile": "strong",
+    "question": "Tell me about a time you improved a process or system significantly.",
+    "candidate_answer": "In a recent software engineering project, a repeated setup or release task was wasting effort every week and confusing newer teammates. My responsibility was to improve the system in a way that lasts beyond one sprint. I mapped the friction, automated or simplified the highest-leverage step, and documented the new path. As a result, the process became faster, easier to repeat, and less dependent on one person remembering hidden steps. The experience taught me that significant improvements usually come from fixing repeated friction, not one-off heroics.",
+    "expected_follow_up_intent": "praise_strong",
+    "expected_scores": {
+      "situation": 5,
+      "task": 5,
+      "action": 5,
+      "result": 5
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "Strong answer. The ownership, actions, and impact are all clear."
+    }
+  },
+  {
+    "eval_case_id": "learn_new_technology--intern--strong--baseline--25",
+    "question_id": "learn_new_technology",
+    "question_family_id": "learn_new_technology--intern",
+    "group": "Adaptability & Growth",
+    "tags": [
+      "adaptability",
+      "learning",
+      "growth",
+      "delivery"
+    ],
+    "level": "intern",
+    "answer_profile": "strong",
+    "question": "Tell me about a time you had to learn a new technology quickly.",
+    "candidate_answer": "In a recent software engineering project, our project needed Docker to stop environment drift, but I had never used it before. My responsibility was to learn only what I needed to unblock delivery and then document it well. I focused on the official docs, built the smallest working version, and wrote down the repeatable setup for others. As a result, the team got unblocked and the new tool became immediately useful instead of staying theoretical. The experience taught me that I learn new tools fastest when I tie them to a concrete delivery problem.",
+    "expected_follow_up_intent": "praise_strong",
+    "expected_scores": {
+      "situation": 5,
+      "task": 5,
+      "action": 5,
+      "result": 5
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "Strong answer. The ownership, actions, and impact are all clear."
+    }
+  },
+  {
+    "eval_case_id": "learn_new_technology--new_grad--missing_result--missing_result--25",
+    "question_id": "learn_new_technology",
+    "question_family_id": "learn_new_technology--new_grad",
+    "group": "Adaptability & Growth",
+    "tags": [
+      "adaptability",
+      "learning",
+      "growth",
+      "delivery"
+    ],
+    "level": "new_grad",
+    "answer_profile": "missing_result",
+    "question": "Tell me about a time you had to learn a new technology quickly.",
+    "candidate_answer": "During my internship, a delivery goal required me to get productive in a new tool quickly instead of learning it passively. My responsibility was to learn only what I needed to unblock delivery and then document it well. I focused on the official docs, built the smallest working version, and wrote down the repeatable setup for others. The experience taught me that I learn new tools fastest when I tie them to a concrete delivery problem.",
+    "expected_follow_up_intent": "clarify_result",
+    "expected_scores": {
+      "situation": 4,
+      "task": 4,
+      "action": 4,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The story is credible, but it stops before the interviewer learns what changed because of your actions."
+    }
+  },
+  {
+    "eval_case_id": "learn_new_technology--intern--missing_result--edge--25",
+    "question_id": "learn_new_technology",
+    "question_family_id": "learn_new_technology--intern",
+    "group": "Adaptability & Growth",
+    "tags": [
+      "adaptability",
+      "learning",
+      "growth",
+      "delivery"
+    ],
+    "level": "intern",
+    "answer_profile": "missing_result",
+    "question": "Tell me about a time you had to learn a new technology quickly.",
+    "candidate_answer": "In a recent software engineering project, our project needed Docker to stop environment drift, but I had never used it before. My responsibility was to learn only what I needed to unblock delivery and then document it well. I focused on the official docs, built the smallest working version, and wrote down the repeatable setup for others. The experience taught me that I learn new tools fastest when I tie them to a concrete delivery problem.",
+    "expected_follow_up_intent": "clarify_result",
+    "expected_scores": {
+      "situation": 4,
+      "task": 4,
+      "action": 4,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The story is credible, but it stops before the interviewer learns what changed because of your actions."
+    }
+  },
+  {
+    "eval_case_id": "priorities_shifted--intern--strong--baseline--26",
+    "question_id": "priorities_shifted",
+    "question_family_id": "priorities_shifted--intern",
+    "group": "Adaptability & Growth",
+    "tags": [
+      "adaptability",
+      "learning",
+      "growth",
+      "prioritization",
+      "communication"
+    ],
+    "level": "intern",
+    "answer_profile": "strong",
+    "question": "Describe a time priorities shifted dramatically mid-sprint. How did you handle it?",
+    "candidate_answer": "In a recent software engineering project, mid-sprint, a higher-priority user issue forced us to pause planned feature work. My responsibility was to re-prioritize cleanly without leaving everyone confused. I helped re-sequence the work, explained what was changing and why, and protected the most important deliverables first. As a result, the team adjusted faster because the new priorities were explicit and the tradeoffs were communicated clearly. The experience taught me that priority shifts feel manageable once the reasoning and next steps are both visible.",
+    "expected_follow_up_intent": "praise_strong",
+    "expected_scores": {
+      "situation": 5,
+      "task": 5,
+      "action": 5,
+      "result": 5
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "Strong answer. The ownership, actions, and impact are all clear."
+    }
+  },
+  {
+    "eval_case_id": "priorities_shifted--new_grad--missing_result--missing_result--26",
+    "question_id": "priorities_shifted",
+    "question_family_id": "priorities_shifted--new_grad",
+    "group": "Adaptability & Growth",
+    "tags": [
+      "adaptability",
+      "learning",
+      "growth",
+      "prioritization",
+      "communication"
+    ],
+    "level": "new_grad",
+    "answer_profile": "missing_result",
+    "question": "Describe a time priorities shifted dramatically mid-sprint. How did you handle it?",
+    "candidate_answer": "During my internship, our sprint priorities changed quickly because new information made the original plan less valuable. My responsibility was to re-prioritize cleanly without leaving everyone confused. I helped re-sequence the work, explained what was changing and why, and protected the most important deliverables first. The experience taught me that priority shifts feel manageable once the reasoning and next steps are both visible.",
+    "expected_follow_up_intent": "clarify_result",
+    "expected_scores": {
+      "situation": 4,
+      "task": 4,
+      "action": 4,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The story is credible, but it stops before the interviewer learns what changed because of your actions."
+    }
+  },
+  {
+    "eval_case_id": "priorities_shifted--intern--we_language--edge--26",
+    "question_id": "priorities_shifted",
+    "question_family_id": "priorities_shifted--intern",
+    "group": "Adaptability & Growth",
+    "tags": [
+      "adaptability",
+      "learning",
+      "growth",
+      "prioritization",
+      "communication"
+    ],
+    "level": "intern",
+    "answer_profile": "we_language",
+    "question": "Describe a time priorities shifted dramatically mid-sprint. How did you handle it?",
+    "candidate_answer": "In a recent software engineering project, mid-sprint, a higher-priority user issue forced us to pause planned feature work. Our responsibility was to re-prioritize cleanly without leaving everyone confused. we helped re-sequence the work, explained what was changing and why, and protected the most important deliverables first. The experience taught us that priority shifts feel manageable once the reasoning and next steps are both visible. We delivered a good outcome for the team.",
+    "expected_follow_up_intent": "reduce_we_language",
+    "expected_scores": {
+      "situation": 4,
+      "task": 2,
+      "action": 2,
+      "result": 3
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The answer sounds collaborative, but your individual ownership is still blurry."
+    }
+  },
+  {
+    "eval_case_id": "join_new_codebase--intern--strong--baseline--27",
+    "question_id": "join_new_codebase",
+    "question_family_id": "join_new_codebase--intern",
+    "group": "Adaptability & Growth",
+    "tags": [
+      "adaptability",
+      "learning",
+      "growth",
+      "ramp-up",
+      "execution"
+    ],
+    "level": "intern",
+    "answer_profile": "strong",
+    "question": "Tell me about a time you joined a new team or codebase and had to get up to speed fast.",
+    "candidate_answer": "In a recent software engineering project, I joined a new codebase shortly before I was expected to contribute to a meaningful milestone. My responsibility was to ramp up fast while building trust and avoiding careless mistakes. I mapped the main flows, asked targeted questions, followed one feature end to end, and chose a first task that was small but real. As a result, I became productive quickly and my first contribution landed without needing a risky amount of rework. The experience taught me that fast ramp-up comes from targeted learning, not reading everything equally.",
+    "expected_follow_up_intent": "praise_strong",
+    "expected_scores": {
+      "situation": 5,
+      "task": 5,
+      "action": 5,
+      "result": 5
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "Strong answer. The ownership, actions, and impact are all clear."
+    }
+  },
+  {
+    "eval_case_id": "join_new_codebase--new_grad--missing_result--missing_result--27",
+    "question_id": "join_new_codebase",
+    "question_family_id": "join_new_codebase--new_grad",
+    "group": "Adaptability & Growth",
+    "tags": [
+      "adaptability",
+      "learning",
+      "growth",
+      "ramp-up",
+      "execution"
+    ],
+    "level": "new_grad",
+    "answer_profile": "missing_result",
+    "question": "Tell me about a time you joined a new team or codebase and had to get up to speed fast.",
+    "candidate_answer": "During my internship, I joined a new team and needed to become useful quickly without pretending I understood the system already. My responsibility was to ramp up fast while building trust and avoiding careless mistakes. I mapped the main flows, asked targeted questions, followed one feature end to end, and chose a first task that was small but real. The experience taught me that fast ramp-up comes from targeted learning, not reading everything equally.",
+    "expected_follow_up_intent": "clarify_result",
+    "expected_scores": {
+      "situation": 4,
+      "task": 4,
+      "action": 4,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The story is credible, but it stops before the interviewer learns what changed because of your actions."
+    }
+  },
+  {
+    "eval_case_id": "join_new_codebase--intern--rambling--edge--27",
+    "question_id": "join_new_codebase",
+    "question_family_id": "join_new_codebase--intern",
+    "group": "Adaptability & Growth",
+    "tags": [
+      "adaptability",
+      "learning",
+      "growth",
+      "ramp-up",
+      "execution"
+    ],
+    "level": "intern",
+    "answer_profile": "rambling",
+    "question": "Tell me about a time you joined a new team or codebase and had to get up to speed fast.",
+    "candidate_answer": "To give a little background, this happened during a period when several priorities were moving at once and there were more details than anyone really needed in the interview. In a recent software engineering project, I joined a new codebase shortly before I was expected to contribute to a meaningful milestone. My responsibility was to ramp up fast while building trust and avoiding careless mistakes. I mapped the main flows, asked targeted questions, followed one feature end to end, and chose a first task that was small but real. As a result, I became productive quickly and my first contribution landed without needing a risky amount of rework. The experience taught me that fast ramp-up comes from targeted learning, not reading everything equally. Looking back, I would probably tell the story more directly.",
+    "expected_follow_up_intent": "tighten_rambling",
+    "expected_scores": {
+      "situation": 2,
+      "task": 3,
+      "action": 4,
+      "result": 3
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "There is a useful example here, but the setup is longer than it needs to be and dilutes the key point."
+    }
+  },
+  {
+    "eval_case_id": "change_approach_new_info--intern--strong--baseline--28",
+    "question_id": "change_approach_new_info",
+    "question_family_id": "change_approach_new_info--intern",
+    "group": "Adaptability & Growth",
+    "tags": [
+      "adaptability",
+      "learning",
+      "growth",
+      "judgment"
+    ],
+    "level": "intern",
+    "answer_profile": "strong",
+    "question": "Give an example of when you had to change your approach based on new information.",
+    "candidate_answer": "In a recent software engineering project, I started with one implementation approach, but new evidence showed it was solving the wrong problem. My responsibility was to pivot early enough that the new information still mattered. I reassessed the goal, changed the implementation strategy, and explained the pivot so the team understood the reason behind it. As a result, the revised approach better matched the real problem and saved us from doubling down on the wrong path. The experience taught me that good adaptation means changing the plan when the evidence changes, not when it is too late.",
+    "expected_follow_up_intent": "praise_strong",
+    "expected_scores": {
+      "situation": 5,
+      "task": 5,
+      "action": 5,
+      "result": 5
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "Strong answer. The ownership, actions, and impact are all clear."
+    }
+  },
+  {
+    "eval_case_id": "change_approach_new_info--new_grad--missing_result--missing_result--28",
+    "question_id": "change_approach_new_info",
+    "question_family_id": "change_approach_new_info--new_grad",
+    "group": "Adaptability & Growth",
+    "tags": [
+      "adaptability",
+      "learning",
+      "growth",
+      "judgment"
+    ],
+    "level": "new_grad",
+    "answer_profile": "missing_result",
+    "question": "Give an example of when you had to change your approach based on new information.",
+    "candidate_answer": "During my internship, new data or stakeholder input made my original plan less effective than I first thought. My responsibility was to pivot early enough that the new information still mattered. I reassessed the goal, changed the implementation strategy, and explained the pivot so the team understood the reason behind it. The experience taught me that good adaptation means changing the plan when the evidence changes, not when it is too late.",
+    "expected_follow_up_intent": "clarify_result",
+    "expected_scores": {
+      "situation": 4,
+      "task": 4,
+      "action": 4,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The story is credible, but it stops before the interviewer learns what changed because of your actions."
+    }
+  },
+  {
+    "eval_case_id": "change_approach_new_info--intern--no_example--edge--28",
+    "question_id": "change_approach_new_info",
+    "question_family_id": "change_approach_new_info--intern",
+    "group": "Adaptability & Growth",
+    "tags": [
+      "adaptability",
+      "learning",
+      "growth",
+      "judgment"
+    ],
+    "level": "intern",
+    "answer_profile": "no_example",
+    "question": "Give an example of when you had to change your approach based on new information.",
+    "candidate_answer": "I do not have a perfect example of that, but I think I would stay calm, communicate clearly, and try to solve the problem with the team.",
+    "expected_follow_up_intent": "reframe_no_example",
+    "expected_scores": {
+      "situation": 1,
+      "task": 1,
+      "action": 2,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "This does not answer the question directly because it stays hypothetical."
+    }
+  },
+  {
+    "eval_case_id": "outside_comfort_zone--intern--strong--baseline--29",
+    "question_id": "outside_comfort_zone",
+    "question_family_id": "outside_comfort_zone--intern",
+    "group": "Adaptability & Growth",
+    "tags": [
+      "adaptability",
+      "learning",
+      "growth"
+    ],
+    "level": "intern",
+    "answer_profile": "strong",
+    "question": "Tell me about a time you worked outside your comfort zone.",
+    "candidate_answer": "In a recent software engineering project, I had to take on a part of the stack I had not worked in before because the team needed coverage there. My responsibility was to deliver despite being uncomfortable and learn quickly enough to be useful. I broke the problem into smaller steps, used documentation and feedback loops, and kept validating my progress instead of guessing silently. As a result, I produced a useful result in an unfamiliar area and expanded what I could take on later. The experience taught me that comfort zones grow fastest when I stay honest about what I do not know and keep feedback loops short.",
+    "expected_follow_up_intent": "praise_strong",
+    "expected_scores": {
+      "situation": 5,
+      "task": 5,
+      "action": 5,
+      "result": 5
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "Strong answer. The ownership, actions, and impact are all clear."
+    }
+  },
+  {
+    "eval_case_id": "outside_comfort_zone--new_grad--missing_result--missing_result--29",
+    "question_id": "outside_comfort_zone",
+    "question_family_id": "outside_comfort_zone--new_grad",
+    "group": "Adaptability & Growth",
+    "tags": [
+      "adaptability",
+      "learning",
+      "growth"
+    ],
+    "level": "new_grad",
+    "answer_profile": "missing_result",
+    "question": "Tell me about a time you worked outside your comfort zone.",
+    "candidate_answer": "During my internship, I stepped into an unfamiliar domain because the project needed someone to move it forward and waiting was worse than learning. My responsibility was to deliver despite being uncomfortable and learn quickly enough to be useful. I broke the problem into smaller steps, used documentation and feedback loops, and kept validating my progress instead of guessing silently. The experience taught me that comfort zones grow fastest when I stay honest about what I do not know and keep feedback loops short.",
+    "expected_follow_up_intent": "clarify_result",
+    "expected_scores": {
+      "situation": 4,
+      "task": 4,
+      "action": 4,
+      "result": 1
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The story is credible, but it stops before the interviewer learns what changed because of your actions."
+    }
+  },
+  {
+    "eval_case_id": "outside_comfort_zone--intern--emotional--edge--29",
+    "question_id": "outside_comfort_zone",
+    "question_family_id": "outside_comfort_zone--intern",
+    "group": "Adaptability & Growth",
+    "tags": [
+      "adaptability",
+      "learning",
+      "growth"
+    ],
+    "level": "intern",
+    "answer_profile": "emotional",
+    "question": "Tell me about a time you worked outside your comfort zone.",
+    "candidate_answer": "This was a difficult one for me emotionally. In a recent software engineering project, I had to take on a part of the stack I had not worked in before because the team needed coverage there. My responsibility was to deliver despite being uncomfortable and learn quickly enough to be useful. I broke the problem into smaller steps, used documentation and feedback loops, and kept validating my progress instead of guessing silently. The experience taught me that comfort zones grow fastest when I stay honest about what I do not know and keep feedback loops short. At the time I felt stressed and disappointed, but I tried to handle it professionally and learn from it.",
+    "expected_follow_up_intent": "support_emotional",
+    "expected_scores": {
+      "situation": 3,
+      "task": 3,
+      "action": 3,
+      "result": 2
+    },
+    "notes": {
+      "source_kind": "synthetic_eval_v1",
+      "overall": "The answer has real emotional weight, but it needs a clearer professional summary of your response and learning."
+    }
+  }
+]
